@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <h1>Documents Object Model - DOM</h1>
+    <P>The DOM is a browser tool/api/extension/software that converts a html document into a nested javascript object,allowing for manipulation.</P>
+    <button>Test</button>
+    <script>
+        const colors=["pink","green","yellow","blue","orange","purple"]
+        document.body.append("Javascript DOM in action -appending/adding text to the page")
+        document.querySelector("button").addEventListener("Click",()=>{
+            const randomIndex=Math.floor(math.random()*colors.length)
+            document.body.style.backgroundColor=colors[randomIndex]
+            
+        })
+    </script>
+</body>
+</html>

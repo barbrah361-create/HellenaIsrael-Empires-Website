@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Object Model</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - HellenaIsrael Empires</title>
+  <link rel="stylesheet" href="Css/checkout.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>Documents Object Model - DOM</h1>
-    <P>The DOM is a browser tool/api/extension/software that converts a html document into a nested javascript object,allowing for manipulation.</P>
-    <button>Test</button>
-    <script>
-        const colors=["pink","green","yellow","blue","orange","purple"]
-        document.body.append("Javascript DOM in action -appending/adding text to the page")
-        document.querySelector("button").addEventListener("Click",()=>{
-            const randomIndex=Math.floor(math.random()*colors.length)
-            document.body.style.backgroundColor=colors[randomIndex]
-            
-        })
-    </script>
+
+<header>
+  <div class="logo-container">
+    <img src="image/my logo - Copy.jpeg" alt="Logo" class="logo">
+    <h1>HellenaIsrael Empires</h1>
+  </div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="checkout.html">Checkout</a>
+    <a href="admin.html">Admin</a>
+  </nav>
+</header>
+
+<section class="checkout-section">
+  <h2>Your Cart</h2>
+  <div id="cart-items" class="cart-items">
+    
+  </div>
+  <h3>Total: Ksh <span id="total-amount">0</span></h3>
+  <button id="clear-cart" class="clear-cart-btn">Clear Cart</button>
+  <button id="send-whatsapp" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Send Order</button>
+</section>
+
+<script src="checkout.js"></script>
 </body>
 </html>

@@ -1,40 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Admin Panel</title>
-<link rel="stylesheet" href="Css/styl.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - HellenaIsrael Empires</title>
+  <link rel="stylesheet" href="Css/style.css">
+  <link rel="stylesheet" href="Css/admin.css">
 </head>
-
 <body>
 
-<header class="header">
+  <header class="header">
+    <div class="header-left">
+      <img src="image/my logo - Copy.jpeg" alt="Logo" class="logo-img">
+      <span class="logo-text">HellenaIsrael Empires</span>
+    </div>
 
-<div class="logoBox">
-<img src="image/my logo - Copy.jpeg" class="logo">
-<h1>Admin Panel</h1>
-</div>
+    
+    <button id="menu-btn" class="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-</header>
+    
+    <nav id="nav" class="nav">
+      <a href="index.html" class="nav-btn">Home</a>
+      <a href="products.html" class="nav-btn">Products</a>
+      <a href="checkout.html" class="nav-btn">Checkout</a>
+      <a href="admin.html" class="nav-btn active">Admin</a>
+    </nav>
 
-<section class="adminSection">
+    
+    <button id="theme-btn" class="theme-btn">🌙</button>
+  </header>
 
-<h2>Add Product</h2>
+  
+  <div class="admin-nav">
+    <a href="index.html" class="back-home-btn">← Back to Home</a>
+  </div>
 
-<input id="name" placeholder="Product name">
-<input id="price" placeholder="Price">
-<input id="image" placeholder="Image path (images/product1.jpg)">
+  
+  <main>
+    <section class="admin-section">
+      <h3>Add New Product</h3>
+      <form id="product-form">
+        <input type="text" id="product-name" placeholder="Product Name" required>
+        <input type="number" id="product-price" placeholder="Price" required>
+        <input type="url" id="product-image" placeholder="Image URL" required>
+        <textarea id="product-desc" placeholder="Product Description" required></textarea>
+        <button type="submit">Add Product</button>
+      </form>
+    </section>
 
-<button onclick="addProduct()">Add Product</button>
+    <section class="admin-section">
+      <h3>Existing Products</h3>
+      <table id="product-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>Description</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </section>
+  </main>
 
-<h2>Existing Products</h2>
-
-<div id="adminProducts"></div>
-
-</section>
-
-<script src="Js/admin.js"></script>
+  <script src="Admin.js"></script>
 
 </body>
 </html>

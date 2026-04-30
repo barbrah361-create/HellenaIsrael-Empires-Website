@@ -3,24 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Checkout - HellenaIsrael Empires</title>
+  <title>Checkout - Hellenaisrael Authentic Cosmetic Empire</title>
+  <link rel="stylesheet" href="Css/styl.css">
   <link rel="stylesheet" href="Css/checkout.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
 <header>
-  <div class="logo-container">
+  <a href="index.html" class="logo-container">
     <img src="image/my logo - Copy.jpeg" alt="Logo" class="logo">
-    <h1>HellenaIsrael Empires</h1>
+    <h1>Hellenaisrael Authentic Cosmetic Empire</h1>
+  </a>
+  <div class="social-icons">
+    <div class="social-links">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://wa.me/254717263203"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <button id="menu-btn" class="menu-btn" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
   <nav class="nav">
     <a href="index.html">Home</a>
     <a href="products.html">Products</a>
-    <a href="checkout.html">Checkout</a>
+    <a href="skintype.html">Skin Discovery</a>
+    <a id="checkout-link" href="checkout.html">Checkout</a>
     <a href="admin.html">Admin</a>
   </nav>
+  <script>
+    function updateCheckoutLinkCount() {
+      const checkoutLink = document.getElementById('checkout-link');
+      if (!checkoutLink) return;
+      const cart = JSON.parse(localStorage.getItem('cart')) || {};
+      const total = Object.values(cart).reduce((sum, item) => sum + (item.qty || 0), 0);
+      checkoutLink.textContent = total ? `Checkout (${total})` : 'Checkout';
+    }
+    updateCheckoutLinkCount();
+    window.addEventListener('storage', updateCheckoutLinkCount);
+  </script>
 </header>
+
+
+<section class="hero checkout-hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Checkout</p>
+    <h2>Review your order before sending it.</h2>
+    <p>Confirm the items in your cart and send your order straight to WhatsApp for fast checkout.</p>
+  </div>
+</section>
 
 <section class="checkout-section">
   <h2>Your Cart</h2>
@@ -33,5 +66,6 @@
 </section>
 
 <script src="checkout.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

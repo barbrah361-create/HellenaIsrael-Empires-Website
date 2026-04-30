@@ -3,47 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HellenaIsrael Empires</title>
+  <title>Hellenaisrael Authentic Cosmetic Empire</title>
   <link rel="stylesheet" href="Css/styl.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Helenaisrael Authentic Cosmetic Empire offers premium cosmetics, skincare, fragrances, and beauty essentials in Kenya. Explore curated products with artistic style and rich dark elegance.">
+  <meta name="keywords" content="Hellenaisrael, cosmetics, beauty, skincare, fragrances, Kenya, premium cosmetics, Helenacosmetics, dark beauty, artistic makeup">
+  <meta name="author" content="Helenaisrael Authentic Cosmetic Empire">
+  <meta property="og:title" content="Helenaisrael Authentic Cosmetic Empire - Premium Cosmetics in Kenya">
+  <meta property="og:description" content="Discover premium skincare, fragrances, and beauty essentials crafted for bold, artistic looks at helenacosmetics.co.ke.">
+  <meta property="og:url" content="https://helenacosmetics.co.ke/">
+  <meta property="og:site_name" content="Helenacosmetics">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Helenaisrael Authentic Cosmetic Empire">
+  <meta name="twitter:description" content="Discover premium cosmetics and skincare with an artistic dark theme on helenacosmetics.co.ke.">
+  <link rel="canonical" href="https://helenacosmetics.co.ke/">
 </head>
 <body>
 
 
 
 <header>
-  <div class="logo-container">
+  <a href="index.html" class="logo-container">
     <img src="image/my logo - Copy.jpeg" alt="Logo" class="logo">
-    <h1>HellenaIsrael Empires</h1>
-  </div>
+    <h1>Hellenaisrael Authentic Cosmetic Empire</h1>
+  </a>
   <div class="social-icons">
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://wa.me/254717263203"><i class="fab fa-whatsapp"></i></a>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://wa.me/254717263203"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <button id="menu-btn" class="menu-btn" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
   <nav class="nav">
     <a href="index.html">Home</a>
     <a href="products.html">Products</a>
-    <a href="checkout.html">Checkout</a>
-    <a href="skintype.html" class="highlight-btn">✨ Skin Type Finder</a>
-    <a href="search.html">🔍 Search Me</a>
+    <a href="skintype.html">Skin Discovery</a>
+    <a id="checkout-link" href="checkout.html">Checkout</a>
     <a href="admin.html">Admin</a>
   </nav>
+  <script>
+    function updateCheckoutLinkCount() {
+      const checkoutLink = document.getElementById('checkout-link');
+      if (!checkoutLink) return;
+      const cart = JSON.parse(localStorage.getItem('cart')) || {};
+      const total = Object.values(cart).reduce((sum, item) => sum + (item.qty || 0), 0);
+      checkoutLink.textContent = total ? `Checkout (${total})` : 'Checkout';
+    }
+    updateCheckoutLinkCount();
+    window.addEventListener('storage', updateCheckoutLinkCount);
+  </script>
 </header>
+
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Authentic. Artistic. Illuminating.</p>
+    <h2>Premium cosmetics for confident, creative beauty.</h2>
+    <p>Explore a curated collection of skincare, fragrances, and essentials designed to glow in every light.</p>
+    <a class="btn hero-btn" href="products.html">Explore Products</a>
+  </div>
+</section>
 
 <section class="slider">
   <div class="slides">
-    <img src="image/black the beuty.jpg" class="active">
+    <img  src="image/brandamb.png" class="active">
+    <img src="image/black the beuty.jpg" >
     <img src="image/man model.webp">
     <img src="image/mr white man.jpg">
     <img src="image/white beuty.webp">
   </div>
 </section>
 
+<section class="promo-section">
+  <div class="promo-text">
+    <h2>Featured Selections</h2>
+    <p>Eight hand-picked favorites from our collection, ready to add a touch of premium glow to every routine.</p>
+  </div>
+  <div id="featured-products-grid" class="products-grid"></div>
+</section>
+
 <section id="about">
-  <h2>About HellenaIsrael Empires</h2>
+  <h2>About Hellenaisrael Authentic Cosmetic Empire</h2>
   <p>We import high-quality cosmetics from Thailand, Germany, USA, UK, and Korea.</p>
   <p>Our mission is to bring beauty and confidence to everyone with authentic, premium products.</p>
+</section>
+
+<section class="discovery-section">
+  <div class="discovery-copy">
+    <p class="eyebrow">Skin discovery</p>
+    <h2>Find the right routine for your skin type.</h2>
+    <p>Answer a few simple questions on our skin discovery page to learn whether your skin is oily, dry, sensitive, or combination.</p>
+    <a class="btn" href="skintype.html">Discover My Skin Type</a>
+  </div>
 </section>
 
 <section class="tabs-section">
@@ -98,16 +157,14 @@
 
 
 <script src="slider.js"></script>
-<script src="Js/products.js"></script>
-<script src="Js/admin.js"></script>
-  </main> 
+  <script src="products.js"></script>
 
 
   <footer class="site-footer">
     <div class="footer-content">
       <div class="footer-logo">
-        <img src="image/my logo - Copy.jpeg" alt="Helena Israel Empires Logo" class="logo-footer">
-        <h3>HellenaIsrael Empires</h3>
+        <img src="image/my logo - Copy.jpeg" alt="Hellenaisrael Authentic Cosmetic Empire Logo" class="logo-footer">
+        <h3>Hellenaisrael Authentic Cosmetic Empire</h3>
       </div>
 
       <div class="footer-socials">
@@ -116,13 +173,11 @@
         <a href="https://wa.me/254717263203" target="_blank"><i class="fab fa-whatsapp"></i></a>
       </div>
 
-      <p class="footer-text">© 2026 HellenaIsrael Empires. All rights reserved.</p>
+      <p class="footer-text">© 2026 Hellenaisrael Authentic Cosmetic Empire. All rights reserved.</p>
     </div>
   </footer>
   
 
   <script src="app.js"></script>
-</body>
-</html>
 </body>
 </html>

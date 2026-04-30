@@ -43,6 +43,27 @@ body.dark .header {
   gap: 10px;
 }
 
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-icons .social-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: #333;
+  text-decoration: none;
+}
+
+body.dark .social-icons a {
+  color: #f0f0f0;
+}
+
 .logo-img {
   width: 50px;
   height: 50px;
@@ -148,6 +169,13 @@ body.dark .menu-btn span {
 
   .nav.active {
     transform: translateX(0);
+  }
+
+  .social-icons {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 12px;
   }
 
   .menu-btn {

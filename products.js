@@ -934,7 +934,7 @@ const products = [
 
 {
     id: 82,
-    name: "D..",
+    name: "BEAUTY PALLETTE",
     price: 1960,
     image: "image/85.jpeg"
   },
@@ -1298,19 +1298,238 @@ const products = [
     image: "image/135.jpeg"
   },
 
+{
+    id: 93,
+    name: "ULTA HYDRATION HAND CREAM",
+    price: 1100,
+    image: "image/500.jpeg"
+  },
+
+{
+    id: 94,
+    name: "LACURA INTENSIVE HAND CREAM",
+    price: 1000,
+    image: "image/501.jpeg"
+  },
+
+  
+{
+    id: 95,
+    name: "BIO GLOW HAND CREAM ROSE",
+    price: 1100,
+    image: "image/502.jpeg"
+  },{
+    id: 93,
+    name: "NOURISHING HAND CREAM ORGAN OIL",
+    price: 1100,
+    image: "image/503.jpeg"
+  },
+
+{
+    id: 94,
+    name: "NULAN Q10 ENZYM HAND CREAM",
+    price: 1300,
+    image: "image/504.jpeg"
+  },
+
+  
+{
+    id: 95,
+    name: "MANGO HAND CREAM MOISTURIZING",
+    price: 1100,
+    image: "image/505.jpeg"
+  },{
+    id: 93,
+    name: "CIEN HAND CREAM Q10",
+    price: 1300,
+    image: "image/506.jpeg"
+  },
+
+{
+    id: 94,
+    name: "CIEN HAND CREAM MOISTURIZING",
+    price: 1200,
+    image: "image/507.jpeg"
+  },
+
+  
+{
+    id: 95,
+    name: "LACURA MOISTURISING HAND CREAM",
+    price: 1100,
+    image: "image/508.jpeg"
+  },
+  {
+    id: 93,
+    name: "FLOELLA CONCENTRATED DISINFECTANT",
+    price: 1650,
+    image: "image/509.jpeg"
+  },
+
+{
+    id: 94,
+    name: "ZIFLORA CONCENTRATED DISINFECTANT",
+    price: 1870,
+    image: "image/510.jpeg"
+  },
+
+  
+{
+    id: 95,
+    name: "ANTI FUNGAL FOOT POWDER",
+    price: 1650,
+    image: "image/511.jpeg"
+  },{
+    id: 93,
+    name: "FOOT CARE",
+    price: 1350,
+    image: "image/512.jpeg"
+  },
+
+{
+    id: 94,
+    name: "HAND CREAM REDUCING BALM FOOT CARE",
+    price: 1100,
+    image: "image/513.jpeg"
+  },
+
+  
+{
+    id: 95,
+    name: "ROUGH SKIN REMOVER FOOT CARE",
+    price: 1350,
+    image: "image/514.jpeg"
+  },
+  {
+    id: 93,
+    name: "INTENSIVE FOOT CREAM",
+    price: 1200,
+    image: "image/515.jpeg"
+  },
+
+{
+    id: 94,
+    name: "SOFTENING FOOT LOTION FOOT CARE",
+    price: 1050,
+    image: "image/516.jpeg"
+  },
+
+  
+{
+    id: 95,
+    name: "SOAP & GLORY BRIGHTENING SHEET MASK",
+    price: 700,
+    image: "image/517.jpeg"
+  },
+  {
+    id: 93,
+    name: "CIEN MOISTURISING & RELAXING SHEET MASK",
+    price: 500,
+    image: "image/518.jpeg"
+  },
+
+{
+    id: 94,
+    name: "HYDRO BOOST TISUE MASK",
+    price: 500,
+    image: "image/519.jpeg"
+  },
+
+  
+{
+    id: 95,
+    name: "PEACH&GINGER SMOOTHING (SANTA PRINTED SHEET MASK)",
+    price: 800,
+    image: "image/520.jpeg"
+  },
+  {
+    id: 93,
+    name: "SKINACADEMY INK'D TATOO CARE",
+    price: 2280,
+    image: "image/521.jpeg"
+  },
+
+{
+    id: 94,
+    name: "RASP BERRY FLAVOUR VITAMIN C",
+    price: 2500,
+    image: "image/522.jpeg"
+  },
+
+  
+{
+    id: 95,
+    name: "EA45 DAILY CARE RICH CREAM",
+    price: 3000,
+    image: "image/523.jpeg"
+  },
+  {
+    id: 93,
+    name: "COCOA BUTTER FORMULA BODY OIL",
+    price: 1350,
+    image: "image/525.jpeg"
+  },
+
+{
+    id: 94,
+    name: "PEEL OFF MASK WITH CHARCOAL",
+    price: 2100,
+    image: "image/527.jpeg"
+  },
+
+  
+{
+    id: 95,
+    name: "GARNIER PURE ACTIVE 3 IN 1 CHARCOAL",
+    price: 2200,
+    image: "image/528.jpeg"
+  },
+  {
+    id: 93,
+    name: "GRACE & STELLA FACE MASK",
+    price: 1630,
+    image: "image/529.jpeg"
+  },
+
+{
+    id: 94,
+    name: "LACURA MARINE MASK",
+    price: 1800,
+    image: "image/530.jpeg"
+  },
+{
+    id: 94,
+    name: "GARNIER VITAMIN C",
+    price: 2600,
+    image: "image/524.jpeg"
+  },
+  
 
 ];
 
 
 const productsGrid = document.getElementById("products-grid");
+const featuredProductsGrid = document.getElementById("featured-products-grid");
+const featuredProductIds = [1, 2, 3, 5,  14, 23];
+const productSearchInput = document.getElementById("product-search-input");
 
 let cart = JSON.parse(localStorage.getItem("cart")) || {};
 
-
 function saveCart() {
   localStorage.setItem("cart", JSON.stringify(cart));
+  updateCheckoutLinkCount();
 }
 
+function getCartItemCount() {
+  return Object.values(cart).reduce((total, item) => total + (item.qty || 0), 0);
+}
+
+function updateCheckoutLinkCount() {
+  const checkoutLink = document.getElementById("checkout-link");
+  if (!checkoutLink) return;
+  const totalItems = getCartItemCount();
+  checkoutLink.textContent = totalItems > 0 ? `Checkout (${totalItems})` : "Checkout";
+}
 
 function increaseQty(id, name, price, image) {
   if (!cart[id]) {
@@ -1321,7 +1540,6 @@ function increaseQty(id, name, price, image) {
   saveCart();
   updateUI(id);
 }
-
 
 function decreaseQty(id) {
   if (!cart[id]) return;
@@ -1336,46 +1554,76 @@ function decreaseQty(id) {
   updateUI(id);
 }
 
-
 function updateUI(id) {
-  const card = document.querySelector(`[data-id="${id}"]`);
-  if (!card) return;
+  const cards = document.querySelectorAll(`[data-id="${id}"]`);
+  if (!cards.length) return;
 
-  const qtyEl = card.querySelector(".qty");
+  const qty = cart[id] ? cart[id].qty : 0;
 
-  if (cart[id]) {
-    qtyEl.textContent = cart[id].qty;
-  } else {
-    qtyEl.textContent = 0;
-  }
-}
+  cards.forEach(card => {
+    const qtyEl = card.querySelector(".qty");
+    const addBtn = card.querySelector(".add-cart-btn");
+    const decBtn = card.querySelector(".dec-btn");
 
-
-function displayProducts() {
-  productsGrid.innerHTML = "";
-
-  products.forEach(product => {
-    const qty = cart[product.id] ? cart[product.id].qty : 0;
-
-    const productCard = document.createElement("div");
-    productCard.classList.add("product-card");
-    productCard.setAttribute("data-id", product.id);
-
-    productCard.innerHTML = `
-      <img src="${product.image}" alt="${product.name}">
-      <h3>${product.name}</h3>
-      <p>Ksh ${product.price}</p>
-
-      <div class="cart-controls">
-        <button onclick="decreaseQty(${product.id})">-</button>
-        <span class="qty">${qty}</span>
-        <button onclick="increaseQty(${product.id}, '${product.name}', ${product.price}, '${product.image}')">+</button>
-      </div>
-    `;
-
-    productsGrid.appendChild(productCard);
+    if (qtyEl) qtyEl.textContent = qty;
+    if (addBtn) {
+      addBtn.textContent = qty > 0 ? "+" : "Add to Cart";
+      addBtn.classList.toggle("plus-btn", qty > 0);
+      addBtn.title = qty > 0 ? "Add more" : "Add to cart";
+    }
+    if (decBtn) decBtn.disabled = qty === 0;
   });
 }
 
 
+function renderProductCard(product, container) {
+  const qty = cart[product.id] ? cart[product.id].qty : 0;
+  const productCard = document.createElement("div");
+  productCard.classList.add("product-card");
+  productCard.setAttribute("data-id", product.id);
+
+  productCard.innerHTML = `
+      <div class="product-image-wrapper">
+          <img src="${product.image}" alt="${product.name}">
+      </div>
+
+      <h3>${product.name}</h3>
+      <p> @ Ksh ${product.price}</p>
+
+      <div class="cart-controls">
+        <button class="dec-btn" onclick="decreaseQty(${product.id})" ${qty === 0 ? "disabled" : ""}>-</button>
+        <span class="qty">${qty}</span>
+        <button class="add-cart-btn ${qty > 0 ? "plus-btn" : ""}" onclick='increaseQty(${product.id}, ${JSON.stringify(product.name)}, ${product.price}, ${JSON.stringify(product.image)})'>
+          ${qty === 0 ? "Add to Cart" : "+"}
+        </button>
+      </div>
+    `;
+
+  container.appendChild(productCard);
+}
+
+function displayProducts(filteredProducts = products) {
+  if (!productsGrid) return;
+  productsGrid.innerHTML = "";
+  filteredProducts.forEach(product => renderProductCard(product, productsGrid));
+  updateCheckoutLinkCount();
+}
+
+if (productSearchInput) {
+  productSearchInput.addEventListener("input", () => {
+    const query = productSearchInput.value.trim().toLowerCase();
+    const filtered = products.filter(product => product.name.toLowerCase().includes(query));
+    displayProducts(filtered);
+  });
+}
+
+function displayFeaturedProducts() {
+  if (!featuredProductsGrid) return;
+  featuredProductsGrid.innerHTML = "";
+  const featuredProducts = products.filter(product => featuredProductIds.includes(product.id));
+  featuredProducts.forEach(product => renderProductCard(product, featuredProductsGrid));
+  updateCheckoutLinkCount();
+}
+
 displayProducts();
+displayFeaturedProducts();

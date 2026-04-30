@@ -37,6 +37,18 @@ if (themeBtn) {
 
 
 
+function updateCheckoutLinkCount() {
+  const checkoutLink = document.getElementById("checkout-link");
+  if (!checkoutLink) return;
+
+  const cart = JSON.parse(localStorage.getItem("cart")) || {};
+  const totalItems = Object.values(cart).reduce((sum, item) => sum + (item.qty || 0), 0);
+  checkoutLink.textContent = totalItems > 0 ? `Checkout (${totalItems})` : "Checkout";
+}
+
+updateCheckoutLinkCount();
+window.addEventListener("storage", updateCheckoutLinkCount);
+
 const navButtons = document.querySelectorAll(".nav-btn");
 const sections = document.querySelectorAll(".content-section");
 

@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function saveCart() {
     localStorage.setItem("cart", JSON.stringify(cart));
+    if (typeof updateCheckoutLinkCount === "function") {
+      updateCheckoutLinkCount();
+    }
   }
 
   function renderCart() {
@@ -98,19 +101,27 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      let message = "Hello, I would like to order:%0A";
+      let message = "Hello, I would like to place an order with the following items:\n\n";
       let total = 0;
+      let totalQty = 0;
 
       items.forEach(item => {
         const itemTotal = item.price * item.qty;
         total += itemTotal;
+        totalQty += item.qty;
 
-        message += `- ${item.name} x${item.qty} = Ksh ${itemTotal}%0A`;
+        message += `- ${item.name}\n`;
+        message += `  Quantity: ${item.qty}\n`;
+        message += `  Unit price: Ksh ${item.price}\n`;
+        message += `  Subtotal: Ksh ${itemTotal}\n\n`;
       });
 
-      message += `%0ATotal: Ksh ${total}`;
+      message += `Total items: ${totalQty}\n`;
+      message += `Total amount: Ksh ${total}\n\n`;
+      message += "Please let me know the next steps for payment and delivery.";
 
-      const url = `https://wa.me/254717263203?text=${message}`;
+      const encodedMessage = encodeURIComponent(message);
+      const url = `https://wa.me/254717263203?text=${encodedMessage}`;
       window.open(url, "_blank");
     });
   }

@@ -1,148 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Skin Type | Israel Empires</title>
-
-<link rel="stylesheet" href="Css/skintype.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Analysis | Hellenaisrael Empire</title>
+    <link rel="stylesheet" href="Css/styl.css">
+    <link rel="stylesheet" href="Css/skintype.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
 
-
-<header class="header">
-
-    <div class="logo">
-        <img src="image/my logo - Copy.jpeg">
-        <span>Israel Empires</span>
+  <header>
+    <a href="index.html" class="logo-container">
+      <img src="image/my logo - Copy.jpeg" alt="Logo" class="logo">
+      <h1>Hellenaisrael Authentic Cosmetic Empire</h1>
+    </a>
+    <div class="social-icons">
+      <div class="social-links">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/254717263203"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <button id="menu-btn" class="menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="skintype.html" class="active">Skin Discovery</a>
+      <a id="checkout-link" href="checkout.html">Checkout</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+    <script>
+      function updateCheckoutLinkCount() {
+        const checkoutLink = document.getElementById('checkout-link');
+        if (!checkoutLink) return;
+        const cart = JSON.parse(localStorage.getItem('cart')) || {};
+        const total = Object.values(cart).reduce((sum, item) => sum + (item.qty || 0), 0);
+        checkoutLink.textContent = total ? `Checkout (${total})` : 'Checkout';
+      }
+      updateCheckoutLinkCount();
+      window.addEventListener('storage', updateCheckoutLinkCount);
+    </script>
+  </header>
 
-    <div class="icons">
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-whatsapp"></i>
-        <i class="fab fa-facebook"></i>
-    </div>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Skin Discovery</p>
+        <h2>Find your true skin type and the perfect routine.</h2>
+        <p>Answer two quick questions and send your profile to WhatsApp for tailored product guidance and beauty advice.</p>
+        <a class="btn hero-btn" href="products.html">Explore Recommended Products</a>
+      </div>
+    </section>
 
-</header>
+    <section class="skin-assessment-section">
+      <div class="section-header">
+        <h2>Start your skin discovery</h2>
+        <p>Choose your skin type and main concern to receive a custom recommendation from our beauty experts.</p>
+      </div>
 
-<section class="slider">
+      <div class="assessment-grid">
+        <article class="assessment-card info-card">
+          <h3>How it works</h3>
+          <div class="feature">
+            <span>1</span>
+            <div>
+              <h4>Select your skin type</h4>
+              <p>Pick whether you have oily, dry, sensitive, normal, or combination skin.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span>2</span>
+            <div>
+              <h4>Choose your top concern</h4>
+              <p>Tell us your main skin issue so we can recommend the right products.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span>3</span>
+            <div>
+              <h4>Send details on WhatsApp</h4>
+              <p>Your answers are sent directly to our team for fast consultation and product support.</p>
+            </div>
+          </div>
+        </article>
 
-    <div class="slide active"></div>
-    <div class="slide"></div>
-    <div class="slide"></div>
-    <div class="slide"></div>
-
-    <div class="slider-text">
-        <h1>Glow starts with understanding your skin ✨</h1>
-        <p>Luxury skincare made for your beauty</p>
-    </div>
-
-</section>
-
-
-<section class="model-section">
-
-    <div class="model-card">
-        <img src="image/glow.jpg">
-        <div>
-            <h2>Beauty Inspiration ✨</h2>
-            <p>Healthy skin begins with understanding your natural type.</p>
-        </div>
-    </div>
-
-</section>
-
-<section class="info-section">
-
-    <h2>Skin Intelligence Guide</h2>
-
-    <div class="grid">
-
-        <div class="card">
-            <h3>Skin Types</h3>
-            <p>Oily, Dry, Combination, Sensitive.</p>
-        </div>
-
-        <div class="card">
-            <h3>Hydration</h3>
-            <p>Key to glowing and healthy skin.</p>
-        </div>
-
-        <div class="card">
-            <h3>Skin Issues</h3>
-            <p>Acne, spots, dryness, dullness.</p>
-        </div>
-
-        <div class="card">
-            <h3>Product Match</h3>
-            <p>We recommend based on real skin needs.</p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<section class="form-section">
-
-    <div class="form-card">
-
-        <h2>Skin Analyzer</h2>
-
-        <form id="skinForm">
-
-            <select id="skinType">
-                <option value="">Skin Type</option>
-                <option>Oily</option>
-                <option>Dry</option>
-                <option>Combination</option>
-                <option>Sensitive</option>
+        <article class="assessment-card form-card">
+          <h3>Your skin profile</h3>
+          <form id="skin-assessment-form">
+            <label for="skinType">Skin Type</label>
+            <select id="skinType" required>
+              <option value="Oily">Oily</option>
+              <option value="Dry">Dry</option>
+              <option value="Combination">Combination</option>
+              <option value="Sensitive">Sensitive</option>
+              <option value="Normal">Normal</option>
             </select>
 
-            <select id="concern">
-                <option value="">Skin Problem</option>
-                <option>Acne</option>
-                <option>Dark Spots</option>
-                <option>Dryness</option>
-                <option>Glow</option>
+            <label for="skinProblem">Main Concern</label>
+            <select id="skinProblem" required>
+              <option value="Acne">Acne & Breakouts</option>
+              <option value="Dark Spots">Dark Spots / Hyperpigmentation</option>
+              <option value="Wrinkles">Fine Lines & Wrinkles</option>
+              <option value="Dullness">Dullness & Dehydration</option>
+              <option value="Uneven Tone">Uneven Tone & Texture</option>
             </select>
 
-            <button type="submit" class="analyze-btn">Analyze ✨</button>
+            <button id="whatsappSubmit" class="btn">Send to WhatsApp</button>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
 
-        </form>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="image/my logo - Copy.jpeg" alt="Hellenaisrael Authentic Cosmetic Empire Logo" class="logo-footer">
+        <h3>Hellenaisrael Authentic Cosmetic Empire</h3>
+      </div>
 
-        <a href="index.html" class="home-btn">Go to Home</a>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/254717263203" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
 
+      <p class="footer-text">© 2026 Hellenaisrael Authentic Cosmetic Empire. All rights reserved.</p>
     </div>
+  </footer>
 
-</section>
-
-
-<section id="result" class="result hidden"></section>
-
-
-<footer class="footer">
-
-    <div class="footer-brand">
-        <img src="image/my logo - Copy.jpeg">
-        <h3>Israel Empires</h3>
-    </div>
-
-    <p class="tagline">Luxury skincare made for glow ✨</p>
-
-    <div class="socials">
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-whatsapp"></i>
-        <i class="fab fa-facebook"></i>
-    </div>
-
-    <p class="year">2026</p>
-
-</footer>
-<script src="products.js"></script>
-<script src="skintype.js"></script>
+  <script src="app.js"></script>
+  <script src="skintype.js"></script>
 </body>
 </html>

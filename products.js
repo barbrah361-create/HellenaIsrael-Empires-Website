@@ -858,7 +858,7 @@ const products = [
 {
     id: 72,
     name: "LORIEL PARIS INFAILLIBLE matte cover",
-    price: 700,
+    price: 2200,
     image: "image/75.jpeg"
   },
 
@@ -1264,7 +1264,7 @@ const products = [
   {
     id: 121,
     name: "SIMPLE PURE soap for sensitive skin",
-    price: 400,
+    price: 800,
     image: "image/131.jpeg"
   },
 
@@ -1338,7 +1338,8 @@ const products = [
     name: "MANGO HAND CREAM MOISTURIZING",
     price: 1100,
     image: "image/505.jpeg"
-  },{
+  },
+  {
     id: 93,
     name: "CIEN HAND CREAM Q10",
     price: 1300,
@@ -1494,7 +1495,7 @@ const products = [
 {
     id: 94,
     name: "LACURA MARINE MASK",
-    price: 1800,
+    price: 2200,
     image: "image/530.jpeg"
   },
 {
@@ -1503,8 +1504,306 @@ const products = [
     price: 2600,
     image: "image/524.jpeg"
   },
-  
-
+   {
+    id: 93,
+    name: "SANDAL WOOD & VETIVER",
+    price: 3200,
+    image: "image/600.jpeg"
+  },
+   {
+    id: 93,
+    name: "SEBA MED MOISTURISING BODY LOTION",
+    price: 3300,
+    image: "image/601.jpeg"
+  },
+   {
+    id: 93,
+    name: "FEMININE SPRAY",
+    price: 1800,
+    image: "image/602.jpeg"
+  },
+ {
+    id: 93,
+    name: "DAZZLE MASCARA",
+    price: 1550,
+    image: "image/603.jpeg"
+  },
+   {
+    id: 93,
+    name: "DAZZLE LIP GLOSS",
+    price: 1050,
+    image: "image/604.jpeg"
+  },
+   {
+    id: 93,
+    name: "DAZZLE LIPSTICK",
+    price: 800,
+    image: "image/605.jpeg"
+  },
+   {
+    id: 93,
+    name: "LIP SPLASH",
+    price: 1200,
+    image: "image/606.jpeg"
+  },
+   {
+    id: 93,
+    name: "NUDE LON LIPSTICK",
+    price: 1850,
+    image: "image/607.jpeg"
+  },
+   {
+    id: 93,
+    name: "SAFRON LIPSTICK",
+    price: 600,
+    image: "image/608.jpeg"
+  },
+   {
+    id: 93,
+    name: "BUTTER GLOSS",
+    price: 1300,
+    image: "image/609.jpeg"
+  },
+   {
+    id: 93,
+    name: "LIP GLOSS",
+    price: 800,
+    image: "image/610.jpeg"
+  },
+   {
+    id: 93,
+    name: "LIP CARE BALM",
+    price: 1000,
+    image: "image/611.jpeg"
+  },
+   {
+    id: 93,
+    name: "DERMARVIO LIP BALM",
+    price: 700,
+    image: "image/612.jpeg"
+  },
+   {
+    id: 93,
+    name: "DERMAVIO LIP BALM",
+    price: 700,
+    image: "image/613.jpeg"
+  },
+   {
+    id: 93,
+    name: "SECRET ADMIRER LIP BALM",
+    price: 700,
+    image: "image/614.jpeg"
+  },
+   {
+    id: 93,
+    name: "CIEN CARING LIP BALM",
+    price: 700,
+    image: "image/615.jpeg"
+  },
+   {
+    id: 93,
+    name: "CIEN CARING LIP BALM",
+    price: 1000,
+    image: "image/616.jpeg"
+  },
+   {
+    id: 93,
+    name: "NIVEA CARING LIP BALM",
+    price: 600,
+    image: "image/617.jpeg"
+  },
+   {
+    id: 93,
+    name: "THE MASCARA REVOLUTION",
+    price: 1550,
+    image: "image/618.jpeg"
+  },
+   {
+    id: 93,
+    name: "INTENSIFY LASH LIFTING MASCARA",
+    price: 1400,
+    image: "image/619.jpeg"
+  },
+   {
+    id: 93,
+    name: "AMOR GOLDEN ELIXIR",
+    price: 1800,
+    image: "image/620.jpeg"
+  },
+   {
+    id: 93,
+    name: "CERAMIDE REPLENISHING EYE CREAM",
+    price: 1460,
+    image: "image/621.jpeg"
+  },
+   {
+    id: 93,
+    name: "CERAMIDE REPAIRING SERUM CREAM",
+    price: 2000,
+    image: "image/622.jpeg"
+  },
+   {
+    id: 93,
+    name: "CERAMIDE MOISTURISING GEL CREAM",
+    price: 2300,
+    image: "image/623.jpeg"
+  },
+   {
+    id: 93,
+    name: "REVOLUTION SKIN HYALURONIC ACID SERUM",
+    price: 2600,
+    image: "image/624.jpeg"
+  },
+   {
+    id: 93,
+    name: "GOLD VEGAN COLLAGEN FIRMING SERUM",
+    price: 2600,
+    image: "image/625.jpeg"
+  },
+   {
+    id: 93,
+    name: "NIACINAMIDE BLEMISH RECOVERY SERUM",
+    price: 2600,
+    image: "image/626.jpeg"
+  },
+   {
+    id: 93,
+    name: "CHERRY BLISS RADIANCE GLOW MIST",
+    price: 2260,
+    image: "image/627.jpeg"
+  },
+   {
+    id: 93,
+    name: "CERAMIDE NOURISHING BODY CREAM",
+    price: 2600,
+    image: "image/628.jpeg"
+  },
+   {
+    id: 93,
+    name: "BRAZILIAN GLOW BODY BUTTER",
+    price: 2300,
+    image: "image/629.jpeg"
+  },
+   {
+    id: 93,
+    name: "INTENSELY HYDRATING OVERNIGHT RECOVERY BODY CREAM",
+    price: 2350,
+    image: "image/630.jpeg"
+  },
+   {
+    id: 93,
+    name: "SANCTUARY SPA BODY BUTTER",
+    price: 2500,
+    image: "image/631.jpeg"
+  },
+   {
+    id: 93,
+    name: "BREATH SPRAY DENTAL CARE",
+    price: 1300,
+    image: "image/632.jpeg"
+  },
+   {
+    id: 93,
+    name: "GARNIAR CERAMIDE NOURISHING BODY CREAM",
+    price: 2600,
+    image: "image/633.jpeg"
+  },
+   {
+    id: 93,
+    name: "TED BAKER JASMINE & LIME BLOSSOM BODY SPRAY",
+    price: 4650,
+    image: "image/634.jpeg"
+  },
+   {
+    id: 93,
+    name: "BOUM CANDY LAND PERFUME",
+    price: 5800,
+    image: "image/635.jpeg"
+  },
+   {
+    id: 93,
+    name: "GLOW VANILLA ALMOND PERFUME MIST",
+    price: 2500,
+    image: "image/636.jpeg"
+  },
+   {
+    id: 93,
+    name: "SO...? UNIQUE PERFUME",
+    price: 1600,
+    image: "image/637.jpeg"
+  },
+   {
+    id: 93,
+    name: "ANTI-AGING +MOISTURE INTENSE SERUM",
+    price: 2800,
+    image: "image/638.jpeg"
+  },
+   {
+    id: 93,
+    name: "CIEN VITAMIN C GLOW SERUM",
+    price: 2800,
+    image: "image/639.jpeg"
+  },
+   {
+    id: 93,
+    name: "NULAB FEELIN' BLISS ANTI-PERSPIRANT",
+    price: 550,
+    image: "image/640.jpeg"
+  },
+   {
+    id: 93,
+    name: "LACURA MEN SENSITIVE ANTI-PERSPIRANT DEODORANT",
+    price: 550,
+    image: "image/641.jpeg"
+  },
+   {
+    id: 93,
+    name: "ALPHA ARBUTIN SOAP VITAMIN E",
+    price: 1500,
+    image: "image/642.jpeg"
+  },
+   {
+    id: 93,
+    name: "LACURA SHIMMER HYDRATING FACIAL MIST",
+    price: 2350,
+    image: "image/643.jpeg"
+  },
+   {
+    id: 93,
+    name: "HOT CLOTH CEANSER WITH VITAMIN C",
+    price: 2850,
+    image: "image/644.jpeg"
+  },
+   {
+    id: 93,
+    name: "LACURA ORIGINAL HOT CLOTH CLEANSER",
+    price: 2850,
+    image: "image/645.jpeg"
+  },
+   {
+    id: 93,
+    name: "REVOLUTION SKIN HYALURONIC ACID SERUM",
+    price: 2600,
+    image: "image/646.jpeg"
+  },
+   {
+    id: 93,
+    name: "INTENSELY HYDRATING OVERNIGHT RECOVERY BODY CREAM",
+    price: 2350,
+    image: "image/647.jpeg"
+  },
+   {
+    id: 93,
+    name: "KYRA ALPHA ARBUTIN RICE FERMENT BOOST POWDER",
+    price: 500,
+    image: "image/648.jpeg"
+  },
+   {
+    id: 93,
+    name: "FEMFRESH ACTIVE DEODORANT",
+    price: 2200,
+    image: "image/649.jpeg"
+  },
 ];
 
 

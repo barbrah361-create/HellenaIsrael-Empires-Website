@@ -1804,6 +1804,252 @@ const products = [
     price: 2200,
     image: "image/649.jpeg"
   },
+   {
+    id: A,
+    name: "CLINICAL FORMULATIONS",
+    price: 3000,
+    image: "image/A.jpeg"
+  },
+   {
+    id: B,
+    name: "SOMEBY MI",
+    price: 2600,
+    image: "image/B.jpeg"
+  },
+   {
+    id: C,
+    name: "LOREAL PARIS BRIGHT REVEAL",
+    price: 3300,
+    image: "image/C.jpeg"
+  },
+   {
+    id: D,
+    name: "ADVANCED SNAIL 92 ALL IN ONE CREAM",
+    price: 3200,
+    image: "image/D.jpeg"
+  },
+   {
+    id: E,
+    name: "HYALURONIC ACID INTENSIVE CREAM",
+    price: 3200,
+    image: "image/E.jpeg"
+  },
+   {
+    id: F,
+    name: "BRIGHTENING CARE",
+    price: 3200,
+    image: "image/F.jpeg"
+  },
+   {
+    id: G,
+    name: "SEOUL 1988",
+    price: 3200,
+    image: "image/G.jpeg"
+  },
+   {
+    id: H,
+    name: "CENTELLA",
+    price: 3200,
+    image: "image/H.jpeg"
+  },
+   {
+    id: I,
+    name: "ABIB DARK SPORT SERUM",
+    price: 3000,
+    image: "image/I.jpeg"
+  },
+  {
+    id: K,
+    name: "SOMEBYMI",
+    price: 3000,
+    image: "image/K.jpeg"
+  },
+  {
+    id: L,
+    name: "SOMEBYMI",
+    price: 2800,
+    image: "image/L.jpeg"
+  },
+  {
+    id: M,
+    name: "GALACTOMYSES",
+    price: 2800,
+    image: "image/M.jpeg"
+  },
+  {
+    id: N,
+    name: "RELIEF CREAM MIST",
+    price: 3200,
+    image: "image/N.jpeg"
+  },
+  {
+    id: O,
+    name: "CENTELLA",
+    price: 3200,
+    image: "image/O.jpeg"
+  },
+  {
+    id: P,
+    name: "CENTELLA",
+    price: 3200,
+    image: "image/P.jpeg"
+  },
+  {
+    id: Q,
+    name: "RELIEF CREAM MIST",
+    price: 2400,
+    image: "image/Q.jpeg"
+  },
+  {
+    id: R,
+    name: "DARK SPORT CORRECTING GLOW",
+    price: 3000,
+    image: "image/R.jpeg"
+  },
+  {
+    id: S,
+    name: "YOUTHFULL EYE SERUM",
+    price: 2500,
+    image: "image/S.jpeg"
+  },
+  {
+    id: T,
+    name: "PURITO MIGHTY BAMBOO PANTHENOL",
+    price: 3200,
+    image: "image/T.jpeg"
+  },
+  {
+    id: U,
+    name: "SEOUL 1988 RETINAL LIPOSOME",
+    price: 3000,
+    image: "image/U.jpeg"
+  },
+  {
+    id: V,
+    name: "SEOUL 1988SUNPINE TREE CERAMIDE",
+    price: 3200,
+    image: "image/V.jpeg"
+  },
+  {
+    id: W,
+    name: "MEDICUBE COLLAGEN NIGHT CREAM",
+    price: 3200,
+    image: "image/W.jpeg"
+  },
+  {
+    id: X,
+    name: "MEDICUBE COLLAGEN JELLY CREAM",
+    price: 3600,
+    image: "image/X.jpeg"
+  },
+  {
+    id: Y,
+    name: "RETINAL SHOT TIGHTENING BOOSTER",
+    price: 2800,
+    image: "image/Y.jpeg"
+  },
+  {
+    id: Z,
+    name: "AQUAPHOR",
+    price: 3600,
+    image: "image/Z.jpeg"
+  },
+  {
+    id: ZA,
+    name: "EUCERINE ORIGINAL HEALING CREAM",
+    price: 3500,
+    image: "image/ZA.jpeg"
+  },
+  {
+    id: ZE,
+    name: "OLAY VITAMIN C",
+    price: 3600,
+    image: "image/ZE.jpeg"
+  },
+  {
+    id: ZI,
+    name: "PALMER COCOA BUTTER FORMULA",
+    price: 2800,
+    image: "image/ZI.jpeg"
+  },
+  
+  {
+    id: ZO,
+    name: "COCOA BUTTER FORMULA FIRMING BUTTER",
+    price: 2300,
+    image: "image/ZO.jpeg"
+  },
+  {
+    id: ZU,
+    name: "SKIN SUCCESS FADE MILK",
+    price: 2200,
+    image: "image/ZU.jpeg"
+  },
+  {
+    id: SA,
+    name: "24H MOISTURE BODY LOTION",
+    price: 3300,
+    image: "image/SA.jpeg"
+  },
+  {
+    id: SE,
+    name: "MEDIX 5.5",
+    price: 4300,
+    image: "image/SE.jpeg"
+  },
+  {
+    id: SI,
+    name: "JERGENS SKIN LIGHTENING",
+    price: 3200,
+    image: "image/SI.jpeg"
+  },
+  {
+    id: SO,
+    name: "SUDO CREAM ANTISEPTIC HEALING CREAM",
+    price: 1450,
+    image: "image/SO.jpeg"
+  },
+  {
+    id: SU,
+    name: "EUCERIN ANTI WRINKLE",
+    price: 3500,
+    image: "image/SU.jpeg"
+  },
+  {
+    id: BA,
+    name: "ULTRA DERM HAND CREAM",
+    price: 1200,
+    image: "image/BA.jpeg"
+  },
+  {
+    id: BE,
+    name: "AQUAPHOR HEALING OINTMENT",
+    price: 1600,
+    image: "image/BE.jpeg"
+  },
+  {
+    id: BI,
+    name: "MEDICUBE NIACINEMIDE 15 CERUM",
+    price: 3000,
+    image: "image/BI.jpeg"
+  },
+  {
+    id: BO,
+    name: "ANUA HEARTLEAF 77%",
+    price: 3200,
+    image: "image/BO.jpeg"
+  },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 ];
 
 

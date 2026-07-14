@@ -1805,247 +1805,240 @@ const products = [
     image: "image/649.jpeg"
   },
    {
-    id: A,
+    id: 93,
     name: "CLINICAL FORMULATIONS",
     price: 3000,
     image: "image/A.jpeg"
   },
    {
-    id: B,
+    id: 93,
     name: "SOMEBY MI",
     price: 2600,
     image: "image/B.jpeg"
   },
    {
-    id: C,
+    id: 93,
     name: "LOREAL PARIS BRIGHT REVEAL",
     price: 3300,
     image: "image/C.jpeg"
   },
    {
-    id: D,
+    id: 93,
     name: "ADVANCED SNAIL 92 ALL IN ONE CREAM",
     price: 3200,
     image: "image/D.jpeg"
   },
    {
-    id: E,
+    id: 93,
     name: "HYALURONIC ACID INTENSIVE CREAM",
     price: 3200,
     image: "image/E.jpeg"
   },
    {
-    id: F,
+    id: 93,
     name: "BRIGHTENING CARE",
     price: 3200,
     image: "image/F.jpeg"
   },
    {
-    id: G,
+    id: 93,
     name: "SEOUL 1988",
     price: 3200,
     image: "image/G.jpeg"
   },
    {
-    id: H,
+    id: 93,
     name: "CENTELLA",
     price: 3200,
     image: "image/H.jpeg"
   },
    {
-    id: I,
+    id: 93,
     name: "ABIB DARK SPORT SERUM",
     price: 3000,
     image: "image/I.jpeg"
   },
   {
-    id: K,
+    id: 93,
     name: "SOMEBYMI",
     price: 3000,
     image: "image/K.jpeg"
   },
   {
-    id: L,
+    id: 93,
     name: "SOMEBYMI",
     price: 2800,
     image: "image/L.jpeg"
   },
   {
-    id: M,
+    id: 93,
     name: "GALACTOMYSES",
     price: 2800,
     image: "image/M.jpeg"
   },
   {
-    id: N,
+    id: 93,
     name: "RELIEF CREAM MIST",
     price: 3200,
     image: "image/N.jpeg"
   },
   {
-    id: O,
+    id: 93,
     name: "CENTELLA",
     price: 3200,
     image: "image/O.jpeg"
   },
   {
-    id: P,
+    id: 93,
     name: "CENTELLA",
     price: 3200,
     image: "image/P.jpeg"
   },
   {
-    id: Q,
+    id: 93,
     name: "RELIEF CREAM MIST",
     price: 2400,
     image: "image/Q.jpeg"
   },
   {
-    id: R,
+    id: 93,
     name: "DARK SPORT CORRECTING GLOW",
     price: 3000,
     image: "image/R.jpeg"
   },
   {
-    id: S,
+    id: 93,
     name: "YOUTHFULL EYE SERUM",
     price: 2500,
     image: "image/S.jpeg"
   },
   {
-    id: T,
+    id: 93,
     name: "PURITO MIGHTY BAMBOO PANTHENOL",
     price: 3200,
     image: "image/T.jpeg"
   },
   {
-    id: U,
+    id: 93,
     name: "SEOUL 1988 RETINAL LIPOSOME",
     price: 3000,
     image: "image/U.jpeg"
   },
   {
-    id: V,
+    id: 93,
     name: "SEOUL 1988SUNPINE TREE CERAMIDE",
     price: 3200,
     image: "image/V.jpeg"
   },
   {
-    id: W,
+    id: 93,
     name: "MEDICUBE COLLAGEN NIGHT CREAM",
     price: 3200,
     image: "image/W.jpeg"
   },
   {
-    id: X,
+    id: 93,
     name: "MEDICUBE COLLAGEN JELLY CREAM",
     price: 3600,
     image: "image/X.jpeg"
   },
   {
-    id: Y,
+    id: 93,
     name: "RETINAL SHOT TIGHTENING BOOSTER",
     price: 2800,
     image: "image/Y.jpeg"
   },
   {
-    id: Z,
+    id: 93,
     name: "AQUAPHOR",
     price: 3600,
     image: "image/Z.jpeg"
   },
   {
-    id: ZA,
+    id: 93,
     name: "EUCERINE ORIGINAL HEALING CREAM",
     price: 3500,
     image: "image/ZA.jpeg"
   },
   {
-    id: ZE,
+    id: 93,
     name: "OLAY VITAMIN C",
     price: 3600,
     image: "image/ZE.jpeg"
   },
   {
-    id: ZI,
+    id: 93,
     name: "PALMER COCOA BUTTER FORMULA",
     price: 2800,
     image: "image/ZI.jpeg"
   },
   
   {
-    id: ZO,
+    id: 93,
     name: "COCOA BUTTER FORMULA FIRMING BUTTER",
     price: 2300,
     image: "image/ZO.jpeg"
   },
   {
-    id: ZU,
+    id: 93,
     name: "SKIN SUCCESS FADE MILK",
     price: 2200,
     image: "image/ZU.jpeg"
   },
   {
-    id: SA,
+    id: 93,
     name: "24H MOISTURE BODY LOTION",
     price: 3300,
     image: "image/SA.jpeg"
   },
   {
-    id: SE,
+    id: 93,
     name: "MEDIX 5.5",
     price: 4300,
     image: "image/SE.jpeg"
   },
   {
-    id: SI,
+    id: 93,
     name: "JERGENS SKIN LIGHTENING",
     price: 3200,
     image: "image/SI.jpeg"
   },
   {
-    id: SO,
+    id: 93,
     name: "SUDO CREAM ANTISEPTIC HEALING CREAM",
     price: 1450,
     image: "image/SO.jpeg"
   },
   {
-    id: SU,
+    id: 93,
     name: "EUCERIN ANTI WRINKLE",
     price: 3500,
     image: "image/SU.jpeg"
   },
   {
-    id: BA,
+    id: 93,
     name: "ULTRA DERM HAND CREAM",
     price: 1200,
     image: "image/BA.jpeg"
   },
   {
-    id: BE,
+    id: 93,
     name: "AQUAPHOR HEALING OINTMENT",
     price: 1600,
     image: "image/BE.jpeg"
   },
   {
-    id: BI,
+    id: 93,
     name: "MEDICUBE NIACINEMIDE 15 CERUM",
     price: 3000,
     image: "image/BI.jpeg"
   },
   {
-    id: BO,
+    id: 93,
     name: "ANUA HEARTLEAF 77%",
     price: 3200,
     image: "image/BO.jpeg"
   },
-  
-  
-  
-  
-  
-  
-  
   
   
   

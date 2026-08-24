@@ -1,105 +1,144 @@
-
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #000;
-  color: #fff;
-}
-
-
+/* Checkout Specific Styles - Jumia Style & Playful */
 
 .checkout-section {
   max-width: 900px;
   margin: 25px auto;
-  padding: 15px;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.checkout-section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 2rem;
 }
 
 .cart-items {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 15px;
 }
-
 
 .cart-item {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
-  background: #111;
-  padding: 10px;
-  border-radius: 10px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.cart-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  border-color: #f68b1e;
+}
 
 .cart-item img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
   border-radius: 8px;
+  background: #f9f9f9;
+  padding: 5px;
 }
 
+.item-details {
+  flex: 1;
+}
 
 .item-details h4 {
-  color: #FFD700;
+  color: #333;
+  margin: 0 0 5px;
+  font-size: 1.1rem;
+}
+
+.item-details p {
+  color: #f68b1e;
+  font-weight: bold;
+  font-size: 1.1rem;
   margin: 0;
 }
 
-@media (max-width: 768px) {
-  .social-icons {
-    width: 100%;
-    justify-content: space-between;
-    padding: 0 8px;
-    margin-top: 10px;
-  }
-
-  .menu-btn {
-    display: inline-flex;
-  }
+.cart-item button {
+  background: #f0f0f0;
+  color: #333;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 0 3px;
 }
 
-button {
-  background: #FFD700;
-  color: #000;
-  border: none;
-  padding: 8px 12px;
-  margin: 6px 4px;
+.cart-item button:hover {
+  background: #e0e0e0;
+}
+
+.checkout-section h3 {
+  text-align: right;
+  color: #333;
+  font-size: 1.6rem;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 2px dashed #eee;
+}
+
+.checkout-section h3 span {
+  color: #f68b1e;
+}
+
+.checkout-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.clear-cart-btn {
+  background: #fff;
+  color: #e74c3c;
+  border: 1px solid #e74c3c;
+  padding: 12px 24px;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.2s;
+  font-size: 1rem;
 }
 
-button:hover {
-  background: #fff;
-  transform: scale(1.03);
+.clear-cart-btn:hover {
+  background: #e74c3c;
+  color: #fff;
 }
 
-
-h3 {
-  text-align: center;
-  color: #FFD700;
+.whatsapp-btn {
+  background: #25D366;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
 }
 
-
-.hero-image-section {
-    position: relative;
-    width: 100%;
-    height: 75vh;
-
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-                url('../image/Wendy.jpeg');
-
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.hero-writings {
-    position: absolute;
-    top: 40%;
-    left: 5%;
-    font-size: 3.5rem;
-    color: var(--yellow);
-    font-style: italic;
-    text-shadow: 2px 2px 20px rgba(0,0,0,0.8);
+.whatsapp-btn:hover {
+  background: #128C7E;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }

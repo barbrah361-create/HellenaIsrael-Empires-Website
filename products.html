@@ -33,7 +33,7 @@
     <a href="products.html">Products</a>
     <a href="skintype.html">Skin Discovery</a>
     <a id="checkout-link" href="checkout.html">Checkout</a>
-    <a href="admin.html">Admin</a>
+
   </nav>
 </header>
 
@@ -44,6 +44,13 @@
       <input id="product-search-input" type="search" placeholder="Search products..." aria-label="Search products">
     </div>
   </div>
+  
+  <div class="category-filters">
+    <button class="cat-btn active" data-cat="all">All Products</button>
+    <button class="cat-btn" data-cat="women">Women</button>
+    <button class="cat-btn" data-cat="men">Men</button>
+    <button class="cat-btn" data-cat="kids">Kids</button>
+  </div>
   <div class="products-grid" id="products-grid"></div>
 </section>
 
@@ -51,8 +58,46 @@
   <i class="fab fa-whatsapp"></i>
 </a>
 
+<!-- Product Details Modal -->
+<div id="product-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div class="modal-body">
+      <div class="modal-image-wrapper">
+        <img id="modal-image" src="" alt="">
+      </div>
+      <div class="modal-details">
+        <h2 id="modal-title"></h2>
+        <p class="modal-price" id="modal-price"></p>
+        <div class="modal-article" id="modal-article"></div>
+        <div id="modal-cart-controls" class="cart-controls"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="products.js"></script>
 <script src="app.js"></script>
+<script>
+  // Dynamic Theme Switcher for Categories
+  const categoryBtns = document.querySelectorAll('.cat-btn');
+  categoryBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      // Clear existing themes
+      document.body.classList.remove('kids-theme', 'men-theme', 'women-theme');
+      
+      // Apply new theme based on category
+      const cat = e.target.dataset.cat;
+      if (cat === 'kids') {
+        document.body.classList.add('kids-theme');
+      } else if (cat === 'men') {
+        document.body.classList.add('men-theme');
+      } else if (cat === 'women') {
+        document.body.classList.add('women-theme');
+      }
+    });
+  });
+</script>
 
 </body>
 </html>

@@ -10,18 +10,35 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <meta name="description" content="Hellenaisrael Authentic Cosmetics Empire offers premium cosmetics, skincare, fragrances, and beauty essentials in Kenya. Explore curated products with artistic style and rich dark elegance.">
-  <meta name="keywords" content="Hellenaisrael, cosmetics, beauty, skincare, fragrances, Kenya, premium cosmetics, Helenacosmetics, dark beauty, artistic makeup">
+  <meta name="description" content="Buy premium authentic cosmetics, skincare, and fragrances in Eldoret, Kenya. Discover top beauty brands from USA, UK, Korea, and Germany at Hellenaisrael Cosmetics.">
+  <meta name="keywords" content="Hellenaisrael, cosmetics in Kenya, beauty products Eldoret, skincare, fragrances, premium cosmetics, authentic makeup, Korean skincare, buy cosmetics online">
   <meta name="author" content="Hellenaisrael Authentic Cosmetic Empire">
   <meta property="og:title" content="Hellenaisrael Authentic Cosmetics Empire - Premium Cosmetics in Kenya">
-  <meta property="og:description" content="Discover premium skincare, fragrances, and beauty essentials crafted for bold, artistic looks at helenacosmetics.co.ke.">
+  <meta property="og:description" content="Buy premium authentic cosmetics, skincare, and fragrances in Eldoret, Kenya. Discover top beauty brands from USA, UK, Korea, and Germany.">
   <meta property="og:url" content="https://hellenacosmetics.co.ke/">
   <meta property="og:site_name" content="Hellenacosmetics">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Helenaisrael Authentic Cosmetics Empire">
-  <meta name="twitter:description" content="Discover premium cosmetics and skincare with an artistic dark theme on hellenacosmetics.co.ke.">
+  <meta name="twitter:title" content="Hellenaisrael Authentic Cosmetics Empire">
+  <meta name="twitter:description" content="Discover premium cosmetics and skincare in Kenya on hellenacosmetics.co.ke.">
   <link rel="canonical" href="https://hellenacosmetics.co.ke/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "Hellenaisrael Authentic Cosmetics Empire",
+    "image": "https://hellenacosmetics.co.ke/image/my%20logo%20-%20Copy.jpeg",
+    "description": "Premium imported cosmetics, skincare, fragrances, and beauty essentials in Eldoret, Kenya.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Eldoret",
+      "addressRegion": "Uasin Gishu",
+      "addressCountry": "KE"
+    },
+    "telephone": "+254717263203",
+    "url": "https://hellenacosmetics.co.ke/"
+  }
+  </script>
 </head>
 <body>
 
@@ -49,7 +66,7 @@
     <a href="products.html">Products</a>
     <a href="skintype.html">Skin Discovery</a>
     <a id="checkout-link" href="checkout.html">Checkout</a>
-    <a href="admin.html">Admin</a>
+
   </nav>
   <script>
     function updateCheckoutLinkCount() {
@@ -66,9 +83,9 @@
 
 <section class="hero">
   <div class="hero-copy">
-    <p class="eyebrow">Authentic. Artistic. Illuminating.</p>
-    <h2>Premium cosmetics for confident, creative beauty.</h2>
-    <p>Explore a curated collection of skincare, fragrances, and essentials designed to glow in every light.</p>
+    <p class="eyebrow">Eldoret's Premium Beauty Destination</p>
+    <h2>Discover your glow with our curated collection of authentic cosmetics.</h2>
+    <p>Explore premium skincare, fragrances, and beauty essentials designed for everyday elegance and radiant confidence.</p>
     <a class="btn hero-btn" href="products.html">Explore Products</a>
   </div>
 </section>
@@ -84,9 +101,10 @@
 </section>
 
 <section class="promo-section">
-  <div class="promo-text">
-    <h2>Featured Selections</h2>
-    <p>Eight hand-picked favorites from our collection, ready to add a touch of premium glow to every routine.</p>
+  <div class="creative-promo-header">
+    <div class="promo-badge">HOT THIS WEEK</div>
+    <h2>Trending Beauty Secrets</h2>
+    <p>Discover the most loved, premium cosmetics flying off our shelves. Hand-picked for your perfect glow.</p>
   </div>
   <div id="featured-products-grid" class="products-grid"></div>
 </section>
@@ -164,8 +182,26 @@
 
 
 
+<!-- Product Details Modal -->
+<div id="product-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div class="modal-body">
+      <div class="modal-image-wrapper">
+        <img id="modal-image" src="" alt="">
+      </div>
+      <div class="modal-details">
+        <h2 id="modal-title"></h2>
+        <p class="modal-price" id="modal-price"></p>
+        <div class="modal-article" id="modal-article"></div>
+        <div id="modal-cart-controls" class="cart-controls"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="slider.js"></script>
-  <script src="products.js"></script>
+<script src="products.js"></script>
 
 
   <footer class="site-footer">

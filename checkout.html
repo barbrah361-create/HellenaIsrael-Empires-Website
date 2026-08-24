@@ -31,7 +31,7 @@
     <a href="products.html">Products</a>
     <a href="skintype.html">Skin Discovery</a>
     <a id="checkout-link" href="checkout.html">Checkout</a>
-    <a href="admin.html">Admin</a>
+
   </nav>
   <script>
     function updateCheckoutLinkCount() {
@@ -61,8 +61,10 @@
     
   </div>
   <h3>Total: Ksh <span id="total-amount">0</span></h3>
-  <button id="clear-cart" class="clear-cart-btn">Clear Cart</button>
-  <button id="send-whatsapp" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Send Order</button>
+  <div class="checkout-actions">
+    <button id="clear-cart" class="clear-cart-btn">Clear Cart</button>
+    <button id="send-whatsapp" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Send Order</button>
+  </div>
 </section>
 
 <script src="checkout.js"></script>

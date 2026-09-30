@@ -2416,7 +2416,9 @@ window.addEventListener("click", (e) => {
 
 function openModal(product) {
   if (!productModal) return;
-  document.getElementById("modal-image").src = product.image;
+  const modalImg = document.getElementById("modal-image");
+  modalImg.src = product.image;
+  modalImg.alt = product.name;
   document.getElementById("modal-title").textContent = product.name;
   document.getElementById("modal-price").textContent = "Ksh " + product.price;
   
@@ -2446,7 +2448,7 @@ function renderProductCard(product, container) {
 
   const imageWrapper = document.createElement("div");
   imageWrapper.classList.add("product-image-wrapper", "clickable-card");
-  imageWrapper.innerHTML = `<img src="${product.image}" alt="${product.name}">`;
+  imageWrapper.innerHTML = `<img src="${product.image}" alt="${product.name.replace(/"/g, '&quot;')}" loading="lazy">`;
   
   const title = document.createElement("h3");
   title.classList.add("clickable-card");
@@ -2482,6 +2484,33 @@ function displayProducts(filteredProducts = products) {
   productsGrid.innerHTML = "";
   filteredProducts.forEach(product => renderProductCard(product, productsGrid));
   updateCheckoutLinkCount();
+  injectProductSchema(filteredProducts.slice(0, 20)); // Limit schema to top 20 to avoid massive payload
+}
+
+function injectProductSchema(schemaProducts) {
+  let existingScript = document.getElementById('dynamic-product-schema');
+  if (existingScript) existingScript.remove();
+  
+  const schemaData = schemaProducts.map(p => ({
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": p.name,
+    "image": "https://hellenacosmetics.co.ke/" + p.image,
+    "description": p.description ? p.description.replace(/<[^>]*>?/gm, '') : "Premium cosmetic and skincare product",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://hellenacosmetics.co.ke/products.html",
+      "priceCurrency": "KES",
+      "price": p.price,
+      "availability": "https://schema.org/InStock"
+    }
+  }));
+
+  const script = document.createElement('script');
+  script.id = 'dynamic-product-schema';
+  script.type = 'application/ld+json';
+  script.text = JSON.stringify(schemaData);
+  document.head.appendChild(script);
 }
 
 // Category Filter Logic

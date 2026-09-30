@@ -40,7 +40,7 @@ header {
   border-radius: 4px;
 }
 
-.logo-container h1, header h1 {
+.logo-container h1, header h1, .logo-container .site-title-h1 {
   font-size: 1.3rem;
   color: #000; /* Black */
   margin: 0;
@@ -121,7 +121,7 @@ header {
 }
 
 @media (max-width: 600px) {
-  .logo-container h1, header h1 {
+  .logo-container h1, header h1, .logo-container .site-title-h1 {
     font-size: 1rem;
   }
   .logo {
@@ -431,18 +431,20 @@ header {
 }
 
 /* Watermarks */
-.product-image-wrapper::after {
+.product-image-wrapper::after,
+.modal-image-wrapper::after {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80px;
-  height: 80px;
+  width: 120px; /* Slightly larger for modal visibility but scales down automatically */
+  height: 120px;
   background: url('../image/water mark.jpeg') no-repeat center;
   background-size: contain;
   opacity: 0.15;
   pointer-events: none;
+  z-index: 20;
 }
 
 .product-card h3 {

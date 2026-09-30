@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Articles & Tips | Hellena Israel Empires</title>
+  <meta name="description" content="Read our latest articles on beauty, skincare, and cosmetics. Discover expert tips and trends at Hellena Israel Empires.">
+  <meta name="author" content="Hellena Israel Empires">
+  <meta property="og:title" content="Beauty Articles & Tips | Hellena Israel Empires">
+  <meta property="og:description" content="Read our latest articles on beauty, skincare, and cosmetics. Discover expert tips and trends.">
+  <meta property="og:url" content="https://hellenacosmetics.co.ke/articles.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://hellenacosmetics.co.ke/image/my%20logo%20-%20Copy.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://hellenacosmetics.co.ke/articles.html">
+  <link rel="icon" type="image/jpeg" href="image/my logo - Copy.jpeg">
+  <link rel="stylesheet" href="Css/styl.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .articles-hero {
+      background: linear-gradient(135deg, #fff9f0 0%, #fff4f6 100%);
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 1px solid #ffe8e8;
+    }
+    .articles-hero h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    .articles-hero p {
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+    }
+    .articles-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 30px;
+    }
+    .article-card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .article-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    .article-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      background: #f9f9f9;
+    }
+    .article-content {
+      padding: 25px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .article-category {
+      color: #f68b1e;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+    .article-title {
+      font-size: 1.3rem;
+      color: #000;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+    .article-excerpt {
+      color: #666;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+    .read-more {
+      color: #333;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: color 0.2s;
+    }
+    .read-more:hover {
+      color: #f68b1e;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo-container">
+    <img src="image/my logo - Copy.jpeg" alt="Hellena Israel Empires Logo" class="logo">
+    <div class="site-title-h1">Hellenaisrael Authentic Cosmetic Empire</div>
+  </a>
+  <div class="social-icons">
+    <div class="social-links">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://wa.me/254717263203"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <button id="menu-btn" class="menu-btn" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="skintype.html">Skin Discovery</a>
+    <a href="articles.html" class="active" style="color: #f68b1e;">Articles</a>
+    <a id="checkout-link" href="checkout.html">Checkout</a>
+  </nav>
+  <script>
+    function updateCheckoutLinkCount() {
+      const checkoutLink = document.getElementById('checkout-link');
+      if (!checkoutLink) return;
+      const cart = JSON.parse(localStorage.getItem('cart')) || {};
+      const total = Object.values(cart).reduce((sum, item) => sum + (item.qty || 0), 0);
+      checkoutLink.textContent = total ? `Checkout (${total})` : 'Checkout';
+    }
+    updateCheckoutLinkCount();
+    window.addEventListener('storage', updateCheckoutLinkCount);
+  </script>
+</header>
+
+<main>
+  <section class="articles-hero">
+    <h1>Beauty Insider Articles</h1>
+    <p>Discover expert skincare tips, makeup tutorials, and the latest cosmetic trends tailored for your daily glow.</p>
+  </section>
+
+  <section class="articles-container">
+    
+    <article class="article-card">
+      <img src="image/white beuty.webp" alt="Skincare Routine Tips" class="article-img" loading="lazy">
+      <div class="article-content">
+        <span class="article-category">Skincare</span>
+        <h2 class="article-title">The Perfect 5-Step Morning Skincare Routine</h2>
+        <p class="article-excerpt">Start your day right with a skincare routine that protects, hydrates, and preps your face for flawless makeup application. Learn the essential steps you can't afford to skip.</p>
+        <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </article>
+
+    <article class="article-card">
+      <img src="image/brandamb.png" alt="Makeup Trends" class="article-img" loading="lazy">
+      <div class="article-content">
+        <span class="article-category">Makeup</span>
+        <h2 class="article-title">How to Achieve a Natural "No-Makeup" Makeup Look</h2>
+        <p class="article-excerpt">The secret to a glowing, effortless complexion lies in the right products. Discover how to use our premium lightweight foundations and highlighters for that perfect natural finish.</p>
+        <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </article>
+
+    <article class="article-card">
+      <img src="image/man model.webp" alt="Men's Grooming" class="article-img" loading="lazy">
+      <div class="article-content">
+        <span class="article-category">Grooming</span>
+        <h2 class="article-title">Essential Skincare Guide for Men</h2>
+        <p class="article-excerpt">Skincare isn't just for women. Explore the best cleansers, moisturizers, and beard care routines designed specifically to tackle men's unique skin concerns.</p>
+        <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </article>
+
+    <article class="article-card">
+      <img src="image/black the beuty.jpg" alt="Korean Beauty Secrets" class="article-img" loading="lazy">
+      <div class="article-content">
+        <span class="article-category">Trends</span>
+        <h2 class="article-title">Why Korean Skincare is Taking Over the World</h2>
+        <p class="article-excerpt">From snail mucin to glass skin routines, dive into the philosophy behind Korean beauty products and find out which K-beauty items are a must-have in your cabinet.</p>
+        <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </article>
+
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="image/my logo - Copy.jpeg" alt="Hellena Israel Empires Logo" class="logo-footer" loading="lazy">
+      <h3>Hellena Israel Empires</h3>
+    </div>
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://wa.me/254717263203" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p class="footer-text">© 2026 Hellena Israel Empires. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Hellena Israel Empires Beauty Blog",
+  "url": "https://hellenacosmetics.co.ke/articles.html",
+  "description": "Expert skincare tips, makeup tutorials, and cosmetic trends."
+}
+</script>
+</body>
+</html>

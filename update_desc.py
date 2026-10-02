@@ -5,7 +5,9 @@ with open('products.js', 'r', encoding='utf-8') as f:
 
 def get_desc(name):
     n = name.lower()
-    if any(k in n for k in ['eye gel', 'eye patch', 'eye']):
+    if any(k in n for k in ['gumm', 'supplement', 'vitamin', 'glucosamine', 'capsule', 'omega', 'health', 'tablet', 'pill']):
+        return '<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>'
+    elif any(k in n for k in ['eye gel', 'eye patch', 'eye']):
         return '<p>Revitalize your under-eye area with these cooling and brightening eye patches, designed to reduce puffiness and dark circles.</p><br><p><strong>Primary Uses:</strong> Apply under the eyes to refresh, hydrate, and brighten tired-looking skin.</p>'
     elif any(k in n for k in ['deodorant', 'antiperspirant', 'roll on', 'roll-on', 'deo']):
         return '<p>Stay fresh and confident all day with this long-lasting deodorant, offering superior protection against odor and wetness.</p><br><p><strong>Primary Uses:</strong> Apply to underarms for all-day freshness and a subtle, clean scent.</p>'
@@ -33,8 +35,6 @@ def get_desc(name):
         return '<p>Enhance your natural beauty with this high-quality, blendable makeup product designed for a flawless finish.</p><br><p><strong>Primary Uses:</strong> Apply with a brush or sponge to build customized coverage and stunning, radiant looks.</p>'
     elif any(k in n for k in ['sunscreen', 'spf', 'sun']):
         return '<p>Protect your skin from harmful UVA and UVB rays with this lightweight, non-greasy sunscreen.</p><br><p><strong>Primary Uses:</strong> Apply generously 15 minutes before sun exposure to prevent sunburn and premature skin aging.</p>'
-    elif any(k in n for k in ['gumm', 'supplement', 'vitamin', 'glucosamine', 'capsule', 'omega', 'health']):
-        return '<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>'
     else:
         return '<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>'
 

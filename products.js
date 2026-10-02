@@ -210,7 +210,7 @@ const products = [
     name: "POENY EAU DE PARFUM",
     price: 5650,
     image: "image/158.jpeg",
-    description: `<p>Experience a captivating and long-lasting scent that leaves a memorable, elegant impression wherever you go.</p><br><p><strong>Primary Uses:</strong> Spray onto pulse points such as wrists and neck for a beautifully balanced, all-day fragrance.</p>`
+    description: `<p>Experience a captivating scent that leaves a memorable, elegant impression wherever you go.</p><br><p><strong>Primary Uses:</strong> Spray onto your body or pulse points for a beautifully balanced, refreshing, all-day fragrance.</p>`
   },
 
 
@@ -221,7 +221,7 @@ const products = [
     name: "(Eternal Romance) EAU DE PARFUM For Women",
     price: 5650,
     image: "image/159.jpeg",
-    description: `<p>Experience a captivating and long-lasting scent that leaves a memorable, elegant impression wherever you go.</p><br><p><strong>Primary Uses:</strong> Spray onto pulse points such as wrists and neck for a beautifully balanced, all-day fragrance.</p>`
+    description: `<p>Experience a captivating scent that leaves a memorable, elegant impression wherever you go.</p><br><p><strong>Primary Uses:</strong> Spray onto your body or pulse points for a beautifully balanced, refreshing, all-day fragrance.</p>`
   },
 
 
@@ -239,7 +239,7 @@ const products = [
     name: "(Story Of Flower) EAU DE PARFUM Natural Spray",
     price: 2850,
     image: "image/161.jpeg",
-    description: `<p>Refresh and hydrate your skin instantly with this lightweight, soothing mist.</p><br><p><strong>Primary Uses:</strong> Spritz over your face or body throughout the day for an instant boost of hydration and radiance.</p>`
+    description: `<p>Experience a captivating scent that leaves a memorable, elegant impression wherever you go.</p><br><p><strong>Primary Uses:</strong> Spray onto your body or pulse points for a beautifully balanced, refreshing, all-day fragrance.</p>`
   },
 
 
@@ -249,7 +249,7 @@ const products = [
     name: "Blue Stratos Original Blue  EAU DE TOILETTE",
     price: 4860,
     image: "image/162.jpeg",
-    description: `<p>Deeply hydrate and nourish your skin with this rich, luxurious formula designed to lock in moisture and improve skin elasticity.</p><br><p><strong>Primary Uses:</strong> Massage onto clean skin, focusing on dry or stretch-prone areas, to intensely moisturize and soften.</p>`
+    description: `<p>Experience a captivating scent that leaves a memorable, elegant impression wherever you go.</p><br><p><strong>Primary Uses:</strong> Spray onto your body or pulse points for a beautifully balanced, refreshing, all-day fragrance.</p>`
   },
 
 
@@ -1779,49 +1779,49 @@ const products = [
     name: "LIP CARE BALM",
     price: 1000,
     image: "image/611.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Add a beautiful pop of color and deep hydration to your lips with this smooth, long-lasting lip product.</p><br><p><strong>Primary Uses:</strong> Glide over lips for a stunning finish and comfortable, all-day wear.</p>`
   },
   {
     id: 206,
     name: "DERMARVIO LIP BALM",
     price: 700,
     image: "image/612.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Add a beautiful pop of color and deep hydration to your lips with this smooth, long-lasting lip product.</p><br><p><strong>Primary Uses:</strong> Glide over lips for a stunning finish and comfortable, all-day wear.</p>`
   },
   {
     id: 207,
     name: "DERMAVIO LIP BALM",
     price: 700,
     image: "image/613.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Add a beautiful pop of color and deep hydration to your lips with this smooth, long-lasting lip product.</p><br><p><strong>Primary Uses:</strong> Glide over lips for a stunning finish and comfortable, all-day wear.</p>`
   },
   {
     id: 208,
     name: "SECRET ADMIRER LIP BALM",
     price: 700,
     image: "image/614.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Add a beautiful pop of color and deep hydration to your lips with this smooth, long-lasting lip product.</p><br><p><strong>Primary Uses:</strong> Glide over lips for a stunning finish and comfortable, all-day wear.</p>`
   },
   {
     id: 209,
     name: "CIEN CARING LIP BALM",
     price: 700,
     image: "image/615.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Add a beautiful pop of color and deep hydration to your lips with this smooth, long-lasting lip product.</p><br><p><strong>Primary Uses:</strong> Glide over lips for a stunning finish and comfortable, all-day wear.</p>`
   },
   {
     id: 210,
     name: "CIEN CARING LIP BALM",
     price: 1000,
     image: "image/616.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Add a beautiful pop of color and deep hydration to your lips with this smooth, long-lasting lip product.</p><br><p><strong>Primary Uses:</strong> Glide over lips for a stunning finish and comfortable, all-day wear.</p>`
   },
   {
     id: 211,
     name: "NIVEA CARING LIP BALM",
     price: 600,
     image: "image/617.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Add a beautiful pop of color and deep hydration to your lips with this smooth, long-lasting lip product.</p><br><p><strong>Primary Uses:</strong> Glide over lips for a stunning finish and comfortable, all-day wear.</p>`
   },
   {
     id: 212,
@@ -1940,28 +1940,28 @@ const products = [
     name: "TED BAKER JASMINE & LIME BLOSSOM BODY SPRAY",
     price: 4650,
     image: "image/634.jpeg",
-    description: `<p>Refresh and hydrate your skin instantly with this lightweight, soothing mist.</p><br><p><strong>Primary Uses:</strong> Spritz over your face or body throughout the day for an instant boost of hydration and radiance.</p>`
+    description: `<p>Experience a captivating scent that leaves a memorable, elegant impression wherever you go.</p><br><p><strong>Primary Uses:</strong> Spray onto your body or pulse points for a beautifully balanced, refreshing, all-day fragrance.</p>`
   },
   {
     id: 229,
     name: "BOUM CANDY LAND PERFUME",
     price: 5800,
     image: "image/635.jpeg",
-    description: `<p>Experience a captivating and long-lasting scent that leaves a memorable, elegant impression wherever you go.</p><br><p><strong>Primary Uses:</strong> Spray onto pulse points such as wrists and neck for a beautifully balanced, all-day fragrance.</p>`
+    description: `<p>Experience a captivating scent that leaves a memorable, elegant impression wherever you go.</p><br><p><strong>Primary Uses:</strong> Spray onto your body or pulse points for a beautifully balanced, refreshing, all-day fragrance.</p>`
   },
   {
     id: 230,
     name: "GLOW VANILLA ALMOND PERFUME MIST",
     price: 2500,
     image: "image/636.jpeg",
-    description: `<p>Refresh and hydrate your skin instantly with this lightweight, soothing mist.</p><br><p><strong>Primary Uses:</strong> Spritz over your face or body throughout the day for an instant boost of hydration and radiance.</p>`
+    description: `<p>Experience a captivating scent that leaves a memorable, elegant impression wherever you go.</p><br><p><strong>Primary Uses:</strong> Spray onto your body or pulse points for a beautifully balanced, refreshing, all-day fragrance.</p>`
   },
   {
     id: 231,
     name: "SO...? UNIQUE PERFUME",
     price: 1600,
     image: "image/637.jpeg",
-    description: `<p>Experience a captivating and long-lasting scent that leaves a memorable, elegant impression wherever you go.</p><br><p><strong>Primary Uses:</strong> Spray onto pulse points such as wrists and neck for a beautifully balanced, all-day fragrance.</p>`
+    description: `<p>Experience a captivating scent that leaves a memorable, elegant impression wherever you go.</p><br><p><strong>Primary Uses:</strong> Spray onto your body or pulse points for a beautifully balanced, refreshing, all-day fragrance.</p>`
   },
   {
     id: 232,
@@ -2663,12 +2663,88 @@ function renderProductCard(product, container) {
   container.appendChild(productCard);
 }
 
+let currentPage = 1;
+const itemsPerPage = 9;
+
 function displayProducts(filteredProducts = products) {
   if (!productsGrid) return;
   productsGrid.innerHTML = "";
-  filteredProducts.forEach(product => renderProductCard(product, productsGrid));
+  
+  const start = (currentPage - 1) * itemsPerPage;
+  const end = start + itemsPerPage;
+  const paginated = filteredProducts.slice(start, end);
+
+  paginated.forEach(product => renderProductCard(product, productsGrid));
   updateCheckoutLinkCount();
-  injectProductSchema(filteredProducts.slice(0, 20)); // Limit schema to top 20 to avoid massive payload
+  injectProductSchema(paginated);
+  
+  renderPaginationControls(filteredProducts);
+}
+
+function renderPaginationControls(filteredProducts) {
+  const totalItems = filteredProducts.length;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+  let paginationContainer = document.getElementById("pagination-controls");
+  
+  if (!paginationContainer) {
+    paginationContainer = document.createElement("div");
+    paginationContainer.id = "pagination-controls";
+    paginationContainer.style.display = "flex";
+    paginationContainer.style.justifyContent = "center";
+    paginationContainer.style.alignItems = "center";
+    paginationContainer.style.gap = "15px";
+    paginationContainer.style.marginTop = "30px";
+    paginationContainer.style.marginBottom = "30px";
+    productsGrid.parentNode.insertBefore(paginationContainer, productsGrid.nextSibling);
+  }
+  
+  paginationContainer.innerHTML = "";
+  if (totalPages <= 1) return;
+
+  const prevBtn = document.createElement("button");
+  prevBtn.innerHTML = "&laquo; Prev";
+  prevBtn.disabled = currentPage === 1;
+  prevBtn.style.padding = "10px 20px";
+  prevBtn.style.background = currentPage === 1 ? "#ccc" : "#f68b1e";
+  prevBtn.style.color = "#fff";
+  prevBtn.style.border = "none";
+  prevBtn.style.borderRadius = "25px";
+  prevBtn.style.cursor = currentPage === 1 ? "not-allowed" : "pointer";
+  prevBtn.style.fontWeight = "bold";
+  prevBtn.onclick = () => {
+    if (currentPage > 1) {
+      currentPage--;
+      displayProducts(filteredProducts);
+      window.scrollTo({ top: productsGrid.offsetTop - 100, behavior: "smooth" });
+    }
+  };
+
+  const pageInfo = document.createElement("span");
+  pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
+  pageInfo.style.fontWeight = "bold";
+  pageInfo.style.color = "#333";
+
+  const nextBtn = document.createElement("button");
+  nextBtn.innerHTML = "Next &raquo;";
+  nextBtn.disabled = currentPage === totalPages;
+  nextBtn.style.padding = "10px 20px";
+  nextBtn.style.background = currentPage === totalPages ? "#ccc" : "#f68b1e";
+  nextBtn.style.color = "#fff";
+  nextBtn.style.border = "none";
+  nextBtn.style.borderRadius = "25px";
+  nextBtn.style.cursor = currentPage === totalPages ? "not-allowed" : "pointer";
+  nextBtn.style.fontWeight = "bold";
+  nextBtn.onclick = () => {
+    if (currentPage < totalPages) {
+      currentPage++;
+      displayProducts(filteredProducts);
+      window.scrollTo({ top: productsGrid.offsetTop - 100, behavior: "smooth" });
+    }
+  };
+
+  paginationContainer.appendChild(prevBtn);
+  paginationContainer.appendChild(pageInfo);
+  paginationContainer.appendChild(nextBtn);
 }
 
 function injectProductSchema(schemaProducts) {
@@ -2703,6 +2779,7 @@ let currentCategory = "all";
 let currentSearch = "";
 
 function applyFilters() {
+  currentPage = 1;
   const filtered = products.filter(product => {
     const matchesSearch = product.name.toLowerCase().includes(currentSearch);
     const matchesCategory = currentCategory === "all" || getCategory(product.name) === currentCategory;
@@ -2754,13 +2831,21 @@ function fixProductDescriptions() {
     else if (['deodorant', 'antiperspirant', 'roll on', 'roll-on', 'deo'].some(k => n.includes(k))) {
       p.description = '<p>Stay fresh and confident all day with this long-lasting deodorant, offering superior protection against odor and wetness.</p><br><p><strong>Primary Uses:</strong> Apply to underarms for all-day freshness and a subtle, clean scent.</p>';
     }
-    // Mists & Sprays
+    // Perfumes and Body Sprays
+    else if (['perfume', 'fragrance', 'cologne', 'scent', 'eau de', 'body spray', 'body splash', 'body mist'].some(k => n.includes(k))) {
+      p.description = '<p>Experience a captivating scent that leaves a memorable, elegant impression wherever you go.</p><br><p><strong>Primary Uses:</strong> Spray onto your body or pulse points for a beautifully balanced, refreshing, all-day fragrance.</p>';
+    }
+    // Mists & Sprays (Hydrating)
     else if (['mist', 'spray', 'spritz', 'setting'].some(k => n.includes(k))) {
       p.description = '<p>Refresh and hydrate your skin instantly with this lightweight, soothing mist.</p><br><p><strong>Primary Uses:</strong> Spritz over your face or body throughout the day for an instant boost of hydration and radiance.</p>';
     }
     // Oils & Butters
     else if (['oil', 'butter', 'stretch mark', 'vaseline', 'jelly', 'petroleum'].some(k => n.includes(k))) {
       p.description = '<p>Deeply hydrate and nourish your skin with this rich, luxurious formula designed to lock in moisture and improve skin elasticity.</p><br><p><strong>Primary Uses:</strong> Massage onto clean skin, focusing on dry or stretch-prone areas, to intensely moisturize and soften.</p>';
+    }
+    // Lips
+    else if (['lip', 'gloss', 'lipstick'].some(k => n.includes(k))) {
+      p.description = '<p>Add a beautiful pop of color and deep hydration to your lips with this smooth, long-lasting lip product.</p><br><p><strong>Primary Uses:</strong> Glide over lips for a stunning finish and comfortable, all-day wear.</p>';
     }
     // Lotions & Creams
     else if (['lotion', 'cream', 'moisturizer', 'balm'].some(k => n.includes(k))) {
@@ -2782,17 +2867,9 @@ function fixProductDescriptions() {
     else if (['shampoo', 'conditioner', 'hair', 'leave in', 'leave-in', 'wig'].some(k => n.includes(k))) {
       p.description = '<p>Nourish and strengthen your hair from root to tip with this premium hair care formula designed for healthy, luscious locks.</p><br><p><strong>Primary Uses:</strong> Apply to hair, massage thoroughly, and style or rinse as directed for soft, manageable, and vibrant hair.</p>';
     }
-    // Perfumes
-    else if (['perfume', 'fragrance', 'cologne', 'scent', 'eau de'].some(k => n.includes(k))) {
-      p.description = '<p>Experience a captivating and long-lasting scent that leaves a memorable, elegant impression wherever you go.</p><br><p><strong>Primary Uses:</strong> Spray onto pulse points such as wrists and neck for a beautifully balanced, all-day fragrance.</p>';
-    }
     // Masks
     else if (['mask', 'masque'].some(k => n.includes(k))) {
       p.description = '<p>Pamper your skin with this intensive treatment mask, formulated to deeply purify, hydrate, and rejuvenate.</p><br><p><strong>Primary Uses:</strong> Apply an even layer, leave on as directed, and rinse off for a glowing, spa-like finish.</p>';
-    }
-    // Lips
-    else if (['lip', 'gloss', 'lipstick'].some(k => n.includes(k))) {
-      p.description = '<p>Add a beautiful pop of color and deep hydration to your lips with this smooth, long-lasting lip product.</p><br><p><strong>Primary Uses:</strong> Glide over lips for a stunning finish and comfortable, all-day wear.</p>';
     }
     // Makeup
     else if (['palette', 'eyeshadow', 'powder', 'foundation', 'concealer', 'blush', 'makeup', 'primer'].some(k => n.includes(k))) {

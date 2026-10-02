@@ -122,7 +122,7 @@ sliders.forEach(slider => {
 
 // 1. Prevent right-click (context menu) on all images
 document.addEventListener('contextmenu', (e) => {
-  if (e.target.tagName === 'IMG' || e.target.classList.contains('product-image-wrapper') || e.target.classList.contains('modal-image-wrapper')) {
+  if (e.target.tagName === 'IMG' || e.target.classList.contains('product-image-wrapper') || e.target.classList.contains('modal-image-wrapper') || e.target.classList.contains('single-product-image')) {
     e.preventDefault();
   }
 });
@@ -145,14 +145,15 @@ protectionStyle.textContent = `
     user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-    -webkit-touch-callout: none; /* Disables the long-press popup on iOS/Android */
-    pointer-events: none; /* Disables direct interaction with the img element */
+    -webkit-touch-callout: none !important; /* Disables the long-press popup on iOS/Android */
+    pointer-events: none !important; /* Disables direct interaction with the img element */
   }
   
   /* Create an invisible shield over the product images so right-clicking/long-pressing 
      hits the shield instead of the image, while still allowing the click to pass to the wrapper */
   .product-image-wrapper::before,
-  .modal-image-wrapper::before {
+  .modal-image-wrapper::before,
+  .single-product-image::before {
     content: '';
     position: absolute;
     top: 0;
@@ -172,59 +173,4 @@ protectionStyle.textContent = `
 `;
 document.head.appendChild(protectionStyle);
 
-// 4. ANTI-SCREENSHOT & SNIPPING TOOL DETERRENT
-// Creates a black overlay to hide content when a screenshot is attempted.
-const blackoutOverlay = document.createElement('div');
-blackoutOverlay.style.position = 'fixed';
-blackoutOverlay.style.top = '0';
-blackoutOverlay.style.left = '0';
-blackoutOverlay.style.width = '100vw';
-blackoutOverlay.style.height = '100vh';
-blackoutOverlay.style.backgroundColor = '#000';
-blackoutOverlay.style.color = '#fff';
-blackoutOverlay.style.zIndex = '999999999';
-blackoutOverlay.style.display = 'none';
-blackoutOverlay.style.justifyContent = 'center';
-blackoutOverlay.style.alignItems = 'center';
-blackoutOverlay.style.fontSize = '2rem';
-blackoutOverlay.style.fontFamily = 'sans-serif';
-blackoutOverlay.innerText = 'Content Protected';
-document.body.appendChild(blackoutOverlay);
-
-function showBlackout() {
-  blackoutOverlay.style.display = 'flex';
-}
-function hideBlackout() {
-  blackoutOverlay.style.display = 'none';
-}
-
-// Detect Print Screen and common screenshot shortcut keys
-document.addEventListener('keydown', (e) => {
-  // PrintScreen, Cmd+Shift+3/4/5 (Mac), Win+Shift+S (Windows Snipping Tool), Ctrl+P (Print)
-  if (
-    e.key === 'PrintScreen' ||
-    (e.metaKey && e.shiftKey && (e.key === '3' || e.key === '4' || e.key === '5' || e.key === 's' || e.key === 'S')) ||
-    (e.ctrlKey && e.key === 'p')
-  ) {
-    showBlackout();
-    setTimeout(hideBlackout, 3000); // Blackout for 3 seconds
-  }
-});
-
-document.addEventListener('keyup', (e) => {
-  if (e.key === 'PrintScreen') {
-    navigator.clipboard.writeText(''); // Attempt to clear clipboard
-    showBlackout();
-    setTimeout(hideBlackout, 3000);
-  }
-});
-
-// Blur event: When a user opens a snipping tool or screen recorder, 
-// the browser window often loses focus. We hide the screen to prevent capturing.
-window.addEventListener('blur', () => {
-  showBlackout();
-});
-
-window.addEventListener('focus', () => {
-  hideBlackout();
-});
+

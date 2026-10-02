@@ -42,8 +42,18 @@
     <a href="products.html">Products</a>
     <a href="skintype.html">Skin Discovery</a>
     <a id="checkout-link" href="checkout.html">Checkout</a>
-
   </nav>
+  <script>
+    function updateCheckoutLinkCount() {
+      const checkoutLink = document.getElementById('checkout-link');
+      if (!checkoutLink) return;
+      const cart = JSON.parse(localStorage.getItem('cart')) || {};
+      const total = Object.values(cart).reduce((sum, item) => sum + (item.qty || 0), 0);
+      checkoutLink.textContent = total ? `Checkout (${total})` : 'Checkout';
+    }
+    updateCheckoutLinkCount();
+    window.addEventListener('storage', updateCheckoutLinkCount);
+  </script>
 </header>
 
 <section class="products-section">

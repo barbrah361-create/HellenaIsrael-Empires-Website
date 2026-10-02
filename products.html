@@ -14,7 +14,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://hellenacosmetics.co.ke/products.html">
   <link rel="icon" type="image/jpeg" href="image/my logo - Copy.jpeg">
-  <link rel="stylesheet" href="Css/styl.css?v=4">
+  <link rel="stylesheet" href="Css/styl.css?v=5">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -49,7 +49,11 @@
       if (!checkoutLink) return;
       const cart = JSON.parse(localStorage.getItem('cart')) || {};
       const total = Object.values(cart).reduce((sum, item) => sum + (item.qty || 0), 0);
-      checkoutLink.textContent = total ? `Checkout (${total})` : 'Checkout';
+      if (total > 0) {
+        checkoutLink.innerHTML = `<i class="fas fa-shopping-cart"></i><span class="cart-badge">${total}</span>`;
+      } else {
+        checkoutLink.innerHTML = `<i class="fas fa-shopping-cart"></i>`;
+      }
     }
     updateCheckoutLinkCount();
     window.addEventListener('storage', updateCheckoutLinkCount);
@@ -95,7 +99,7 @@
   </div>
 </div>
 
-<script src="products.js?v=5"></script>
+<script src="products.js?v=6"></script>
 <script src="app.js"></script>
 <script>
   // Dynamic Theme Switcher for Categories

@@ -43,7 +43,11 @@ function updateCheckoutLinkCount() {
 
   const cart = JSON.parse(localStorage.getItem("cart")) || {};
   const totalItems = Object.values(cart).reduce((sum, item) => sum + (item.qty || 0), 0);
-  checkoutLink.textContent = totalItems > 0 ? `Checkout (${totalItems})` : "Checkout";
+  if (totalItems > 0) {
+    checkoutLink.innerHTML = `<i class="fas fa-shopping-cart"></i><span class="cart-badge">${totalItems}</span>`;
+  } else {
+    checkoutLink.innerHTML = `<i class="fas fa-shopping-cart"></i>`;
+  }
 }
 
 updateCheckoutLinkCount();

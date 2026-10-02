@@ -2522,7 +2522,11 @@ function updateCheckoutLinkCount() {
   const checkoutLink = document.getElementById("checkout-link");
   if (!checkoutLink) return;
   const totalItems = getCartItemCount();
-  checkoutLink.textContent = totalItems > 0 ? `Checkout (${totalItems})` : "Checkout";
+  if (totalItems > 0) {
+    checkoutLink.innerHTML = `<i class="fas fa-shopping-cart"></i><span class="cart-badge">${totalItems}</span>`;
+  } else {
+    checkoutLink.innerHTML = `<i class="fas fa-shopping-cart"></i>`;
+  }
 }
 
 function increaseQty(id, name, price, image) {

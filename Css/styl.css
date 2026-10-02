@@ -83,6 +83,26 @@ header {
   color: #f68b1e;
 }
 
+#checkout-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.cart-badge {
+  background: #f68b1e;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 0.65rem;
+  font-weight: bold;
+  position: absolute;
+  top: -8px;
+  right: -14px;
+  min-width: 14px;
+  text-align: center;
+}
+
 /* Menu Button for Mobile */
 .menu-btn {
   display: none;

@@ -312,9 +312,9 @@
       <div class="description"><p>Experience a captivating scent that leaves a memorable, elegant impression wherever you go.</p><br><p><strong>Primary Uses:</strong> Spray onto your body or pulse points for a beautifully balanced, refreshing, all-day fragrance.</p></div>
       
       <div class="single-product-controls cart-controls">
-        <button class="dec-btn" onclick="decreaseSingleQty(26)" disabled>-</button>
+        <button class="dec-btn" id="dec-btn-single" data-id="26" disabled>-</button>
         <span class="qty" id="single-qty">0</span>
-        <button class="add-cart-btn" onclick='increaseSingleQty(26, "(Story Of Flower) EAU DE PARFUM Natural Spray", 2850, "image/161.jpeg")'>
+        <button class="add-cart-btn" id="add-btn-single" data-id="26" data-name="(Story Of Flower) EAU DE PARFUM Natural Spray" data-price="2850" data-image="image/161.jpeg">
           Add to Cart
         </button>
       </div>
@@ -410,7 +410,22 @@
 
   // Initialize cart state on load
   document.addEventListener("DOMContentLoaded", () => {
-    refreshSingleQty(26);
+    const decBtn = document.getElementById('dec-btn-single');
+    const addBtn = document.getElementById('add-btn-single');
+    const pid = parseInt(decBtn.getAttribute('data-id'), 10);
+    
+    refreshSingleQty(pid);
+    
+    decBtn.addEventListener('click', () => {
+      decreaseSingleQty(pid);
+    });
+    
+    addBtn.addEventListener('click', () => {
+      const pName = addBtn.getAttribute('data-name');
+      const pPrice = parseFloat(addBtn.getAttribute('data-price'));
+      const pImage = addBtn.getAttribute('data-image');
+      increaseSingleQty(pid, pName, pPrice, pImage);
+    });
   });
 </script>
 </body>

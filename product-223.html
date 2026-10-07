@@ -312,9 +312,9 @@
       <div class="description"><p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p></div>
       
       <div class="single-product-controls cart-controls">
-        <button class="dec-btn" onclick="decreaseSingleQty(223)" disabled>-</button>
+        <button class="dec-btn" id="dec-btn-single" data-id="223" disabled>-</button>
         <span class="qty" id="single-qty">0</span>
-        <button class="add-cart-btn" onclick='increaseSingleQty(223, "BRAZILIAN GLOW BODY BUTTER", 2300, "image/629.jpeg")'>
+        <button class="add-cart-btn" id="add-btn-single" data-id="223" data-name="BRAZILIAN GLOW BODY BUTTER" data-price="2300" data-image="image/629.jpeg">
           Add to Cart
         </button>
       </div>
@@ -410,7 +410,22 @@
 
   // Initialize cart state on load
   document.addEventListener("DOMContentLoaded", () => {
-    refreshSingleQty(223);
+    const decBtn = document.getElementById('dec-btn-single');
+    const addBtn = document.getElementById('add-btn-single');
+    const pid = parseInt(decBtn.getAttribute('data-id'), 10);
+    
+    refreshSingleQty(pid);
+    
+    decBtn.addEventListener('click', () => {
+      decreaseSingleQty(pid);
+    });
+    
+    addBtn.addEventListener('click', () => {
+      const pName = addBtn.getAttribute('data-name');
+      const pPrice = parseFloat(addBtn.getAttribute('data-price'));
+      const pImage = addBtn.getAttribute('data-image');
+      increaseSingleQty(pid, pName, pPrice, pImage);
+    });
   });
 </script>
 </body>

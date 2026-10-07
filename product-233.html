@@ -312,9 +312,9 @@
       <div class="description"><p>Target fine lines, dark spots, and uneven texture with this concentrated serum, delivering powerful active ingredients deep into the skin.</p><br><p><strong>Primary Uses:</strong> Apply a few drops to cleansed skin before moisturizing to treat specific skin concerns and boost radiance.</p></div>
       
       <div class="single-product-controls cart-controls">
-        <button class="dec-btn" onclick="decreaseSingleQty(233)" disabled>-</button>
+        <button class="dec-btn" id="dec-btn-single" data-id="233" disabled>-</button>
         <span class="qty" id="single-qty">0</span>
-        <button class="add-cart-btn" onclick='increaseSingleQty(233, "CIEN VITAMIN C GLOW SERUM", 2800, "image/639.jpeg")'>
+        <button class="add-cart-btn" id="add-btn-single" data-id="233" data-name="CIEN VITAMIN C GLOW SERUM" data-price="2800" data-image="image/639.jpeg">
           Add to Cart
         </button>
       </div>
@@ -410,7 +410,22 @@
 
   // Initialize cart state on load
   document.addEventListener("DOMContentLoaded", () => {
-    refreshSingleQty(233);
+    const decBtn = document.getElementById('dec-btn-single');
+    const addBtn = document.getElementById('add-btn-single');
+    const pid = parseInt(decBtn.getAttribute('data-id'), 10);
+    
+    refreshSingleQty(pid);
+    
+    decBtn.addEventListener('click', () => {
+      decreaseSingleQty(pid);
+    });
+    
+    addBtn.addEventListener('click', () => {
+      const pName = addBtn.getAttribute('data-name');
+      const pPrice = parseFloat(addBtn.getAttribute('data-price'));
+      const pImage = addBtn.getAttribute('data-image');
+      increaseSingleQty(pid, pName, pPrice, pImage);
+    });
   });
 </script>
 </body>

@@ -312,9 +312,9 @@
       <div class="description"><p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p></div>
       
       <div class="single-product-controls cart-controls">
-        <button class="dec-btn" onclick="decreaseSingleQty(262)" disabled>-</button>
+        <button class="dec-btn" id="dec-btn-single" data-id="262" disabled>-</button>
         <span class="qty" id="single-qty">0</span>
-        <button class="add-cart-btn" onclick='increaseSingleQty(262, "PURITO MIGHTY BAMBOO PANTHENOL", 3200, "image/T.jpeg")'>
+        <button class="add-cart-btn" id="add-btn-single" data-id="262" data-name="PURITO MIGHTY BAMBOO PANTHENOL" data-price="3200" data-image="image/T.jpeg">
           Add to Cart
         </button>
       </div>
@@ -410,7 +410,22 @@
 
   // Initialize cart state on load
   document.addEventListener("DOMContentLoaded", () => {
-    refreshSingleQty(262);
+    const decBtn = document.getElementById('dec-btn-single');
+    const addBtn = document.getElementById('add-btn-single');
+    const pid = parseInt(decBtn.getAttribute('data-id'), 10);
+    
+    refreshSingleQty(pid);
+    
+    decBtn.addEventListener('click', () => {
+      decreaseSingleQty(pid);
+    });
+    
+    addBtn.addEventListener('click', () => {
+      const pName = addBtn.getAttribute('data-name');
+      const pPrice = parseFloat(addBtn.getAttribute('data-price'));
+      const pImage = addBtn.getAttribute('data-image');
+      increaseSingleQty(pid, pName, pPrice, pImage);
+    });
   });
 </script>
 </body>

@@ -312,9 +312,9 @@
       <div class="description"><p>Enhance your natural beauty with this high-quality, blendable makeup product designed for a flawless finish.</p><br><p><strong>Primary Uses:</strong> Apply with a brush or sponge to build customized coverage and stunning, radiant looks.</p></div>
       
       <div class="single-product-controls cart-controls">
-        <button class="dec-btn" onclick="decreaseSingleQty(242)" disabled>-</button>
+        <button class="dec-btn" id="dec-btn-single" data-id="242" disabled>-</button>
         <span class="qty" id="single-qty">0</span>
-        <button class="add-cart-btn" onclick='increaseSingleQty(242, "KYRA ALPHA ARBUTIN RICE FERMENT BOOST POWDER", 500, "image/648.jpeg")'>
+        <button class="add-cart-btn" id="add-btn-single" data-id="242" data-name="KYRA ALPHA ARBUTIN RICE FERMENT BOOST POWDER" data-price="500" data-image="image/648.jpeg">
           Add to Cart
         </button>
       </div>
@@ -410,7 +410,22 @@
 
   // Initialize cart state on load
   document.addEventListener("DOMContentLoaded", () => {
-    refreshSingleQty(242);
+    const decBtn = document.getElementById('dec-btn-single');
+    const addBtn = document.getElementById('add-btn-single');
+    const pid = parseInt(decBtn.getAttribute('data-id'), 10);
+    
+    refreshSingleQty(pid);
+    
+    decBtn.addEventListener('click', () => {
+      decreaseSingleQty(pid);
+    });
+    
+    addBtn.addEventListener('click', () => {
+      const pName = addBtn.getAttribute('data-name');
+      const pPrice = parseFloat(addBtn.getAttribute('data-price'));
+      const pImage = addBtn.getAttribute('data-image');
+      increaseSingleQty(pid, pName, pPrice, pImage);
+    });
   });
 </script>
 </body>

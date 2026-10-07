@@ -312,9 +312,9 @@
       <div class="description"><%- product.description || "Experience luxury skincare designed to leave you feeling confident, refreshed, and beautifully authentic." %></div>
       
       <div class="single-product-controls cart-controls">
-        <button class="dec-btn" onclick="decreaseSingleQty(<%= product.id %>)" disabled>-</button>
+        <button class="dec-btn" id="dec-btn-single" data-id="<%= product.id %>" disabled>-</button>
         <span class="qty" id="single-qty">0</span>
-        <button class="add-cart-btn" onclick='increaseSingleQty(<%= product.id %>, "<%= product.name.replace(/"/g, "&quot;") %>", <%= product.price %>, "<%= product.image %>")'>
+        <button class="add-cart-btn" id="add-btn-single" data-id="<%= product.id %>" data-name="<%= product.name.replace(/"/g, '&quot;') %>" data-price="<%= product.price %>" data-image="<%= product.image %>">
           Add to Cart
         </button>
       </div>
@@ -410,7 +410,22 @@
 
   // Initialize cart state on load
   document.addEventListener("DOMContentLoaded", () => {
-    refreshSingleQty(<%= product.id %>);
+    const decBtn = document.getElementById('dec-btn-single');
+    const addBtn = document.getElementById('add-btn-single');
+    const pid = parseInt(decBtn.getAttribute('data-id'), 10);
+    
+    refreshSingleQty(pid);
+    
+    decBtn.addEventListener('click', () => {
+      decreaseSingleQty(pid);
+    });
+    
+    addBtn.addEventListener('click', () => {
+      const pName = addBtn.getAttribute('data-name');
+      const pPrice = parseFloat(addBtn.getAttribute('data-price'));
+      const pImage = addBtn.getAttribute('data-image');
+      increaseSingleQty(pid, pName, pPrice, pImage);
+    });
   });
 </script>
 </body>

@@ -1,0 +1,25 @@
+{
+  "name": "hellenaisrael-empires-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barbrah361-create/HellenaIsrael-Empires-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/barbrah361-create/HellenaIsrael-Empires-Website/issues"
+  },
+  "homepage": "https://github.com/barbrah361-create/HellenaIsrael-Empires-Website#readme",
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "ejs": "^7.0.1"
+  }
+}

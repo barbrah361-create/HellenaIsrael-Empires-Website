@@ -48,7 +48,7 @@ const products = [
     name: "(Brightening Vitamin C) EYE GEL PATCHES",
     price: 2800,
     image: "image/142.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Revitalize your under-eye area with these cooling and brightening eye patches, designed to reduce puffiness and dark circles.</p><br><p><strong>Primary Uses:</strong> Apply under the eyes to refresh, hydrate, and brighten tired-looking skin.</p>`
   },
 
 
@@ -84,7 +84,7 @@ const products = [
     name: "COCOA BUTTER FORMULA with Vitamin E Body Oil",
     price: 2300,
     image: "image/146.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
 
 
@@ -107,7 +107,7 @@ const products = [
     name: "brazilian love Glow body butter",
     price: 2300,
     image: "image/148.jpeg",
-    description: `<p>Deeply hydrate and nourish your skin with this rich, luxurious formula designed to lock in moisture and improve skin elasticity.</p><br><p><strong>Primary Uses:</strong> Massage onto clean skin, focusing on dry or stretch-prone areas, to intensely moisturize and soften.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
 
 
@@ -139,7 +139,7 @@ const products = [
     name: "MOISTURISING CREAM FACE NECK & HANDS Retinol",
     price: 3000,
     image: "image/151.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Target fine lines, dark spots, and uneven texture with this concentrated serum, delivering powerful active ingredients deep into the skin.</p><br><p><strong>Primary Uses:</strong> Apply a few drops to cleansed skin before moisturizing to treat specific skin concerns and boost radiance.</p>`
   },
 
 
@@ -149,7 +149,7 @@ const products = [
     name: "Body Butter LAVENDER VANILLA",
     price: 3600,
     image: "image/152.jpeg",
-    description: `<p>Deeply hydrate and nourish your skin with this rich, luxurious formula designed to lock in moisture and improve skin elasticity.</p><br><p><strong>Primary Uses:</strong> Massage onto clean skin, focusing on dry or stretch-prone areas, to intensely moisturize and soften.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
 
 
@@ -306,7 +306,7 @@ const products = [
     name: "Vitamin e Foaming Facial Wash",
     price: 1850,
     image: "image/171.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Gently remove impurities, dirt, and excess oil with this clarifying cleanser for a fresh, balanced complexion.</p><br><p><strong>Primary Uses:</strong> Use daily to wash your face or body, leaving the skin feeling clean and refreshed without stripping moisture.</p>`
   },
 
 
@@ -424,7 +424,7 @@ const products = [
     name: "BRIGHTENING Vitamin C Micro-Polishing Facial Scrub",
     price: 2000,
     image: "image/182.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Exfoliate dead skin cells and reveal a smoother, brighter complexion with this gentle yet effective formula.</p><br><p><strong>Primary Uses:</strong> Apply to skin as directed to polish, renew your skin texture, and unclog pores.</p>`
   },
 
 
@@ -495,7 +495,7 @@ const products = [
     name: "BRIGHTENING VITAMIN C FACIAL TONIC",
     price: 1860,
     image: "image/190.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
   },
 
 
@@ -554,7 +554,7 @@ const products = [
     name: "SOIL PROTECT MOISTURISING LOTION",
     price: 3000,
     image: "image/197.jpeg",
-    description: `<p>Deeply hydrate and nourish your skin with this rich, luxurious formula designed to lock in moisture and improve skin elasticity.</p><br><p><strong>Primary Uses:</strong> Massage onto clean skin, focusing on dry or stretch-prone areas, to intensely moisturize and soften.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
 
 
@@ -663,7 +663,7 @@ const products = [
     name: "AMERICAN TOUCH VITAMIN E BODY CREAM",
     price: 1500,
     image: "image/211.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
 
 
@@ -800,7 +800,7 @@ const products = [
     name: "CHEWABLE VITAMIN-C one A day",
     price: 4200,
     image: "image/227.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
   },
 
   {
@@ -808,7 +808,7 @@ const products = [
     name: "HIGH STRENGTH VITAMIN C EMMUNE SUPPORT",
     price: 4200,
     image: "image/228.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
   },
 
 
@@ -817,7 +817,7 @@ const products = [
     name: "VITAMIN E 400iu",
     price: 4200,
     image: "image/229.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
   },
 
 
@@ -861,7 +861,7 @@ const products = [
     name: "VITAMIN C & ZINC",
     price: 4800,
     image: "image/235.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
   },
 
 
@@ -1105,7 +1105,7 @@ const products = [
     name: "LACURA VITAMIN C SERUM",
     price: 2800,
     image: "image/91.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Target fine lines, dark spots, and uneven texture with this concentrated serum, delivering powerful active ingredients deep into the skin.</p><br><p><strong>Primary Uses:</strong> Apply a few drops to cleansed skin before moisturizing to treat specific skin concerns and boost radiance.</p>`
   },
 
 
@@ -1149,7 +1149,7 @@ const products = [
     name: "GLOWING SERUM 2% VITAMIN C",
     price: 2700,
     image: "image/97.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Target fine lines, dark spots, and uneven texture with this concentrated serum, delivering powerful active ingredients deep into the skin.</p><br><p><strong>Primary Uses:</strong> Apply a few drops to cleansed skin before moisturizing to treat specific skin concerns and boost radiance.</p>`
   },
 
   {
@@ -1192,7 +1192,7 @@ const products = [
     name: "FACE FACTS CHERRY BLISS HYALURONIC HYDRO CREAM",
     price: 3200,
     image: "image/103.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Target fine lines, dark spots, and uneven texture with this concentrated serum, delivering powerful active ingredients deep into the skin.</p><br><p><strong>Primary Uses:</strong> Apply a few drops to cleansed skin before moisturizing to treat specific skin concerns and boost radiance.</p>`
   },
 
 
@@ -1210,7 +1210,7 @@ const products = [
     name: "LORIEL PARIS WRINKLE EXPERT 65+ multivitamins",
     price: 3500,
     image: "image/105.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
   },
 
 
@@ -1245,7 +1245,7 @@ const products = [
     name: "SALICYLIC ACID SOOTHING LOTION",
     price: 2200,
     image: "image/110.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Target fine lines, dark spots, and uneven texture with this concentrated serum, delivering powerful active ingredients deep into the skin.</p><br><p><strong>Primary Uses:</strong> Apply a few drops to cleansed skin before moisturizing to treat specific skin concerns and boost radiance.</p>`
   },
 
 
@@ -1262,7 +1262,7 @@ const products = [
     name: "GLOWING SNAIL CREAM",
     price: 3360,
     image: "image/112.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Target fine lines, dark spots, and uneven texture with this concentrated serum, delivering powerful active ingredients deep into the skin.</p><br><p><strong>Primary Uses:</strong> Apply a few drops to cleansed skin before moisturizing to treat specific skin concerns and boost radiance.</p>`
   },
 
 
@@ -1280,7 +1280,7 @@ const products = [
     name: "MEDISPHERE SKINCARE COLLAGEN CAPSULE CREAM",
     price: 3350,
     image: "image/114.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
 
 
@@ -1297,7 +1297,7 @@ const products = [
     name: "FACEFACTS CERAMIDE REPAIRING SERUM CREAM",
     price: 2000,
     image: "image/116.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Target fine lines, dark spots, and uneven texture with this concentrated serum, delivering powerful active ingredients deep into the skin.</p><br><p><strong>Primary Uses:</strong> Apply a few drops to cleansed skin before moisturizing to treat specific skin concerns and boost radiance.</p>`
   },
 
 
@@ -1324,7 +1324,7 @@ const products = [
     name: "VITAMIN C BRIGHTENING SERUM",
     price: 2600,
     image: "image/119.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Target fine lines, dark spots, and uneven texture with this concentrated serum, delivering powerful active ingredients deep into the skin.</p><br><p><strong>Primary Uses:</strong> Apply a few drops to cleansed skin before moisturizing to treat specific skin concerns and boost radiance.</p>`
   },
 
   {
@@ -1489,7 +1489,7 @@ const products = [
     name: "NOURISHING HAND CREAM ORGAN OIL",
     price: 1100,
     image: "image/503.jpeg",
-    description: `<p>Deeply hydrate and nourish your skin with this rich, luxurious formula designed to lock in moisture and improve skin elasticity.</p><br><p><strong>Primary Uses:</strong> Massage onto clean skin, focusing on dry or stretch-prone areas, to intensely moisturize and soften.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
 
   {
@@ -1640,7 +1640,7 @@ const products = [
     name: "RASP BERRY FLAVOUR VITAMIN C",
     price: 2500,
     image: "image/522.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
   },
 
 
@@ -1656,7 +1656,7 @@ const products = [
     name: "COCOA BUTTER FORMULA BODY OIL",
     price: 1350,
     image: "image/525.jpeg",
-    description: `<p>Deeply hydrate and nourish your skin with this rich, luxurious formula designed to lock in moisture and improve skin elasticity.</p><br><p><strong>Primary Uses:</strong> Massage onto clean skin, focusing on dry or stretch-prone areas, to intensely moisturize and soften.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
 
   {
@@ -1695,7 +1695,7 @@ const products = [
     name: "GARNIER VITAMIN C",
     price: 2600,
     image: "image/524.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
   },
   {
     id: 194,
@@ -1765,7 +1765,7 @@ const products = [
     name: "BUTTER GLOSS",
     price: 1300,
     image: "image/609.jpeg",
-    description: `<p>Deeply hydrate and nourish your skin with this rich, luxurious formula designed to lock in moisture and improve skin elasticity.</p><br><p><strong>Primary Uses:</strong> Massage onto clean skin, focusing on dry or stretch-prone areas, to intensely moisturize and soften.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
   {
     id: 204,
@@ -1779,49 +1779,49 @@ const products = [
     name: "LIP CARE BALM",
     price: 1000,
     image: "image/611.jpeg",
-    description: `<p>Add a beautiful pop of color and deep hydration to your lips with this smooth, long-lasting lip product.</p><br><p><strong>Primary Uses:</strong> Glide over lips for a stunning finish and comfortable, all-day wear.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
   {
     id: 206,
     name: "DERMARVIO LIP BALM",
     price: 700,
     image: "image/612.jpeg",
-    description: `<p>Add a beautiful pop of color and deep hydration to your lips with this smooth, long-lasting lip product.</p><br><p><strong>Primary Uses:</strong> Glide over lips for a stunning finish and comfortable, all-day wear.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
   {
     id: 207,
     name: "DERMAVIO LIP BALM",
     price: 700,
     image: "image/613.jpeg",
-    description: `<p>Add a beautiful pop of color and deep hydration to your lips with this smooth, long-lasting lip product.</p><br><p><strong>Primary Uses:</strong> Glide over lips for a stunning finish and comfortable, all-day wear.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
   {
     id: 208,
     name: "SECRET ADMIRER LIP BALM",
     price: 700,
     image: "image/614.jpeg",
-    description: `<p>Add a beautiful pop of color and deep hydration to your lips with this smooth, long-lasting lip product.</p><br><p><strong>Primary Uses:</strong> Glide over lips for a stunning finish and comfortable, all-day wear.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
   {
     id: 209,
     name: "CIEN CARING LIP BALM",
     price: 700,
     image: "image/615.jpeg",
-    description: `<p>Add a beautiful pop of color and deep hydration to your lips with this smooth, long-lasting lip product.</p><br><p><strong>Primary Uses:</strong> Glide over lips for a stunning finish and comfortable, all-day wear.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
   {
     id: 210,
     name: "CIEN CARING LIP BALM",
     price: 1000,
     image: "image/616.jpeg",
-    description: `<p>Add a beautiful pop of color and deep hydration to your lips with this smooth, long-lasting lip product.</p><br><p><strong>Primary Uses:</strong> Glide over lips for a stunning finish and comfortable, all-day wear.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
   {
     id: 211,
     name: "NIVEA CARING LIP BALM",
     price: 600,
     image: "image/617.jpeg",
-    description: `<p>Add a beautiful pop of color and deep hydration to your lips with this smooth, long-lasting lip product.</p><br><p><strong>Primary Uses:</strong> Glide over lips for a stunning finish and comfortable, all-day wear.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
   {
     id: 212,
@@ -1856,7 +1856,7 @@ const products = [
     name: "CERAMIDE REPAIRING SERUM CREAM",
     price: 2000,
     image: "image/622.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Target fine lines, dark spots, and uneven texture with this concentrated serum, delivering powerful active ingredients deep into the skin.</p><br><p><strong>Primary Uses:</strong> Apply a few drops to cleansed skin before moisturizing to treat specific skin concerns and boost radiance.</p>`
   },
   {
     id: 217,
@@ -1905,7 +1905,7 @@ const products = [
     name: "BRAZILIAN GLOW BODY BUTTER",
     price: 2300,
     image: "image/629.jpeg",
-    description: `<p>Deeply hydrate and nourish your skin with this rich, luxurious formula designed to lock in moisture and improve skin elasticity.</p><br><p><strong>Primary Uses:</strong> Massage onto clean skin, focusing on dry or stretch-prone areas, to intensely moisturize and soften.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
   {
     id: 224,
@@ -1919,7 +1919,7 @@ const products = [
     name: "SANCTUARY SPA BODY BUTTER",
     price: 2500,
     image: "image/631.jpeg",
-    description: `<p>Deeply hydrate and nourish your skin with this rich, luxurious formula designed to lock in moisture and improve skin elasticity.</p><br><p><strong>Primary Uses:</strong> Massage onto clean skin, focusing on dry or stretch-prone areas, to intensely moisturize and soften.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
   {
     id: 226,
@@ -1975,7 +1975,7 @@ const products = [
     name: "CIEN VITAMIN C GLOW SERUM",
     price: 2800,
     image: "image/639.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Target fine lines, dark spots, and uneven texture with this concentrated serum, delivering powerful active ingredients deep into the skin.</p><br><p><strong>Primary Uses:</strong> Apply a few drops to cleansed skin before moisturizing to treat specific skin concerns and boost radiance.</p>`
   },
   {
     id: 234,
@@ -1996,7 +1996,7 @@ const products = [
     name: "ALPHA ARBUTIN SOAP VITAMIN E",
     price: 1500,
     image: "image/642.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Gently remove impurities, dirt, and excess oil with this clarifying cleanser for a fresh, balanced complexion.</p><br><p><strong>Primary Uses:</strong> Use daily to wash your face or body, leaving the skin feeling clean and refreshed without stripping moisture.</p>`
   },
   {
     id: 237,
@@ -2010,7 +2010,7 @@ const products = [
     name: "HOT CLOTH CEANSER WITH VITAMIN C",
     price: 2850,
     image: "image/644.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
   },
   {
     id: 239,
@@ -2073,14 +2073,14 @@ const products = [
     name: "ADVANCED SNAIL 92 ALL IN ONE CREAM",
     price: 3200,
     image: "image/D.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Target fine lines, dark spots, and uneven texture with this concentrated serum, delivering powerful active ingredients deep into the skin.</p><br><p><strong>Primary Uses:</strong> Apply a few drops to cleansed skin before moisturizing to treat specific skin concerns and boost radiance.</p>`
   },
   {
     id: 248,
     name: "HYALURONIC ACID INTENSIVE CREAM",
     price: 3200,
     image: "image/E.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Target fine lines, dark spots, and uneven texture with this concentrated serum, delivering powerful active ingredients deep into the skin.</p><br><p><strong>Primary Uses:</strong> Apply a few drops to cleansed skin before moisturizing to treat specific skin concerns and boost radiance.</p>`
   },
   {
     id: 249,
@@ -2136,7 +2136,7 @@ const products = [
     name: "RELIEF CREAM MIST",
     price: 3200,
     image: "image/N.jpeg",
-    description: `<p>Refresh and hydrate your skin instantly with this lightweight, soothing mist.</p><br><p><strong>Primary Uses:</strong> Spritz over your face or body throughout the day for an instant boost of hydration and radiance.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
   {
     id: 257,
@@ -2157,7 +2157,7 @@ const products = [
     name: "RELIEF CREAM MIST",
     price: 2400,
     image: "image/Q.jpeg",
-    description: `<p>Refresh and hydrate your skin instantly with this lightweight, soothing mist.</p><br><p><strong>Primary Uses:</strong> Spritz over your face or body throughout the day for an instant boost of hydration and radiance.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
   {
     id: 260,
@@ -2206,7 +2206,7 @@ const products = [
     name: "MEDICUBE COLLAGEN JELLY CREAM",
     price: 3600,
     image: "image/X.jpeg",
-    description: `<p>Deeply hydrate and nourish your skin with this rich, luxurious formula designed to lock in moisture and improve skin elasticity.</p><br><p><strong>Primary Uses:</strong> Massage onto clean skin, focusing on dry or stretch-prone areas, to intensely moisturize and soften.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
   {
     id: 267,
@@ -2234,14 +2234,14 @@ const products = [
     name: "OLAY VITAMIN C",
     price: 3600,
     image: "image/ZE.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
   },
   {
     id: 271,
     name: "PALMER COCOA BUTTER FORMULA",
     price: 2800,
     image: "image/ZI.jpeg",
-    description: `<p>Deeply hydrate and nourish your skin with this rich, luxurious formula designed to lock in moisture and improve skin elasticity.</p><br><p><strong>Primary Uses:</strong> Massage onto clean skin, focusing on dry or stretch-prone areas, to intensely moisturize and soften.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
 
   {
@@ -2249,7 +2249,7 @@ const products = [
     name: "COCOA BUTTER FORMULA FIRMING BUTTER",
     price: 2300,
     image: "image/ZO.jpeg",
-    description: `<p>Deeply hydrate and nourish your skin with this rich, luxurious formula designed to lock in moisture and improve skin elasticity.</p><br><p><strong>Primary Uses:</strong> Massage onto clean skin, focusing on dry or stretch-prone areas, to intensely moisturize and soften.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   },
   {
     id: 273,
@@ -2498,7 +2498,7 @@ const products = [
     name: "ISANA Straffende Bodylotion Q10 + Vitamin C",
     price: 1550,
     image: "image/025.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
   }
 ];
 
@@ -2652,11 +2652,11 @@ function renderProductCard(product, container) {
   // Attach safe click listeners to redirect to the new product page using localStorage & URL query for SEO
   imageWrapper.addEventListener("click", () => {
     localStorage.setItem('selectedProductId', product.id);
-    window.location.href = `product.html?id=${product.id}`;
+    window.location.href = `product-${product.id}.html`;
   });
   title.addEventListener("click", () => {
     localStorage.setItem('selectedProductId', product.id);
-    window.location.href = `product.html?id=${product.id}`;
+    window.location.href = `product-${product.id}.html`;
   });
 
   productCard.appendChild(imageWrapper);

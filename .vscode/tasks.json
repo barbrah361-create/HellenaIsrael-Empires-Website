@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Serve Hellena Israel Website",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"-e",
+				"const http=require('http'),fs=require('fs'),path=require('path');const root=process.cwd();const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.jpeg':'image/jpeg','.jpg':'image/jpeg','.png':'image/png','.webp':'image/webp','.svg':'image/svg+xml'};http.createServer((req,res)=>{let file=path.resolve(root,'.'+decodeURIComponent(new URL(req.url,'http://localhost').pathname));if(!file.startsWith(root)){res.writeHead(403).end('Forbidden');return}fs.stat(file,(err,stat)=>{if(err){res.writeHead(404).end('Not found');return}if(stat.isDirectory())file=path.join(file,'index.html');res.setHeader('Content-Type',types[path.extname(file).toLowerCase()]||'application/octet-stream');fs.createReadStream(file).on('error',()=>{res.writeHead(404).end('Not found')}).pipe(res)})}).listen(8000,'127.0.0.1',()=>console.log('Website available at http://localhost:8000'))"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}

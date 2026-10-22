@@ -5,7 +5,7 @@ const products = [
     name: "REVITA BEAUTY Skin,Hair & Nails Gummies",
     price: 4500,
     image: "image/136.jpeg",
-    description: `<p>Boost your daily wellness with these premium supplements formulated to provide essential nutrients to your body.</p><br><p><strong>Primary Uses:</strong> Take daily as a dietary supplement to support overall health, vitality, and natural glow from within.</p>`
+    description: `<p>Malibu soothing after-sun lotion for skin after sun exposure.</p><br><p><strong>Primary Uses:</strong> Apply to the skin after sun exposure as directed on the product label.</p>`
   },
   {
     id: 2,
@@ -800,7 +800,7 @@ const products = [
     name: "CHEWABLE VITAMIN-C one A day",
     price: 4200,
     image: "image/227.jpeg",
-    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
+    description: `<p>Chewable vitamin C supplement.</p><br><p><strong>Primary Uses:</strong> Chew and take only as directed on the product packaging.</p>`
   },
 
   {
@@ -808,7 +808,7 @@ const products = [
     name: "HIGH STRENGTH VITAMIN C EMMUNE SUPPORT",
     price: 4200,
     image: "image/228.jpeg",
-    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
+    description: `<p>High-strength vitamin C dietary supplement.</p><br><p><strong>Primary Uses:</strong> Take only as directed on the product packaging.</p>`
   },
 
 
@@ -817,7 +817,7 @@ const products = [
     name: "VITAMIN E 400iu",
     price: 4200,
     image: "image/229.jpeg",
-    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
+    description: `<p>Vitamin E 400 IU dietary supplement.</p><br><p><strong>Primary Uses:</strong> Take only as directed on the product packaging.</p>`
   },
 
 
@@ -826,7 +826,7 @@ const products = [
     name: "Iron 14mg",
     price: 4500,
     image: "image/230.jpeg",
-    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
+    description: `<p>Iron 14 mg dietary supplement.</p><br><p><strong>Primary Uses:</strong> Take only as directed on the product packaging.</p>`
   },
 
 
@@ -861,7 +861,7 @@ const products = [
     name: "VITAMIN C & ZINC",
     price: 4800,
     image: "image/235.jpeg",
-    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
+    description: `<p>Vitamin C and zinc dietary supplement.</p><br><p><strong>Primary Uses:</strong> Take only as directed on the product packaging.</p>`
   },
 
 
@@ -870,7 +870,7 @@ const products = [
     name: "COLLAGEN PEPTIDES SKIN AND GLOW",
     price: 4800,
     image: "image/236.jpeg",
-    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
+    description: `<p>Collagen peptides dietary supplement.</p><br><p><strong>Primary Uses:</strong> Prepare and take only as directed on the product packaging.</p>`
   },
 
 
@@ -1366,7 +1366,7 @@ const products = [
     name: "COOL mint Mouth Wash",
     price: 1350,
     image: "image/124.jpeg",
-    description: `<p>Gently remove impurities, dirt, and excess oil with this clarifying cleanser for a fresh, balanced complexion.</p><br><p><strong>Primary Uses:</strong> Use daily to wash your face or body, leaving the skin feeling clean and refreshed without stripping moisture.</p>`
+    description: `<p>Cool mint mouthwash for a fresh, clean-feeling mouth.</p><br><p><strong>Primary Uses:</strong> Rinse and gargle as directed on the bottle, then spit out. Do not swallow.</p>`
   },
 
 
@@ -1375,7 +1375,7 @@ const products = [
     name: "FRESH mint Mouth Wash",
     price: 1350,
     image: "image/125.jpeg",
-    description: `<p>Gently remove impurities, dirt, and excess oil with this clarifying cleanser for a fresh, balanced complexion.</p><br><p><strong>Primary Uses:</strong> Use daily to wash your face or body, leaving the skin feeling clean and refreshed without stripping moisture.</p>`
+    description: `<p>Fresh mint mouthwash for oral rinsing.</p><br><p><strong>Primary Uses:</strong> Rinse and gargle as directed on the bottle, then spit out. Do not swallow.</p>`
   },
 
 
@@ -1391,7 +1391,7 @@ const products = [
     name: "LISTERINE FLAVOURS SPEARMINT mouth wash",
     price: 1800,
     image: "image/127.jpeg",
-    description: `<p>Gently remove impurities, dirt, and excess oil with this clarifying cleanser for a fresh, balanced complexion.</p><br><p><strong>Primary Uses:</strong> Use daily to wash your face or body, leaving the skin feeling clean and refreshed without stripping moisture.</p>`
+    description: `<p>Listerine Spearmint mouthwash for oral rinsing.</p><br><p><strong>Primary Uses:</strong> Rinse as directed on the bottle, then spit out. Do not swallow.</p>`
   },
 
   {
@@ -1399,7 +1399,7 @@ const products = [
     name: "BREATH SPRAY Dental Care",
     price: 1300,
     image: "image/128.jpeg",
-    description: `<p>Refresh and hydrate your skin instantly with this lightweight, soothing mist.</p><br><p><strong>Primary Uses:</strong> Spritz over your face or body throughout the day for an instant boost of hydration and radiance.</p>`
+    description: `<p>Dental breath spray for a fresh-feeling mouth.</p><br><p><strong>Primary Uses:</strong> Spray into the mouth as directed on the product label.</p>`
   },
 
 
@@ -1408,7 +1408,7 @@ const products = [
     name: "Vaseline lip Therapy",
     price: 800,
     image: "image/129.jpeg",
-    description: `<p>Deeply hydrate and nourish your skin with this rich, luxurious formula designed to lock in moisture and improve skin elasticity.</p><br><p><strong>Primary Uses:</strong> Massage onto clean skin, focusing on dry or stretch-prone areas, to intensely moisturize and soften.</p>`
+    description: `<p>Vaseline Lip Therapy for dry lips.</p><br><p><strong>Primary Uses:</strong> Apply a small amount to the lips as needed.</p>`
   },
 
 
@@ -1537,7 +1537,7 @@ const products = [
     name: "FLOELLA CONCENTRATED DISINFECTANT",
     price: 1650,
     image: "image/509.jpeg",
-    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
+    description: `<p>Floella concentrated disinfectant for household cleaning.</p><br><p><strong>Primary Uses:</strong> Dilute and use only as directed on the product label; do not apply to skin.</p>`
   },
 
   {
@@ -1545,7 +1545,7 @@ const products = [
     name: "ZIFLORA CONCENTRATED DISINFECTANT",
     price: 1870,
     image: "image/510.jpeg",
-    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
+    description: `<p>Ziflora concentrated disinfectant for household cleaning.</p><br><p><strong>Primary Uses:</strong> Dilute and use only as directed on the product label; do not apply to skin.</p>`
   },
 
 
@@ -1554,13 +1554,13 @@ const products = [
     name: "ANTI FUNGAL FOOT POWDER",
     price: 1650,
     image: "image/511.jpeg",
-    description: `<p>Enhance your natural beauty with this high-quality, blendable makeup product designed for a flawless finish.</p><br><p><strong>Primary Uses:</strong> Apply with a brush or sponge to build customized coverage and stunning, radiant looks.</p>`
+    description: `<p>Antifungal foot powder for foot care.</p><br><p><strong>Primary Uses:</strong> Apply to feet as directed on the product label.</p>`
   }, {
     id: 176,
     name: "FOOT CARE",
     price: 1350,
     image: "image/512.jpeg",
-    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
+    description: `<p>Foot-care product.</p><br><p><strong>Primary Uses:</strong> Use on the feet as directed on the product label.</p>`
   },
 
   {
@@ -1568,23 +1568,22 @@ const products = [
     name: "HAND CREAM REDUCING BALM FOOT CARE",
     price: 1100,
     image: "image/513.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Hand and foot care balm.</p><br><p><strong>Primary Uses:</strong> Apply to hands or feet as directed on the product label.</p>`
   },
-
 
   {
     id: 178,
     name: "ROUGH SKIN REMOVER FOOT CARE",
     price: 1350,
     image: "image/514.jpeg",
-    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
+    description: `<p>Foot-care product for rough skin.</p><br><p><strong>Primary Uses:</strong> Use on rough areas of the feet as directed on the product label.</p>`
   },
   {
     id: 179,
     name: "INTENSIVE FOOT CREAM",
     price: 1200,
     image: "image/515.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Intensive moisturizing cream for foot care.</p><br><p><strong>Primary Uses:</strong> Apply to the feet as directed on the product label.</p>`
   },
 
   {
@@ -1592,23 +1591,22 @@ const products = [
     name: "SOFTENING FOOT LOTION FOOT CARE",
     price: 1050,
     image: "image/516.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Softening lotion for foot care.</p><br><p><strong>Primary Uses:</strong> Apply to the feet as directed on the product label.</p>`
   },
-
 
   {
     id: 181,
     name: "SOAP & GLORY BRIGHTENING SHEET MASK",
     price: 700,
     image: "image/517.jpeg",
-    description: `<p>Gently remove impurities, dirt, and excess oil with this clarifying cleanser for a fresh, balanced complexion.</p><br><p><strong>Primary Uses:</strong> Use daily to wash your face or body, leaving the skin feeling clean and refreshed without stripping moisture.</p>`
+    description: `<p>Soap & Glory brightening sheet mask.</p><br><p><strong>Primary Uses:</strong> Place the sheet mask on clean skin, leave on for the time stated on the package, then remove.</p>`
   },
   {
     id: 182,
     name: "CIEN MOISTURISING & RELAXING SHEET MASK",
     price: 500,
     image: "image/518.jpeg",
-    description: `<p>Pamper your skin with this intensive treatment mask, formulated to deeply purify, hydrate, and rejuvenate.</p><br><p><strong>Primary Uses:</strong> Apply an even layer, leave on as directed, and rinse off for a glowing, spa-like finish.</p>`
+    description: `<p>Cien moisturising and relaxing sheet mask.</p><br><p><strong>Primary Uses:</strong> Place the sheet mask on clean skin, leave on for the time stated on the package, then remove.</p>`
   },
 
   {
@@ -1616,23 +1614,22 @@ const products = [
     name: "HYDRO BOOST TISUE MASK",
     price: 500,
     image: "image/519.jpeg",
-    description: `<p>Pamper your skin with this intensive treatment mask, formulated to deeply purify, hydrate, and rejuvenate.</p><br><p><strong>Primary Uses:</strong> Apply an even layer, leave on as directed, and rinse off for a glowing, spa-like finish.</p>`
+    description: `<p>Hydro Boost tissue face mask.</p><br><p><strong>Primary Uses:</strong> Place the sheet mask on clean skin, leave on for the time stated on the package, then remove.</p>`
   },
-
 
   {
     id: 184,
     name: "PEACH&GINGER SMOOTHING (SANTA PRINTED SHEET MASK)",
     price: 800,
     image: "image/520.jpeg",
-    description: `<p>Pamper your skin with this intensive treatment mask, formulated to deeply purify, hydrate, and rejuvenate.</p><br><p><strong>Primary Uses:</strong> Apply an even layer, leave on as directed, and rinse off for a glowing, spa-like finish.</p>`
+    description: `<p>Peach and ginger smoothing printed sheet mask.</p><br><p><strong>Primary Uses:</strong> Place the sheet mask on clean skin, leave on for the time stated on the package, then remove.</p>`
   },
   {
     id: 185,
     name: "SKINACADEMY INK'D TATOO CARE",
     price: 2280,
     image: "image/521.jpeg",
-    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
+    description: `<p>SkinAcademy Ink'd tattoo care product.</p><br><p><strong>Primary Uses:</strong> Apply to tattooed skin as directed on the product label.</p>`
   },
 
   {
@@ -1640,7 +1637,7 @@ const products = [
     name: "RASP BERRY FLAVOUR VITAMIN C",
     price: 2500,
     image: "image/522.jpeg",
-    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
+    description: `<p>Raspberry-flavoured vitamin C product.</p><br><p><strong>Primary Uses:</strong> Take only as directed on the product packaging.</p>`
   },
 
 
@@ -1765,7 +1762,7 @@ const products = [
     name: "BUTTER GLOSS",
     price: 1300,
     image: "image/609.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Butter gloss for adding colour and shine to the lips.</p><br><p><strong>Primary Uses:</strong> Apply to the lips as desired.</p>`
   },
   {
     id: 204,
@@ -1779,70 +1776,70 @@ const products = [
     name: "LIP CARE BALM",
     price: 1000,
     image: "image/611.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Lip care balm.</p><br><p><strong>Primary Uses:</strong> Apply to the lips as needed.</p>`
   },
   {
     id: 206,
     name: "DERMARVIO LIP BALM",
     price: 700,
     image: "image/612.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Dermarvio lip balm.</p><br><p><strong>Primary Uses:</strong> Apply to the lips as needed.</p>`
   },
   {
     id: 207,
     name: "DERMAVIO LIP BALM",
     price: 700,
     image: "image/613.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Dermavio lip balm.</p><br><p><strong>Primary Uses:</strong> Apply to the lips as needed.</p>`
   },
   {
     id: 208,
     name: "SECRET ADMIRER LIP BALM",
     price: 700,
     image: "image/614.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Secret Admirer lip balm.</p><br><p><strong>Primary Uses:</strong> Apply to the lips as needed.</p>`
   },
   {
     id: 209,
     name: "CIEN CARING LIP BALM",
     price: 700,
     image: "image/615.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Cien Caring Lip Balm.</p><br><p><strong>Primary Uses:</strong> Apply to the lips as needed.</p>`
   },
   {
     id: 210,
     name: "CIEN CARING LIP BALM",
     price: 1000,
     image: "image/616.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Cien Caring Lip Balm.</p><br><p><strong>Primary Uses:</strong> Apply to the lips as needed.</p>`
   },
   {
     id: 211,
     name: "NIVEA CARING LIP BALM",
     price: 600,
     image: "image/617.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Nivea Caring Lip Balm.</p><br><p><strong>Primary Uses:</strong> Apply to the lips as needed.</p>`
   },
   {
     id: 212,
     name: "THE MASCARA REVOLUTION",
     price: 1550,
     image: "image/618.jpeg",
-    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
+    description: `<p>The Mascara Revolution for eyelashes.</p><br><p><strong>Primary Uses:</strong> Brush onto lashes from the roots toward the tips.</p>`
   },
   {
     id: 213,
     name: "INTENSIFY LASH LIFTING MASCARA",
     price: 1400,
     image: "image/619.jpeg",
-    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
+    description: `<p>Intensify Lash Lifting Mascara for eyelashes.</p><br><p><strong>Primary Uses:</strong> Brush onto lashes from the roots toward the tips.</p>`
   },
   {
     id: 214,
     name: "AMOR GOLDEN ELIXIR",
     price: 1800,
     image: "image/620.jpeg",
-    description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
+    description: `<p>Amor Golden Elixir beauty product.</p><br><p><strong>Primary Uses:</strong> Use as directed on the product packaging.</p>`
   },
   {
     id: 215,
@@ -2456,7 +2453,7 @@ const products = [
     name: "gisou honey infused lip oil",
     price: 2000,
     image: "image/019.jpeg",
-    description: `<p>Deeply hydrate and nourish your skin with this rich, luxurious formula designed to lock in moisture and improve skin elasticity.</p><br><p><strong>Primary Uses:</strong> Massage onto clean skin, focusing on dry or stretch-prone areas, to intensely moisturize and soften.</p>`
+    description: `<p>Gisou Honey Infused Lip Oil.</p><br><p><strong>Primary Uses:</strong> Apply to the lips for a glossy finish.</p>`
   },
   {
     id: 302,
@@ -2470,14 +2467,14 @@ const products = [
     name: "Malibu 50 SPF Lotion High Protection",
     price: 2500,
     image: "image/021.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Malibu SPF 50 high-protection sunscreen lotion.</p><br><p><strong>Primary Uses:</strong> Apply before sun exposure and reapply as directed on the product label.</p>`
   },
   {
     id: 304,
     name: "Sundance After Sun Lotion",
     price: 1650,
     image: "image/022.jpeg",
-    description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+    description: `<p>Sundance after-sun lotion for skin after sun exposure.</p><br><p><strong>Primary Uses:</strong> Apply to the skin after sun exposure as directed on the product label.</p>`
   },
   {
     id: 305,
@@ -2499,6 +2496,181 @@ const products = [
     price: 1550,
     image: "image/025.jpeg",
     description: `<p>Moisturize and soften your skin daily with this fast-absorbing, nutrient-rich formula designed for long-lasting hydration.</p><br><p><strong>Primary Uses:</strong> Apply generously to the face or body to maintain smooth, supple, and glowing skin.</p>`
+  },
+  {
+    id: 308,
+    name: "Malibu Kids SPF 50 Lotion High Protection",
+    price: 2850,
+    image: "image/A1.jpeg",
+    description: `<p>Malibu Kids SPF 50 high-protection, water-resistant sunscreen lotion.</p><br><p><strong>Primary Uses:</strong> Apply to skin before sun exposure and reapply as directed on the product label.</p>`
+  },
+  {
+    id: 309,
+    name: "No Hair Hair Removal Lotion Assorted",
+    price: 1650,
+    image: "image/A2.jpeg",
+    description: `<p>No Hair men's and sensitive hair removal lotions.</p><br><p><strong>Primary Uses:</strong> Use on the body to remove unwanted hair, following the timing and safety directions on the product label.</p>`
+  },
+  {
+    id: 310,
+    name: "Evoluxe Brightening Vitamin C Body Wash",
+    price: 2650,
+    image: "image/A3.jpeg",
+    description: `<p>Evoluxe Brightening Vitamin C Body Wash.</p><br><p><strong>Primary Uses:</strong> Use to wash the body in the bath or shower, then rinse with water.</p>`
+  },
+  {
+    id: 311,
+    name: "Vaseline Healthy Plus Bar Soap Assorted",
+    price: 450,
+    image: "image/A4.jpeg",
+    description: `<p>Vaseline Healthy Plus bar soaps in Total Moisture and Healthy Bright variants, enriched with Vaseline Jelly.</p><br><p><strong>Primary Uses:</strong> Use with water to cleanse the skin during bathing.</p>`
+  },
+  {
+    id: 312,
+    name: "Russell & Windsor Manuka Honey Exfoliating Body Scrub",
+    price: 2300,
+    image: "image/A5.jpeg",
+    description: `<p>Russell & Windsor Manuka Honey Exfoliating Body Scrub with natural exfoliating particles.</p><br><p><strong>Primary Uses:</strong> Massage lightly onto damp skin, focusing on rough or dry areas, then rinse thoroughly.</p>`
+  },
+  {
+    id: 313,
+    name: "OXY Pimple Control Cleansing Soap Bar",
+    price: 980,
+    image: "image/A6.jpeg",
+    description: `<p>OXY Pimple Control Cleansing Soap Bar with 2% salicylic acid.</p><br><p><strong>Primary Uses:</strong> Lather with warm water to wash the face as directed on the package, avoiding the eye area.</p>`
+  },
+  {
+    id: 314,
+    name: "Bramley Tissue Oils and Dermavio Lip Balms Assorted",
+    price: 2500,
+    image: "image/A7.jpeg",
+    description: `<p>An assortment of Bramley tissue oils and Dermavio watermelon, peach, and berry lip balms.</p><br><p><strong>Primary Uses:</strong> Apply tissue oil to skin or lip balm to lips, according to the selected product label.</p>`
+  },
+  {
+    id: 315,
+    name: "Vaseline Cera-Glow Body Gel-Oil",
+    price: 3200,
+    image: "image/A8.jpeg",
+    description: `<p>Vaseline Cera-Glow Body Gel-Oil with pro-ceramides, vitamin E, and almond oil.</p><br><p><strong>Primary Uses:</strong> Apply to the body to moisturize skin.</p>`
+  },
+  {
+    id: 316,
+    name: "Fresh & Glow Anti-Aging 50+ Moisture Sunscreen SPF 50+",
+    price: 2200,
+    image: "image/A9.jpeg",
+    description: `<p>Fresh & Glow Anti-Aging 50+ Moisture Sunscreen SPF 50+ with an invisible finish.</p><br><p><strong>Primary Uses:</strong> Apply to exposed face and body areas as the final skincare step; reapply every two hours as directed on the package.</p>`
+  },
+  {
+    id: 317,
+    name: "Crez Body Perfume Assorted",
+    price: 1400,
+    image: "image/A10.jpeg",
+    description: `<p>Crez body perfumes in Pure, Desire, Blush, and Diva variants.</p><br><p><strong>Primary Uses:</strong> Spray onto the body as a fragrance.</p>`
+  },
+  {
+    id: 318,
+    name: "Dove Winter Bloom Beauty Cream Bar",
+    price: 500,
+    image: "image/A11.jpeg",
+    description: `<p>Dove Limited Edition Winter Bloom Beauty Cream Bar with rose and sandalwood fragrance.</p><br><p><strong>Primary Uses:</strong> Use with water to wash the skin.</p>`
+  },
+  {
+    id: 319,
+    name: "MAC Studio Fix Powder Plus Foundation",
+    price: 3800,
+    image: "image/A12.jpeg",
+    description: `<p>MAC Studio Fix Powder Plus Foundation.</p><br><p><strong>Primary Uses:</strong> Apply to the face with a powder brush or makeup sponge to even the appearance of skin.</p>`
+  },
+  {
+    id: 320,
+    name: "Dior Addict Lip Glow Butter Assorted",
+    price: 3300,
+    image: "image/A13.jpeg",
+    description: `<p>Dior Addict Lip Glow Butter in assorted shades.</p><br><p><strong>Primary Uses:</strong> Apply to the lips as a hydrating and smoothing lip treatment.</p>`
+  },
+  {
+    id: 321,
+    name: "MAC Lustreglass Lipstick Assorted",
+    price: 3000,
+    image: "image/A14.jpeg",
+    description: `<p>MAC Lustreglass Lipstick in assorted shades.</p><br><p><strong>Primary Uses:</strong> Apply directly to the lips for colour and shine.</p>`
+  },
+  {
+    id: 322,
+    name: "Maybelline Fit Me Matte + Poreless Foundation Assorted",
+    price: 3200,
+    image: "image/A15.jpeg",
+    description: `<p>Maybelline Fit Me Matte + Poreless Foundation for normal to oily skin, shown in assorted shades.</p><br><p><strong>Primary Uses:</strong> Blend over the face with fingers, a brush, or a sponge to even the appearance of skin.</p>`
+  },
+  {
+    id: 323,
+    name: "MAC Lustreglass Lipstick Assorted",
+    price: 3500,
+    image: "image/A16.jpeg",
+    description: `<p>MAC Lustreglass Lipstick in assorted shades.</p><br><p><strong>Primary Uses:</strong> Apply directly to the lips for colour and shine.</p>`
+  },
+  {
+    id: 324,
+    name: "Fenty Beauty Pro Filt'r Soft Matte Longwear Foundation",
+    price: 3350,
+    image: "image/A17.jpeg",
+    description: `<p>Fenty Beauty Pro Filt'r Soft Matte Longwear Foundation.</p><br><p><strong>Primary Uses:</strong> Blend over the face with fingers, a brush, or a sponge to even the appearance of skin.</p>`
+  },
+  {
+    id: 325,
+    name: "Riggs London Perfumed Deodorant Body Spray Assorted",
+    price: 1550,
+    image: "image/A18.jpeg",
+    description: `<p>Riggs London perfumed deodorant body sprays in Icon, Venom, Night, Dynamo, Power, and Hero variants.</p><br><p><strong>Primary Uses:</strong> Spray onto the body as directed on the product label.</p>`
+  },
+  {
+    id: 326,
+    name: "Maybelline Lifter Gloss Assorted",
+    price: 2200,
+    image: "image/A19.jpeg",
+    description: `<p>Maybelline Lifter Gloss in assorted shades.</p><br><p><strong>Primary Uses:</strong> Apply to the lips for colour and a glossy finish.</p>`
+  },
+  {
+    id: 327,
+    name: "KIKO Milano 24H Foundation Assorted",
+    price: 3500,
+    image: "image/A20.jpeg",
+    description: `<p>KIKO Milano 24H Foundation in assorted shades.</p><br><p><strong>Primary Uses:</strong> Blend over the face with fingers, a brush, or a sponge to even the appearance of skin.</p>`
+  },
+  {
+    id: 328,
+    name: "Summer Fridays Lip Butter Balm Assorted",
+    price: 2000,
+    image: "image/A21.jpeg",
+    description: `<p>Summer Fridays Lip Butter Balm in assorted variants.</p><br><p><strong>Primary Uses:</strong> Apply to the lips as a lip balm.</p>`
+  },
+  {
+    id: 329,
+    name: "e.l.f. Glow Reviver Lip Oil Assorted",
+    price: 2500,
+    image: "image/A22.jpeg",
+    description: `<p>e.l.f. Glow Reviver Lip Oil infused with apricot oil, in assorted shades.</p><br><p><strong>Primary Uses:</strong> Apply to the lips for a glossy finish.</p>`
+  },
+  {
+    id: 330,
+    name: "Palmer's Cocoa Butter and Coconut Oil Body Oils",
+    price: 3300,
+    image: "image/A23.jpeg",
+    description: `<p>Palmer's Cocoa Butter Formula Tahitian Vanilla Moisture Drenching Body Oil and Coconut Oil Formula Brazilian Coco Body Oil.</p><br><p><strong>Primary Uses:</strong> Apply to the body to moisturize skin, following the product label.</p>`
+  },
+  {
+    id: 331,
+    name: "Vaseline Cera-Glow Even Tone & Moisture Body Lotion SPF 20",
+    price: 2800,
+    image: "image/A24.jpeg",
+    description: `<p>Vaseline Cera-Glow Even Tone & Moisture Body Lotion with pro-ceramides and SPF 20.</p><br><p><strong>Primary Uses:</strong> Apply to the body to moisturize skin; follow the label directions for sun protection.</p>`
+  },
+  {
+    id: 332,
+    name: "The Ordinary Glycolic Acid 7% Exfoliating Toner",
+    price: 3200,
+    image: "image/A25.jpeg",
+    description: `<p>The Ordinary Glycolic Acid 7% Exfoliating Toner.</p><br><p><strong>Primary Uses:</strong> Apply to clean, dry skin as directed on the product label; avoid the eye area.</p>`
   }
 ];
 

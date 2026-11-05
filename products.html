@@ -12,7 +12,7 @@
   
   <link rel="canonical" href="https://hellenacosmetics.co.ke/products.html">
   <link rel="icon" type="image/jpeg" href="image/my logo - Copy.jpeg">
-  <link rel="stylesheet" href="Css/styl.css?v=5">
+  <link rel="stylesheet" href="Css/styl.css?v=12">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   
@@ -88,7 +88,9 @@
 
 <section class="products-section">
   <div class="products-header">
-    <h1>Our Beauty Products</h1>
+    <div>
+      <h1>Our Beauty Products</h1>
+    </div>
     <div class="product-search">
       <input id="product-search-input" type="search" placeholder="Search products..." aria-label="Search products">
     </div>
@@ -99,6 +101,15 @@
     <button class="cat-btn" data-cat="women">Women</button>
     <button class="cat-btn" data-cat="men">Men</button>
     <button class="cat-btn" data-cat="kids">Kids</button>
+  </div>
+  <div class="category-filters product-type-filters" aria-label="Filter by product type">
+    <button class="cat-btn" data-cat="skincare">Skincare</button>
+    <button class="cat-btn" data-cat="makeup">Makeup</button>
+    <button class="cat-btn" data-cat="fragrance">Fragrance</button>
+    <button class="cat-btn" data-cat="body-care">Body care</button>
+    <button class="cat-btn" data-cat="oral-care">Oral care</button>
+    <button class="cat-btn" data-cat="supplements">Supplements</button>
+    <button class="cat-btn" data-cat="home-care">Household care</button>
   </div>
   <div class="products-grid" id="products-grid"></div>
 </section>
@@ -125,7 +136,7 @@
   </div>
 </div>
 
-<script src="products.js?v=6"></script>
+<script src="products.js?v=22"></script>
 <script src="app.js"></script>
 <script>
   // Dynamic Theme Switcher for Categories
@@ -136,7 +147,7 @@
       document.body.classList.remove('kids-theme', 'men-theme', 'women-theme');
       
       // Apply new theme based on category
-      const cat = e.target.dataset.cat;
+      const cat = e.currentTarget.dataset.cat;
       if (cat === 'kids') {
         document.body.classList.add('kids-theme');
       } else if (cat === 'men') {

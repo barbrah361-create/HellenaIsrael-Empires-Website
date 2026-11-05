@@ -5,8 +5,8 @@
   
   <meta name="robots" content="noindex, nofollow">
   <link rel="icon" type="image/jpeg" href="image/my logo - Copy.jpeg">
-  <link rel="stylesheet" href="Css/styl.css?v=5">
-  <link rel="stylesheet" href="Css/checkout.css">
+  <link rel="stylesheet" href="Css/styl.css?v=12">
+  <link rel="stylesheet" href="Css/checkout.css?v=2">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   
@@ -37,7 +37,7 @@
 }
   </script>
   </head>
-<body>
+<body class="checkout-page">
 <header>
   <a href="index.html" class="logo-container">
     <img src="image/my logo - Copy.jpeg" alt="Hellena Israel Empires Logo" class="logo">
@@ -80,27 +80,36 @@
 </header>
 
 
-<section class="hero checkout-hero">
-  <div class="hero-copy">
-    <p class="eyebrow">Checkout</p>
-    <h1>Review your order before sending it.</h1>
-    <p>Confirm the items in your cart and send your order straight to WhatsApp for fast checkout.</p>
-  </div>
-</section>
+<main class="checkout-main">
+  <section class="checkout-hero">
+    <div class="checkout-hero-copy">
+      <p class="eyebrow">Checkout</p>
+      <h1>Review your order</h1>
+      <p>Check your items and send your order to our team on WhatsApp.</p>
+    </div>
+  </section>
 
-<section class="checkout-section">
-  <h2>Your Cart</h2>
-  <div id="cart-items" class="cart-items">
-    
-  </div>
-  <h3>Total: Ksh <span id="total-amount">0</span></h3>
-  <div class="checkout-actions">
-    <button id="clear-cart" class="clear-cart-btn">Clear Cart</button>
-    <button id="send-whatsapp" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Send Order</button>
-  </div>
-</section>
+  <section class="checkout-section" aria-labelledby="cart-heading">
+    <div class="checkout-section-heading">
+      <div>
+        <p class="eyebrow">Ready when you are</p>
+        <h2 id="cart-heading">Your Cart</h2>
+      </div>
+      <a class="continue-shopping" href="products.html"><i class="fas fa-arrow-left"></i> Continue shopping</a>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="checkout-total">
+      <span>Order total</span>
+      <strong>Ksh <span id="total-amount">0</span></strong>
+    </div>
+    <div class="checkout-actions">
+      <button id="clear-cart" class="clear-cart-btn" type="button">Clear Cart</button>
+      <button id="send-whatsapp" class="whatsapp-btn" type="button"><i class="fab fa-whatsapp"></i> Send Order</button>
+    </div>
+  </section>
+</main>
 
-<script src="checkout.js"></script>
+<script src="checkout.js?v=2"></script>
 <script src="app.js"></script>
 
 </body></html>

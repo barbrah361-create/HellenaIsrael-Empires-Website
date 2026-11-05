@@ -1,121 +1,681 @@
-/* Jumia Style Addon for Skin Discovery Page */
+.skin-discovery-page {
+  --skin-ink: #30282a;
+  --skin-muted: #716567;
+  --skin-rose: #f68b1e;
+  --skin-rose-dark: #df7610;
+  --skin-blush: #fff3e5;
+  --skin-line: #eee5db;
+  background: #fff;
+  color: var(--skin-ink);
+}
 
-.skin-assessment-section {
+.skin-discovery-page header {
+  gap: 24px;
+  padding-right: max(24px, calc((100% - 1200px) / 2));
+  padding-left: max(24px, calc((100% - 1200px) / 2));
+  background: rgba(255, 255, 255, 0.97);
+  border-bottom: 1px solid var(--skin-line);
+  box-shadow: 0 4px 18px rgba(67, 43, 48, 0.06);
+}
+
+.skin-discovery-page .site-title-h1 {
+  max-width: none;
+  flex-shrink: 0;
+  white-space: nowrap;
+  color: var(--skin-ink);
+  font-weight: 900;
+  -webkit-text-stroke: 0.25px currentColor;
+}
+
+.skin-discovery-page .social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.skin-discovery-page .nav a:hover,
+.skin-discovery-page .nav a.active,
+.skin-discovery-page .social-icons a:hover {
+  color: var(--skin-rose);
+}
+
+.skin-discovery-page main {
+  padding-bottom: 10px;
+}
+
+.skin-discovery-page .hero {
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  align-items: stretch;
+  gap: clamp(24px, 5vw, 72px);
+  width: min(1200px, calc(100% - 48px));
   max-width: 1200px;
-  margin: 0 auto 40px;
-  padding: 0 20px;
+  min-height: 370px;
+  margin: 24px auto 0;
+  padding: clamp(28px, 5vw, 62px);
+  overflow: hidden;
+  border: 1px solid #eee1d4;
+  border-radius: 6px;
+  background: linear-gradient(110deg, #fff8ef 0%, #fff1e0 100%);
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(67, 43, 48, 0.06);
 }
 
-.skin-assessment-section .section-header {
+.skin-discovery-page .hero-copy {
+  align-self: center;
+  max-width: 560px;
+}
+
+.skin-discovery-page .eyebrow {
+  margin-bottom: 8px;
+  color: var(--skin-rose);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.skin-discovery-page .hero h1 {
+  margin: 0 0 14px;
+  color: var(--skin-ink);
+  font-family: Georgia, 'Cormorant Garamond', serif;
+  font-size: clamp(2.7rem, 4vw, 3.7rem);
+  font-weight: 500;
+  line-height: 0.98;
+}
+
+.skin-discovery-page .hero-copy > p:not(.eyebrow) {
+  max-width: 440px;
+  margin: 0;
+  color: var(--skin-muted);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.skin-hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.skin-discovery-page .btn {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  background: var(--skin-rose);
+  border: 0;
+  border-radius: 3px;
+  box-shadow: none;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 700;
+  padding: 11px 22px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.skin-discovery-page .btn:hover {
+  background: var(--skin-rose-dark);
+  transform: translateY(-1px);
+}
+
+.skin-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--skin-rose);
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.skin-text-link:hover {
+  color: var(--skin-rose-dark);
+}
+
+.skin-hero-image {
+  min-height: 290px;
+  overflow: hidden;
+  background: #f5e6d7;
+}
+
+.skin-hero-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 290px;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.skin-benefits,
+.skin-goals,
+.skin-promo,
+.skin-assessment-section,
+.skin-bestsellers {
+  width: min(1200px, calc(100% - 48px));
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.skin-benefits {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: -1px;
+  padding: 21px 24px;
+  border: 1px solid var(--skin-line);
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 7px 20px rgba(67, 43, 48, 0.05);
+}
+
+.skin-benefit {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.skin-benefit > span {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  place-items: center;
+  border: 1px solid #f1dfca;
+  border-radius: 50%;
+  color: var(--skin-rose);
+  font-size: 1.05rem;
+}
+
+.skin-benefit h3 {
+  margin: 0 0 3px;
+  color: var(--skin-ink);
+  font-family: Georgia, serif;
+  font-size: 1rem;
+}
+
+.skin-benefit p {
+  margin: 0;
+  color: var(--skin-muted);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.skin-goals,
+.skin-bestsellers {
+  margin-top: 48px;
+}
+
+.skin-section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.skin-section-heading h2,
+.skin-assessment-section .section-header h2,
+.skin-promo h2 {
+  margin: 0;
+  color: var(--skin-ink);
+  font-family: Georgia, 'Cormorant Garamond', serif;
+  font-size: clamp(1.9rem, 3.2vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.skin-goal-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.skin-goal-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--skin-ink);
   text-align: center;
-  margin-bottom: 30px;
+  text-decoration: none;
 }
 
-.skin-assessment-section .section-header h2 {
-  font-size: 2.2rem;
-  color: #000;
-  margin-bottom: 10px;
+.skin-goal-image {
+  display: block;
+  width: min(100%, 190px);
+  aspect-ratio: 1;
+  margin-bottom: 12px;
+  overflow: hidden;
+  border: 1px solid #eee1d4;
+  border-radius: 50%;
+  background: #fff3e5;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.skin-assessment-section .section-header p {
-  color: #666;
+.skin-goal-card:hover .skin-goal-image {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(67, 43, 48, 0.14);
+}
+
+.skin-goal-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.skin-goal-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.skin-goal-caption {
+  margin-top: 4px;
+  color: var(--skin-muted);
+  font-size: 0.88rem;
+}
+
+.skin-promo {
+  display: grid;
+  grid-template-columns: 0.78fr 1.22fr;
+  min-height: 260px;
+  margin-top: 48px;
+  overflow: hidden;
+  background: #fff3e5;
+}
+
+.skin-promo-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: clamp(24px, 4vw, 50px);
+  background: #f68b1e;
+  color: #fff;
+}
+
+.skin-promo-copy .eyebrow,
+.skin-promo-copy h2,
+.skin-promo-copy > p:not(.eyebrow) {
+  color: #fff;
+}
+
+.skin-promo h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.skin-promo-copy > p:not(.eyebrow) {
+  max-width: 440px;
+  margin: 12px 0 20px;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.skin-promo-copy .btn {
+  background: #fff;
+  color: var(--skin-rose-dark);
+}
+
+.skin-promo-copy .btn:hover {
+  background: #fff8ef;
+}
+
+.skin-promo > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #fff3e5;
+}
+
+.skin-discovery-page .skin-assessment-section {
+  margin-top: 52px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.skin-discovery-page .section-header {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 0 auto 26px;
+  text-align: center;
 }
 
-.assessment-grid {
+.skin-discovery-page .section-header .eyebrow {
+  margin-bottom: 7px;
+}
+
+.skin-discovery-page .section-header p:last-child {
+  margin: 10px 0 0;
+  color: var(--skin-muted);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.skin-discovery-page .assessment-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
-.assessment-card {
+.skin-discovery-page .assessment-card {
+  padding: clamp(22px, 3vw, 36px);
+  border: 1px solid var(--skin-line);
+  border-radius: 5px;
   background: #fff;
-  border: 1px solid #e2e2e2;
-  border-radius: 4px;
-  padding: 30px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 8px 24px rgba(67, 43, 48, 0.055);
 }
 
-.assessment-card h3 {
-  color: #000;
-  font-size: 1.5rem;
-  margin-bottom: 25px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 15px;
+.skin-discovery-page .assessment-card h3 {
+  margin: 0 0 22px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--skin-line);
+  color: var(--skin-ink);
+  font-family: Georgia, serif;
+  font-size: 1.45rem;
 }
 
-/* Steps feature */
-.feature {
+.skin-discovery-page .feature {
   display: flex;
-  gap: 15px;
-  margin-bottom: 25px;
+  gap: 14px;
+  margin-bottom: 22px;
 }
 
-.feature span {
-  min-width: 40px;
+.skin-discovery-page .feature:last-child {
+  margin-bottom: 0;
+}
+
+.skin-discovery-page .feature > span {
+  display: flex;
+  width: 40px;
   height: 40px;
-  border-radius: 50%;
-  background: rgba(246, 139, 30, 0.1);
-  color: #f68b1e;
-  font-weight: 700;
-  font-size: 1.2rem;
-  display: flex;
+  flex: 0 0 40px;
   align-items: center;
   justify-content: center;
+  border: 1px solid #f1dfca;
+  border-radius: 50%;
+  background: #fff8ef;
+  color: var(--skin-rose);
+  font-size: 1.05rem;
+  font-weight: 700;
 }
 
-.feature div {
-  flex: 1;
-}
-
-.feature h4 {
-  margin: 0 0 5px 0;
-  font-size: 1.1rem;
-  color: #333;
-}
-
-.feature p {
-  margin: 0;
-  color: #666;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-/* Form Styles */
-.form-card label {
-  display: block;
-  margin: 20px 0 8px;
-  color: #333;
-  font-weight: 600;
-  font-size: 0.95rem;
-}
-
-.form-card select {
-  width: 100%;
-  padding: 12px 15px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  background: #fff;
-  color: #333;
+.skin-discovery-page .feature h4 {
+  margin: 1px 0 5px;
+  color: var(--skin-ink);
   font-size: 1rem;
-  outline: none;
-  font-family: inherit;
-  transition: border-color 0.2s;
 }
 
-.form-card select:focus {
-  border-color: #f68b1e;
+.skin-discovery-page .feature p {
+  margin: 0;
+  color: var(--skin-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
 }
 
-.form-card .btn {
+.skin-discovery-page .form-card label {
+  display: block;
+  margin: 18px 0 7px;
+  color: var(--skin-ink);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.skin-discovery-page .form-card select {
   width: 100%;
-  margin-top: 30px;
-  font-size: 1.1rem;
+  min-height: 50px;
+  padding: 11px 13px;
+  border: 1px solid #dfd4c8;
+  border-radius: 3px;
+  outline: none;
+  background: #fff;
+  color: var(--skin-ink);
+  font: inherit;
+  font-size: 0.95rem;
 }
 
-@media (max-width: 800px) {
-  .assessment-grid {
+.skin-discovery-page .form-card select:focus {
+  border-color: var(--skin-rose);
+  box-shadow: 0 0 0 3px rgba(246, 139, 30, 0.14);
+}
+
+.skin-discovery-page .form-card .btn {
+  width: 100%;
+  margin-top: 24px;
+  font-size: 1rem;
+}
+
+.skin-product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.skin-product-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: 12px;
+  border: 1px solid var(--skin-line);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--skin-ink);
+  text-decoration: none;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.skin-product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 9px 22px rgba(67, 43, 48, 0.1);
+}
+
+.skin-product-card img {
+  width: 100%;
+  height: 175px;
+  margin-bottom: 10px;
+  object-fit: contain;
+  background: #faf6f4;
+}
+
+.skin-product-card span {
+  color: var(--skin-rose);
+  font-size: 0.82rem;
+}
+
+.skin-product-card strong {
+  margin-top: 3px;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.skin-discovery-page .site-footer {
+  margin-top: 55px;
+  border: 0;
+  background: #302a25;
+  color: #fff;
+}
+
+.skin-discovery-page .footer-logo h3,
+.skin-discovery-page .footer-socials a {
+  color: #fff;
+}
+
+.skin-discovery-page .footer-socials a:hover {
+  color: #ffc27d;
+}
+
+.skin-discovery-page .footer-text {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media (max-width: 900px) {
+  .skin-discovery-page header {
+    gap: 14px;
+  }
+
+  .skin-discovery-page .hero {
+    gap: 24px;
+    min-height: 320px;
+    padding: 32px;
+  }
+
+  .skin-benefits {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skin-goal-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .skin-goal-image {
+    width: min(100%, 150px);
+  }
+}
+
+@media (max-width: 700px) {
+  .skin-discovery-page .hero {
     grid-template-columns: 1fr;
+    gap: 22px;
+    width: calc(100% - 28px);
+    margin-top: 14px;
+    padding: 25px 22px;
+  }
+
+  .skin-discovery-page .hero h1 {
+    font-size: clamp(2.2rem, 9.5vw, 3.2rem);
+  }
+
+  .skin-discovery-page .site-title-h1 {
+    font-size: 0.78rem;
+  }
+
+  .skin-hero-image,
+  .skin-hero-image img {
+    min-height: 220px;
+    max-height: 300px;
+  }
+
+  .skin-benefits,
+  .skin-goals,
+  .skin-promo,
+  .skin-assessment-section,
+  .skin-bestsellers {
+    width: calc(100% - 28px);
+  }
+
+  .skin-benefits {
+    gap: 16px 10px;
+    padding: 16px 12px;
+  }
+
+  .skin-benefit {
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .skin-benefit > span {
+    width: 34px;
+    height: 34px;
+    flex-basis: 34px;
+    font-size: 0.9rem;
+  }
+
+  .skin-benefit h3 {
+    font-size: 0.92rem;
+  }
+
+  .skin-benefit p {
+    font-size: 0.78rem;
+  }
+
+  .skin-goals,
+  .skin-bestsellers {
+    margin-top: 38px;
+  }
+
+  .skin-section-heading {
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+
+  .skin-section-heading .skin-text-link {
+    padding-top: 17px;
+    font-size: 0.82rem;
+    white-space: nowrap;
+  }
+
+  .skin-goal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 12px;
+  }
+
+  .skin-goal-image {
+    width: min(100%, 155px);
+    margin-bottom: 9px;
+  }
+
+  .skin-goal-title {
+    font-size: 0.96rem;
+  }
+
+  .skin-goal-caption {
+    font-size: 0.82rem;
+  }
+
+  .skin-promo {
+    grid-template-columns: 1fr;
+    margin-top: 38px;
+  }
+
+  .skin-promo > img {
+    min-height: 0;
+    max-height: none;
+  }
+
+  .skin-discovery-page .skin-assessment-section {
+    margin-top: 40px;
+  }
+
+  .skin-discovery-page .section-header {
+    margin-bottom: 20px;
+  }
+
+  .skin-discovery-page .assessment-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .skin-product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 11px;
+  }
+
+  .skin-product-card {
+    padding: 9px;
+  }
+
+  .skin-product-card img {
+    height: 145px;
+  }
+}
+
+@media (max-width: 380px) {
+  .skin-section-heading {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .skin-section-heading .skin-text-link {
+    padding-top: 0;
   }
 }

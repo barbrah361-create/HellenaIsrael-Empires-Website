@@ -2774,6 +2774,28 @@ function getCategory(name) {
   return "women"; // Default for a beauty shop
 }
 
+function getProductType(name) {
+  const n = name.toLowerCase().replace(/[’']/g, "'");
+  if (n.trim() === "sandal wood & vetiver") return "body-care";
+  if (n.trim() === "amor golden elixir") return "makeup";
+  if (/^0pp0site attract$/.test(n.trim())) return "makeup";
+  if (/\b(cyclax nature\s+pure|strech mark oil|palmer cocoa butter formula|cocoa butter formula firming butter|medix 5\.5|deep moisture|tissue oils|tattoo care)\b/.test(n)) return "body-care";
+  if (/\b(lip care balm|lip butter balm|gloss bomb|lifter gloss)\b/.test(n)) return "makeup";
+  if (/\b(sheet mask|face mask|facial mask|peel off mask|masque)\b/.test(n)) return "skincare";
+  const isSupplement = /\b(gummies|gummy|supplement|chewable|tablets?|glucosamine|cod liver oil|omega\s*3|collagen peptides|collagen powder|iron \d+mg|multivitamin|(?:im|emm)une support|one a day|400\s*iu|vitamin c\s*&\s*zinc|rasp\s*berry\s+flavou?r\s+vitamin c)\b/.test(n)
+    || (/\bcapsules?\b/.test(n) && !/\bcapsule cream\b/.test(n));
+  if (isSupplement) return "supplements";
+  if (/\b(mouth\s*wash|mouthwash|dental|breath spray|toothpaste|oral care)\b/.test(n)) return "oral-care";
+  if (/\b(air freshener|air freshner|disinfectant)\b/.test(n)) return "home-care";
+  if (/\b(perfume|perfumed|parfum|fragrance|cologne|eau de|toilette|body spray|body splash|body mist|eternal romance|oh yes! pour femme)\b/.test(n)) return "fragrance";
+  if (/\b(deodorant|antiperspirant|anti-perspirant|anti[\s-]?transpirant|roll[\s-]?on|deo\b)\b/.test(n)) return "body-care";
+  if (/\b(lipstick|lip gloss|lip liner|lip balm|lip oil|lip therapy|lip splash|butter gloss|mascara|eyeliner|eyeshadow|eye shadow|foundation|concealer|blush|blash|bronzer|highlighter|makeup|face powder|setting powder|loose powder|nail polish|palettes?|pallette|primer|brow|lash|matte cover|blinding glow|beauty mate finish|nude ego|opposite attract|chocolate mint|x sian)\b/.test(n)) return "makeup";
+  if (/\b(body|deodorant|shower|duschgel|bath|hand cream|handcreme|foot|soap|after sun|aftersun|feminine|femfresh|stretch mark|strech mark|body ?lotion|body oil|body butter|body massage cream|firming butter|tissue oil|sanctuary spa|dove summer care|rasierschaum|shaving foam)\b/.test(n)) return "body-care";
+  if (/\b(sandal\s*wood|vetiver)\b/.test(n)) return "fragrance";
+  if (/\b(face|facial|skin|serum|cleanser|cleansing|toner|spf|sunscreen|sun protection|sun protect|nivea sun|eye cream|eye gel|patch|acne|blemish|micellar|retinol|retinal|scrub|exfoliat|mask|moistur\w*|cream|lotion|gel|brightening|hyaluronic|niacinamide|centella|skincare|anti.?wrinkle|anti.?aging|collagen|aloe vera|essential oil|glow|recovery ?oil|salicylic|age perfect|wrinkle expert|priming moistur|skinacademy|charcoal|vitamin c|hot cloth|rice ferment|clinical formulations|someby ?mi|galactomy\w*|purito|seoul 1988\w*|aquaphor|medicube|heartleaf|tagespflege|bright reveal|olay)\b/.test(n)) return "skincare";
+  return "skincare";
+}
+
 // Modal Elements
 const productModal = document.getElementById("product-modal");
 const closeModalBtn = document.querySelector(".close-modal");
@@ -2820,6 +2842,7 @@ function renderProductCard(product, container) {
   productCard.classList.add("product-card");
   productCard.setAttribute("data-id", product.id);
   productCard.setAttribute("data-category", getCategory(product.name));
+  productCard.setAttribute("data-product-type", getProductType(product.name));
 
   const imageWrapper = document.createElement("div");
   imageWrapper.classList.add("product-image-wrapper", "clickable-card");
@@ -2972,16 +2995,40 @@ function injectProductSchema(schemaProducts) {
 
 // Category Filter Logic
 const catButtons = document.querySelectorAll(".cat-btn");
-let currentCategory = "all";
+const categoryAliases = { "skin-care": "skincare", "bodycare": "body-care" };
+const requestedCategory = new URLSearchParams(window.location.search).get("category") || "all";
+const selectedCategory = categoryAliases[requestedCategory] || requestedCategory;
+let currentCategory = Array.from(catButtons).some(btn => btn.dataset.cat === selectedCategory)
+  ? selectedCategory
+  : "all";
 let currentSearch = "";
+
+catButtons.forEach(btn => {
+  btn.classList.toggle("active", btn.dataset.cat === currentCategory);
+});
 
 function applyFilters() {
   currentPage = 1;
+  if (productsGrid) productsGrid.dataset.category = currentCategory;
   const filtered = products.filter(product => {
     const matchesSearch = product.name.toLowerCase().includes(currentSearch);
-    const matchesCategory = currentCategory === "all" || getCategory(product.name) === currentCategory;
+    const matchesCategory = currentCategory === "all"
+      || (["women", "men", "kids"].includes(currentCategory)
+        ? getCategory(product.name) === currentCategory
+        : getProductType(product.name) === currentCategory);
     return matchesSearch && matchesCategory;
   });
+  if (currentCategory === "fragrance") {
+    const priorityNames = [
+      "Crez Body Perfume Assorted",
+      "Riggs London Perfumed Deodorant Body Spray Assorted"
+    ];
+    const priority = name => {
+      const index = priorityNames.indexOf(name);
+      return index === -1 ? priorityNames.length : index;
+    };
+    filtered.sort((a, b) => priority(a.name) - priority(b.name));
+  }
   displayProducts(filtered);
 }
 
@@ -3083,5 +3130,5 @@ function fixProductDescriptions() {
   });
 }
 fixProductDescriptions();
-displayProducts();
+applyFilters();
 displayFeaturedProducts();

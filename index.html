@@ -3,7 +3,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beauty Cosmetics in Kenya | Hellena Israel Empires</title>
   <link rel="icon" type="image/jpeg" href="image/my logo - Copy.jpeg">
-  <link rel="stylesheet" href="Css/styl.css?v=5">
+  <link rel="stylesheet" href="Css/styl.css?v=12">
+  <link rel="stylesheet" href="Css/home.css?v=5">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -59,9 +60,7 @@
 }
   </script>
   </head>
-<body>
-
-
+<body class="home-page">
 
 <header>
   <a href="index.html" class="logo-container">
@@ -104,12 +103,16 @@
   </script>
 </header>
 
+<main>
 <section class="hero">
   <div class="hero-copy">
     <p class="eyebrow">Eldoret's Premium Beauty Destination</p>
-    <h1>Discover your glow with our curated collection of authentic cosmetics.</h1>
+    <h1>Beauty that feels like <span>you.</span></h1>
     <p>Explore premium skincare, fragrances, and beauty essentials designed for everyday elegance and radiant confidence.</p>
-    <a class="btn hero-btn" href="products.html">Explore Products</a>
+    <div class="hero-actions">
+      <a class="btn hero-btn" href="products.html">Shop Beauty</a>
+      <a class="text-link" href="skintype.html">Find your routine <i class="fas fa-arrow-right"></i></a>
+    </div>
   </div>
 </section>
 
@@ -123,19 +126,80 @@
   </div>
 </section>
 
-<section class="promo-section">
-  <div class="creative-promo-header">
-    <div class="promo-badge">HOT THIS WEEK</div>
-    <h2>Trending Beauty Secrets</h2>
-    <p>Discover the most loved, premium cosmetics flying off our shelves. Hand-picked for your perfect glow.</p>
+<section class="trust-strip" aria-label="Why shop with us">
+  <div class="trust-item">
+    <div><h3>Authentic beauty</h3><p>Carefully sourced products</p></div>
   </div>
-  <div id="featured-products-grid" class="products-grid"></div>
+  <div class="trust-item">
+    <div><h3>Chosen with care</h3><p>For your everyday routine</p></div>
+  </div>
+  <div class="trust-item">
+    <div><h3>Visit us in Eldoret</h3><p>Zion Mall, Eldoret Town</p></div>
+  </div>
+  <div class="trust-item">
+    <span class="trust-icon"><i class="fab fa-whatsapp"></i></span>
+    <div><h3>Here to help</h3><p>Chat with our team</p></div>
+  </div>
+</section>
+
+<section class="category-section">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Explore the collection</p>
+      <h2>Find your feel-good essentials</h2>
+    </div>
+    <a class="text-link" href="products.html">View all products <i class="fas fa-arrow-right"></i></a>
+  </div>
+  <div class="category-grid">
+    <a class="category-card category-skin" href="products.html?category=skincare">
+      <img class="category-product-image" src="image/016.jpeg" alt="Face Facts skincare serum" loading="lazy">
+      <span class="category-name">Skincare</span>
+      <span class="category-caption">Nourish your glow</span>
+      <span class="category-arrow"><i class="fas fa-arrow-right"></i></span>
+    </a>
+    <a class="category-card category-makeup" href="products.html?category=makeup">
+      <img class="category-product-image" src="image/A14.jpeg" alt="Lip gloss and makeup products" loading="lazy">
+      <span class="category-name">Makeup</span>
+      <span class="category-caption">Express your style</span>
+      <span class="category-arrow"><i class="fas fa-arrow-right"></i></span>
+    </a>
+    <a class="category-card category-fragrance" href="products.html?category=fragrance">
+      <img class="category-product-image" src="image/A10.jpeg" alt="Crez body perfume collection" loading="lazy">
+      <span class="category-name">Fragrance</span>
+      <span class="category-caption">Leave a lovely impression</span>
+      <span class="category-arrow"><i class="fas fa-arrow-right"></i></span>
+    </a>
+    <a class="category-card category-body" href="products.html?category=body-care">
+      <img class="category-product-image" src="image/A24.jpeg" alt="Vaseline Cera-Glow body lotion" loading="lazy">
+      <span class="category-name">Body care</span>
+      <span class="category-caption">A little everyday luxury</span>
+      <span class="category-arrow"><i class="fas fa-arrow-right"></i></span>
+    </a>
+    <a class="category-card category-discovery" href="skintype.html">
+      <img class="category-product-image" src="image/018.jpeg" alt="Face Facts salicylic acid skincare serum" loading="lazy">
+      <span class="category-name">Find your routine</span>
+      <span class="category-caption">Discover what suits you</span>
+      <span class="category-arrow"><i class="fas fa-arrow-right"></i></span>
+    </a>
+  </div>
 </section>
 
 <section id="about">
-  <h2>About Hellenaisrael Authentic Cosmetics Empire</h2>
-  <p>We import High quality Skincare and Cosmetics from Thailand, Germany, USA, UK, Korea &amp; South Africa.</p>
-  <p>Our mission is to bring beauty and confidence to everyone with authentic, premium products.</p>
+  <div class="about-story">
+    <div class="about-copy">
+      <p class="eyebrow">A little about us</p>
+      <h2>Beauty should feel honest, joyful, and completely your own.</h2>
+      <p>At Hellena Israel Empires, we bring together skincare and cosmetics from Thailand, Germany, the USA, the UK, Korea, and South Africa.</p>
+      <p>Our mission is to help everyone discover authentic beauty essentials that make their daily routine feel special.</p>
+      <a class="text-link" href="products.html">Explore our collection <i class="fas fa-arrow-right"></i></a>
+      <div class="about-stats">
+        <div><strong>6+</strong><span>beauty destinations</span></div>
+        <div><strong>1</strong><span>friendly local team</span></div>
+        <div><strong>∞</strong><span>ways to feel radiant</span></div>
+      </div>
+    </div>
+    <img class="about-image" src="image/face beauty.jpg" alt="A close-up portrait celebrating natural beauty" loading="lazy">
+  </div>
   <div class="about-info">
     <div class="location-details">
       <h3>Visit Our Store</h3>
@@ -146,6 +210,27 @@
       <iframe src="https://maps.google.com/maps?q=Zion%20Mall,%20Eldoret&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
+</section>
+
+<section class="promo-section">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Customer favourites</p>
+      <h2>Beauty picks to love</h2>
+    </div>
+    <a class="text-link" href="products.html">Shop all products <i class="fas fa-arrow-right"></i></a>
+  </div>
+  <div id="featured-products-grid" class="products-grid"></div>
+</section>
+
+<section class="beauty-note">
+  <span class="beauty-note-mark"><i class="fas fa-quote-left"></i></span>
+  <div>
+    <p class="eyebrow">Your beauty, your way</p>
+    <h2>A good routine is one that makes you feel good.</h2>
+    <p>Explore a little, find what works for you, and let your confidence shine.</p>
+  </div>
+  <a class="btn" href="skintype.html">Discover your skin type</a>
 </section>
 
 <section class="discovery-section">
@@ -172,48 +257,48 @@
       <div class="country-card">
         <img src="image/thailand flag.jpg" alt="Thailand cosmetics brands" loading="lazy">
         <h3>Thailand</h3>
-        <p>Our Thai cosmetics are sourced from trusted local brands with natural ingredients, ensuring authentic, safe, and effective skincare and makeup.</p>
+        <p>Explore trusted Thai skincare and makeup with natural ingredients.</p>
       </div>
     </div>
     <div id="germany" class="content">
       <div class="country-card">
         <img src="image/germany flag.jpg" alt="Germany skincare brands" loading="lazy">
         <h3>Germany</h3>
-        <p>German beauty products are science-backed and certified. We import only genuine brands that combine innovation and high-quality ingredients.</p>
+        <p>Discover authentic German beauty with science-backed formulas.</p>
       </div>
     </div>
     <div id="usa" class="content">
       <div class="country-card">
         <img src="image/usa flag.jpg" alt="USA beauty cosmetics" loading="lazy">
         <h3>USA</h3>
-        <p>Our American products come from trusted brands following strict FDA guidelines, providing cutting-edge skincare and vibrant makeup results.</p>
+        <p>Shop trusted American skincare and makeup from quality brands.</p>
       </div>
     </div>
     <div id="France" class="content">
       <div class="country-card">
         <img src="image/france flag.webp" alt="French luxury cosmetics" loading="lazy">
         <h3>France</h3>
-        <p>French beauty products are renowned for their elegance and effectiveness. We import only the finest brands that combine tradition and innovation.</p>
+        <p>Find French beauty blending timeless traditions with modern care.</p>
       </div>
     </div>
     <div id="uk" class="content">
       <div class="country-card">
         <img src="image/uk flag.webp" alt="UK cosmetics and skincare" loading="lazy">
         <h3>United Kingdom</h3>
-        <p>UK cosmetics are luxurious, cruelty-free, and crafted with advanced standards, ensuring flawless results and premium care.</p>
+        <p>Explore premium UK cosmetics, including cruelty-free beauty choices.</p>
       </div>
     </div>
     <div id="korea" class="content">
       <div class="country-card">
         <img src="image/korea flag.webp" alt="Korean skincare products" loading="lazy">
         <h3>South Korea</h3>
-        <p>Korean products are innovative and effective, using natural extracts and advanced formulas to give radiant skin and high-quality cosmetic experiences.</p>
+        <p>Discover Korean skincare with innovative formulas and gentle ingredients.</p>
       </div>
     </div>
   </div>
 </section>
 
-
+</main>
 
 <!-- Product Details Modal -->
 <div id="product-modal" class="modal">
@@ -241,7 +326,7 @@
     <div class="footer-content">
       <div class="footer-logo">
         <img src="image/my logo - Copy.jpeg" alt="Hellena Israel Empires Logo" class="logo-footer" loading="lazy">
-        <h3>Hellena Israel Empires</h3>
+        <h3>Hellenaisrael Authentic Cosmetics Empire</h3>
       </div>
 
       <div class="footer-socials">
@@ -249,6 +334,13 @@
         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
         <a href="https://wa.me/254717263203" target="_blank"><i class="fab fa-whatsapp"></i></a>
       </div>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="products.html">Shop products</a>
+        <a href="skintype.html">Skin discovery</a>
+        <a href="articles.html">Beauty articles</a>
+        <a href="#about">Visit our store</a>
+      </nav>
 
       <p class="footer-text">© 2026 Hellenaisrael Authentic Cosmetics Empire. All rights reserved.</p>
     </div>

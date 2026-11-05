@@ -21,10 +21,18 @@ document.addEventListener("DOMContentLoaded", () => {
     let total = 0;
 
     if (items.length === 0) {
-      cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
+      cartItemsContainer.classList.add("is-empty");
+      cartItemsContainer.innerHTML = `
+        <div class="empty-cart-state">
+          <i class="fas fa-shopping-basket" aria-hidden="true"></i>
+          <strong>Your cart is empty</strong>
+          <span>Browse our products and add your favourites to get started.</span>
+        </div>
+      `;
       totalAmountEl.textContent = "0";
       return;
     }
+    cartItemsContainer.classList.remove("is-empty");
 
     items.forEach(item => {
       const itemTotal = item.price * item.qty;
@@ -33,21 +41,53 @@ document.addEventListener("DOMContentLoaded", () => {
       const div = document.createElement("div");
       div.classList.add("cart-item");
 
-      div.innerHTML = `
-        <img src="${item.image}" alt="${item.name}">
-        <div class="item-details">
-          <h4>${item.name}</h4>
-          <p>Ksh ${item.price} × ${item.qty}</p>
-          <p><strong>Total: Ksh ${itemTotal}</strong></p>
+      const image = document.createElement("img");
+      image.src = item.image;
+      image.alt = item.name;
 
-          <div class="qty-controls">
-            <button class="decrease" data-id="${item.id}">-</button>
-            <span>${item.qty}</span>
-            <button class="increase" data-id="${item.id}">+</button>
-            <button class="remove" data-id="${item.id}">Remove</button>
-          </div>
-        </div>
-      `;
+      const details = document.createElement("div");
+      details.className = "item-details";
+
+      const name = document.createElement("h4");
+      name.textContent = item.name;
+
+      const unitPrice = document.createElement("p");
+      unitPrice.textContent = `Ksh ${item.price} × ${item.qty}`;
+
+      const subtotal = document.createElement("p");
+      subtotal.className = "cart-item-subtotal";
+      subtotal.textContent = `Subtotal: Ksh ${itemTotal}`;
+
+      const controls = document.createElement("div");
+      controls.className = "qty-controls";
+
+      const decrease = document.createElement("button");
+      decrease.className = "decrease";
+      decrease.dataset.id = item.id;
+      decrease.type = "button";
+      decrease.setAttribute("aria-label", `Decrease quantity of ${item.name}`);
+      decrease.textContent = "-";
+
+      const quantity = document.createElement("span");
+      quantity.className = "cart-qty";
+      quantity.textContent = item.qty;
+
+      const increase = document.createElement("button");
+      increase.className = "increase";
+      increase.dataset.id = item.id;
+      increase.type = "button";
+      increase.setAttribute("aria-label", `Increase quantity of ${item.name}`);
+      increase.textContent = "+";
+
+      const remove = document.createElement("button");
+      remove.className = "remove";
+      remove.dataset.id = item.id;
+      remove.type = "button";
+      remove.textContent = "Remove";
+
+      controls.append(decrease, quantity, increase, remove);
+      details.append(name, unitPrice, subtotal, controls);
+      div.append(image, details);
 
       cartItemsContainer.appendChild(div);
     });

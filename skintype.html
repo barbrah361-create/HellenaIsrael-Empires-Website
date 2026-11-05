@@ -11,8 +11,8 @@
     
     <link rel="canonical" href="https://hellenacosmetics.co.ke/skintype.html">
     <link rel="icon" type="image/jpeg" href="image/my logo - Copy.jpeg">
-    <link rel="stylesheet" href="Css/styl.css?v=5">
-    <link rel="stylesheet" href="Css/skintype.css">
+    <link rel="stylesheet" href="Css/styl.css?v=12">
+    <link rel="stylesheet" href="Css/skintype.css?v=3">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
   
@@ -43,7 +43,7 @@
 }
   </script>
   </head>
-<body>
+<body class="skin-discovery-page">
 
   <header>
     <a href="index.html" class="logo-container">
@@ -89,17 +89,82 @@
   <main>
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">Skin Discovery</p>
-        <h1>Find your true skin type and the perfect routine.</h1>
-        <p>Answer two quick questions and send your profile to WhatsApp for tailored product guidance and beauty advice.</p>
-        <a class="btn hero-btn" href="products.html">Explore Recommended Products</a>
+        <p class="eyebrow">Your skin, understood</p>
+        <h1>Radiant skin.<br>Real confidence.</h1>
+        <p>Get to know your skin and take the guesswork out of choosing your next skincare routine.</p>
+        <div class="skin-hero-actions">
+          <a class="btn hero-btn" href="#skin-assessment">Discover my skin</a>
+          <a class="skin-text-link" href="products.html">Shop skincare <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="skin-hero-image">
+        <img src="image/164.jpeg" alt="Face Facts Ceramide Hydrating Gentle Cleanser" fetchpriority="high">
       </div>
     </section>
 
-    <section class="skin-assessment-section">
+    <section class="skin-benefits" aria-label="Our skincare promise">
+      <div class="skin-benefit">
+        <div><h3>Thoughtful care</h3><p>Products chosen with care</p></div>
+      </div>
+      <div class="skin-benefit">
+        <div><h3>Expert guidance</h3><p>Advice for your skin goals</p></div>
+      </div>
+      <div class="skin-benefit">
+        <div><h3>Made for you</h3><p>Your skin is one of a kind</p></div>
+      </div>
+      <div class="skin-benefit">
+        <span><i class="fab fa-whatsapp"></i></span>
+        <div><h3>Personal support</h3><p>Chat with our beauty team</p></div>
+      </div>
+    </section>
+
+    <section class="skin-goals">
+      <div class="skin-section-heading">
+        <div>
+          <p class="eyebrow">A little care goes a long way</p>
+          <h2>Explore by skin goal</h2>
+        </div>
+        <a class="skin-text-link" href="products.html">View skincare <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="skin-goal-grid">
+        <a class="skin-goal-card" href="#skin-assessment">
+          <span class="skin-goal-image"><img src="image/164.jpeg" alt="Face Facts hydrating cleanser" loading="lazy"></span>
+          <span class="skin-goal-title">Gentle cleansing</span>
+          <span class="skin-goal-caption">Start fresh, stay balanced</span>
+        </a>
+        <a class="skin-goal-card" href="#skin-assessment">
+          <span class="skin-goal-image"><img src="image/177.jpeg" alt="Salicylic acid foaming clay cleanser" loading="lazy"></span>
+          <span class="skin-goal-title">Blemish care</span>
+          <span class="skin-goal-caption">Care for breakout-prone skin</span>
+        </a>
+        <a class="skin-goal-card" href="#skin-assessment">
+          <span class="skin-goal-image"><img src="image/91.jpeg" alt="Lacura vitamin C serum" loading="lazy"></span>
+          <span class="skin-goal-title">Brightening</span>
+          <span class="skin-goal-caption">Bring back your glow</span>
+        </a>
+        <a class="skin-goal-card" href="#skin-assessment">
+          <span class="skin-goal-image"><img src="image/016.jpeg" alt="Face Facts illuminating gel serum" loading="lazy"></span>
+          <span class="skin-goal-title">Daily hydration</span>
+          <span class="skin-goal-caption">Give thirsty skin a boost</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="skin-promo">
+      <div class="skin-promo-copy">
+        <p class="eyebrow">Your routine, your way</p>
+        <h2>Good skincare starts with getting to know your skin.</h2>
+        <p>Tell us what your skin is like and what you would like help with. Our team is here to guide you toward products that suit your needs.</p>
+        <a class="btn" href="#skin-assessment">Start your discovery</a>
+      </div>
+      <img src="image/glow.jpg" alt="People with different skin types enjoying their skincare routine" loading="lazy">
+    </section>
+
+    <section class="skin-assessment-section" id="skin-assessment">
       <div class="section-header">
-        <h2>Start your skin discovery</h2>
-        <p>Choose your skin type and main concern to receive a custom recommendation from our beauty experts.</p>
+        <p class="eyebrow">A few quick questions</p>
+        <h2>Let’s find your skin routine</h2>
+        <p>Share your skin type and main concern, then chat with our beauty team for personal product guidance.</p>
       </div>
 
       <div class="assessment-grid">
@@ -149,9 +214,41 @@
               <option value="Uneven Tone">Uneven Tone &amp; Texture</option>
             </select>
 
-            <button id="whatsappSubmit" class="btn">Send to WhatsApp</button>
+            <button id="whatsappSubmit" class="btn" type="button">Send to WhatsApp</button>
           </form>
         </article>
+      </div>
+    </section>
+
+    <section class="skin-bestsellers">
+      <div class="skin-section-heading">
+        <div>
+          <p class="eyebrow">A little inspiration</p>
+          <h2>Skincare essentials to explore</h2>
+        </div>
+        <a class="skin-text-link" href="products.html">Shop all products <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="skin-product-grid">
+        <a class="skin-product-card" href="products.html">
+          <img src="image/164.jpeg" alt="Face Facts Ceramide Hydrating Gentle Cleanser" loading="lazy">
+          <span>Face Facts</span>
+          <strong>Ceramide Hydrating Gentle Cleanser</strong>
+        </a>
+        <a class="skin-product-card" href="products.html">
+          <img src="image/91.jpeg" alt="Lacura Vitamin C Serum" loading="lazy">
+          <span>Lacura</span>
+          <strong>Vitamin C Serum</strong>
+        </a>
+        <a class="skin-product-card" href="products.html">
+          <img src="image/016.jpeg" alt="Face Facts illuminating gel serum" loading="lazy">
+          <span>Face Facts</span>
+          <strong>Illuminating Gel Serum</strong>
+        </a>
+        <a class="skin-product-card" href="products.html">
+          <img src="image/177.jpeg" alt="Creightons Salicylic Acid Foaming Clay Cleanser" loading="lazy">
+          <span>Creightons</span>
+          <strong>Salicylic Acid Foaming Clay Cleanser</strong>
+        </a>
       </div>
     </section>
   </main>

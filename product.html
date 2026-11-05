@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Details | Hellena Israel Empires</title>
   <link rel="icon" type="image/jpeg" href="image/my logo - Copy.jpeg">
-  <link rel="stylesheet" href="Css/styl.css?v=5">
+  <link rel="stylesheet" href="Css/styl.css?v=12">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -164,8 +164,9 @@
       border: 1px solid #efeae4;
     }
   </style>
+  <link rel="stylesheet" href="Css/product-detail.css?v=1">
 </head>
-<body>
+<body class="product-detail-page">
 
 <header>
   <a href="index.html" class="logo-container">
@@ -284,6 +285,11 @@
                 <button class="add-cart-btn ${qty > 0 ? "plus-btn" : ""}" onclick='increaseSingleQty(${product.id}, ${JSON.stringify(product.name).replace(/'/g, "&#39;")}, ${product.price}, "${product.image}")'>
                   ${qty === 0 ? "Add to Cart" : "+"}
                 </button>
+              </div>
+              <div class="product-perks" aria-label="Shopping benefits">
+                <div><i class="fas fa-check-circle"></i><span>Authentic products</span></div>
+                <div><i class="fas fa-truck"></i><span>Delivery across Kenya</span></div>
+                <div><i class="fab fa-whatsapp"></i><span>Friendly product support</span></div>
               </div>
             </div>
           </div>

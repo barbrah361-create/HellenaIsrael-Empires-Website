@@ -6,12 +6,44 @@
 }
 
 body {
+  isolation: isolate;
   font-family: 'Montserrat', 'Roboto', sans-serif;
   background: linear-gradient(135deg, #fdfbfb 0%, #f7ecec 100%);
   color: #4a3f35;
   line-height: 1.6;
   overflow-x: hidden;
   width: 100%;
+}
+
+body::before,
+body::after {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  width: clamp(40px, 8vw, 118px);
+  background:
+    radial-gradient(ellipse at 0 16%, rgba(233, 190, 174, 0.58) 0 11%, transparent 60%),
+    radial-gradient(circle at 0 28%, transparent 0 22px, rgba(185, 145, 105, 0.25) 23px 24px, transparent 25px 36px, rgba(185, 145, 105, 0.14) 37px 38px, transparent 39px),
+    radial-gradient(ellipse at 0 56%, rgba(255, 231, 211, 0.9) 0 13%, transparent 62%),
+    radial-gradient(circle at 48% 72%, rgba(185, 145, 105, 0.35) 0 2px, transparent 3px),
+    radial-gradient(ellipse at 0 88%, rgba(227, 194, 169, 0.5) 0 10%, transparent 58%);
+  content: "";
+  opacity: 0.72;
+  pointer-events: none;
+}
+
+body::before {
+  left: 0;
+  -webkit-mask-image: linear-gradient(to right, #000 0%, #000 55%, transparent 100%);
+  mask-image: linear-gradient(to right, #000 0%, #000 55%, transparent 100%);
+}
+
+body::after {
+  right: 0;
+  transform: scaleX(-1);
+  -webkit-mask-image: linear-gradient(to left, #000 0%, #000 55%, transparent 100%);
+  mask-image: linear-gradient(to left, #000 0%, #000 55%, transparent 100%);
 }
 
 html {

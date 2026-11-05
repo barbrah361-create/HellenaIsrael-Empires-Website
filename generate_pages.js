@@ -26,6 +26,12 @@ try {
   // Require the temporary module to get the fully processed products array
   const products = require('./temp_products');
   const template = fs.readFileSync('product.ejs', 'utf-8');
+  const selectedIds = process.env.PRODUCT_IDS
+    ? new Set(process.env.PRODUCT_IDS.split(',').map(id => Number(id.trim())))
+    : null;
+  const productsToGenerate = selectedIds
+    ? products.filter(product => selectedIds.has(product.id))
+    : products;
 
   let generatedCount = 0;
   
@@ -33,7 +39,7 @@ try {
     // Generate them in the root directory for SEO purposes as requested
   }
 
-  products.forEach(product => {
+  productsToGenerate.forEach(product => {
     // Ensure product data is clean before rendering
     if (!product.description) {
       product.description = '<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>';

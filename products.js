@@ -386,7 +386,7 @@ const products = [
   {
     id: 39,
     name: "BULL DOG skin Care For Men Moisturiser",
-    price: 200,
+    price: 2000,
     image: "image/178.jpeg",
     description: `<p>Enhance your beauty routine with this premium cosmetic essential, carefully selected for its high-quality ingredients and outstanding results.</p><br><p><strong>Primary Uses:</strong> Incorporate into your daily regimen for enhanced beauty, care, and personal confidence.</p>`
   },
@@ -2671,6 +2671,27 @@ const products = [
     price: 3200,
     image: "image/A25.jpeg",
     description: `<p>The Ordinary Glycolic Acid 7% Exfoliating Toner.</p><br><p><strong>Primary Uses:</strong> Apply to clean, dry skin as directed on the product label; avoid the eye area.</p>`
+  },
+  {
+    id: 333,
+    name: "Vaseline Cocoa Radiant Body Oil",
+    price: 2200,
+    image: "image/V1.jpeg",
+    description: `<p>Vaseline Intensive Care Cocoa Radiant Body Oil with cocoa butter.</p><br><p><strong>Primary Uses:</strong> Apply to the body to moisturize skin and leave it feeling soft and radiant. Follow the product label.</p>`
+  },
+  {
+    id: 334,
+    name: "Pampered Stretch Mark Oil",
+    price: 2350,
+    image: "image/V2.jpeg",
+    description: `<p>Pampered Stretch Mark Oil is a moisturizing skincare oil for stretch marks, scars, uneven skin tone, and dry skin.</p><br><p><strong>Primary Uses:</strong> Massage into the skin as directed on the label to hydrate and soften; the packaging states that it helps reduce the appearance of stretch marks.</p>`
+  },
+  {
+    id: 335,
+    name: "Aveeno Skin Relief Body Oil Spray",
+    price: 1600,
+    image: "image/V3.jpeg",
+    description: `<p>Aveeno Skin Relief Body Oil Spray with oat and jojoba oils, made to moisturize very dry, sensitive skin.</p><br><p><strong>Primary Uses:</strong> Spray onto the body and smooth over skin as directed to intensely moisturize. Avoid the face and eyes; follow the product label.</p>`
   }
 ];
 

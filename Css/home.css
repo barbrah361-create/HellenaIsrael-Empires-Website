@@ -93,8 +93,9 @@
   display: flex;
   align-items: center;
   min-height: 470px;
-  max-width: 1200px;
-  margin: 20px auto 0;
+  width: 100%;
+  max-width: none;
+  margin: 20px 0 0;
   padding: 48px 6%;
   overflow: hidden;
   text-align: left;
@@ -855,6 +856,7 @@
 
   .home-page .hero {
     min-height: clamp(410px, 80vw, 500px);
+    width: auto;
     margin: 12px 12px 0;
     padding: 28px 22px;
     border-radius: 13px;

@@ -21,6 +21,7 @@ if (skinFilm) {
     const filmProducts = Array.from(skinFilm.querySelectorAll('.skin-film-product img'));
     const filmChapters = Array.from(skinFilm.querySelectorAll('[data-film-step]'));
     const filmToggle = skinFilm.querySelector('[data-film-toggle]');
+    const filmNarrationToggle = skinFilm.querySelector('[data-film-narration]');
     const filmProgress = skinFilm.querySelector('[data-film-progress]');
     const filmTag = skinFilm.querySelector('[data-film-tag]');
     const filmTitle = skinFilm.querySelector('[data-film-title]');
@@ -54,6 +55,7 @@ if (skinFilm) {
     ];
     const stepDuration = 6500;
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const speechSupported = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
     let activeStep = 0;
     let elapsed = 0;
     let lastStartedAt = 0;
@@ -62,6 +64,23 @@ if (skinFilm) {
     let isVisible = false;
     let isPlaying = !reducedMotion.matches;
     let autoplay = isPlaying;
+    let narrationEnabled = false;
+    let spokenStep = -1;
+    let speechGeneration = 0;
+
+    function narrationText(stepIndex) {
+        const step = filmSteps[stepIndex];
+        const closing = stepIndex === filmSteps.length - 1
+            ? ' There are more authentic products at Hellena Israel Authentic Cosmetics Empire. Visit us today.'
+            : '';
+        return `${step.title}. ${step.description}${closing}`;
+    }
+
+    function currentStepDuration() {
+        if (!narrationEnabled) return stepDuration;
+        const wordsPerMinute = activeStep === filmSteps.length - 1 ? 105 : 120;
+        return Math.max(12000, narrationText(activeStep).trim().split(/\s+/).length * 60000 / wordsPerMinute + 1500);
+    }
 
     function updatePlaybackButton() {
         const icon = filmToggle.querySelector('i');
@@ -70,14 +89,79 @@ if (skinFilm) {
     }
 
     function updateProgress() {
-        const progress = Math.min(elapsed / stepDuration, 1);
+        const progress = Math.min(elapsed / currentStepDuration(), 1);
         filmProgress.style.width = `${progress * 100}%`;
         filmProgress.setAttribute('aria-valuenow', String(Math.round(progress * 100)));
     }
 
+    function updateNarrationButton() {
+        filmNarrationToggle.querySelector('i').className = narrationEnabled
+            ? 'fas fa-volume-high'
+            : 'fas fa-volume-xmark';
+        filmNarrationToggle.setAttribute('aria-pressed', String(narrationEnabled));
+        filmNarrationToggle.setAttribute(
+            'aria-label',
+            narrationEnabled ? 'Turn off spoken narration' : 'Turn on spoken narration'
+        );
+        filmNarrationToggle.title = narrationEnabled
+            ? 'Turn off spoken narration'
+            : 'Turn on spoken narration';
+    }
+
+    function speakActiveStep() {
+        if (!narrationEnabled || !speechSupported) return;
+
+        const generation = ++speechGeneration;
+        window.speechSynthesis.cancel();
+        const stepIndex = activeStep;
+        const voices = window.speechSynthesis.getVoices();
+        const englishVoices = voices.filter(voice => /^en([_-]|$)/i.test(voice.lang));
+        const femaleVoicePattern = /female|hazel|susan|samantha|karen|moira|tessa|victoria|zira|jenny|aria|ava|serena|natasha|salli|joanna|kendra|kimberly|amy|emma|olivia/i;
+        const accentRank = voice => {
+            const language = voice.lang.toLowerCase().replace('_', '-');
+            if (language === 'en-ke') return 0;
+            if (language === 'en-za') return 1;
+            if (language === 'en-gb') return 2;
+            if (language === 'en-us') return 3;
+            return 4;
+        };
+        const femaleVoices = englishVoices.filter(voice => femaleVoicePattern.test(voice.name));
+        const voicePool = femaleVoices.length ? femaleVoices : englishVoices;
+        const voice = voicePool.sort((a, b) => accentRank(a) - accentRank(b))[0];
+        spokenStep = stepIndex;
+        const segments = stepIndex === filmSteps.length - 1
+            ? [
+                { text: `${filmSteps[stepIndex].title}. ${filmSteps[stepIndex].description}`, rate: 0.98 },
+                { text: 'There are more authentic products at', rate: 0.98 },
+                { text: 'Hellena Israel Authentic Cosmetics Empire', rate: 0.82 },
+                { text: 'Visit us today.', rate: 0.95 }
+            ]
+            : [{ text: narrationText(stepIndex), rate: 0.98 }];
+
+        segments.forEach((segment, index) => {
+            const utterance = new SpeechSynthesisUtterance(segment.text);
+            if (voice) utterance.voice = voice;
+            utterance.lang = voice?.lang || 'en-GB';
+            utterance.rate = segment.rate;
+            utterance.pitch = 1.08;
+            utterance.onend = () => {
+                if (speechGeneration !== generation || spokenStep !== stepIndex) return;
+                if (index !== segments.length - 1) return;
+                spokenStep = -1;
+                if (narrationEnabled && isPlaying && isVisible && !document.hidden && activeStep === stepIndex) {
+                    advanceStep();
+                }
+            };
+            utterance.onerror = () => {
+                if (speechGeneration === generation && spokenStep === stepIndex) spokenStep = -1;
+            };
+            window.speechSynthesis.speak(utterance);
+        });
+    }
+
     function stopPlaybackTimer() {
         if (playbackTimer !== null) {
-            elapsed = Math.min(stepDuration, elapsed + performance.now() - lastStartedAt);
+            elapsed = Math.min(currentStepDuration(), elapsed + performance.now() - lastStartedAt);
             window.clearInterval(playbackTimer);
             playbackTimer = null;
         }
@@ -88,17 +172,19 @@ if (skinFilm) {
         activeStep = (activeStep + 1) % filmSteps.length;
         elapsed = 0;
         renderStep();
+        if (isPlaying && isVisible && !document.hidden) speakActiveStep();
     }
 
     function tickPlayback() {
-        elapsed = Math.min(stepDuration, elapsed + performance.now() - lastStartedAt);
+        elapsed = Math.min(currentStepDuration(), elapsed + performance.now() - lastStartedAt);
         lastStartedAt = performance.now();
 
-        if (elapsed >= stepDuration) {
+        if (elapsed >= currentStepDuration() && (!narrationEnabled || !window.speechSynthesis.speaking)) {
             advanceStep();
             return;
         }
 
+        if (elapsed >= currentStepDuration()) elapsed = currentStepDuration();
         updateProgress();
     }
 
@@ -107,8 +193,18 @@ if (skinFilm) {
         if (shouldRun && playbackTimer === null) {
             lastStartedAt = performance.now();
             playbackTimer = window.setInterval(tickPlayback, 100);
+            if (narrationEnabled) {
+                if (window.speechSynthesis.paused && window.speechSynthesis.speaking) {
+                    window.speechSynthesis.resume();
+                } else if (spokenStep !== activeStep) {
+                    speakActiveStep();
+                }
+            }
         } else if (!shouldRun) {
             stopPlaybackTimer();
+            if (speechSupported && window.speechSynthesis.speaking) {
+                window.speechSynthesis.pause();
+            }
         }
         updatePlaybackButton();
     }
@@ -148,11 +244,41 @@ if (skinFilm) {
         syncPlaybackTimer();
     });
 
+    filmNarrationToggle.disabled = !speechSupported;
+    if (!speechSupported) {
+        filmNarrationToggle.setAttribute('aria-label', 'Spoken narration is not supported in this browser');
+        filmNarrationToggle.title = 'Spoken narration is not supported in this browser';
+    } else {
+        filmNarrationToggle.addEventListener('click', () => {
+            narrationEnabled = !narrationEnabled;
+            if (narrationEnabled) {
+                if (isPlaying && isVisible && !document.hidden) speakActiveStep();
+            } else {
+                speechGeneration += 1;
+                window.speechSynthesis.cancel();
+                spokenStep = -1;
+            }
+            elapsed = 0;
+            if (playbackTimer !== null) lastStartedAt = performance.now();
+            updateProgress();
+            updateNarrationButton();
+        });
+        updateNarrationButton();
+    }
+
     filmChapters.forEach((chapter, index) => {
         chapter.addEventListener('click', () => {
             activeStep = index;
             elapsed = 0;
             renderStep();
+            if (narrationEnabled) {
+                if (isPlaying && isVisible && !document.hidden) {
+                    speakActiveStep();
+                } else {
+                    window.speechSynthesis.cancel();
+                    spokenStep = -1;
+                }
+            }
             syncPlaybackTimer();
         });
     });

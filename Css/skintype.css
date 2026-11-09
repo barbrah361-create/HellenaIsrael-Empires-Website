@@ -445,7 +445,8 @@
   gap: 13px;
 }
 
-.skin-film-toggle {
+.skin-film-toggle,
+.skin-film-narration {
   display: grid;
   width: 42px;
   height: 42px;
@@ -460,16 +461,23 @@
   transition: background 0.2s ease, transform 0.2s ease;
 }
 
-.skin-film-toggle:hover {
+.skin-film-toggle:hover,
+.skin-film-narration:hover:not(:disabled) {
   transform: scale(1.06);
   background: rgba(255, 255, 255, 0.27);
 }
 
 .skin-film-toggle:focus-visible,
+.skin-film-narration:focus-visible,
 .skin-film-chapters button:focus-visible,
 .skin-film-cta:focus-visible {
   outline: 3px solid #ffbd7d;
   outline-offset: 3px;
+}
+
+.skin-film-narration:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
 }
 
 .skin-film-track {
@@ -1233,6 +1241,7 @@
 @media (prefers-reduced-motion: reduce) {
   .skin-film-product img,
   .skin-film-toggle,
+  .skin-film-narration,
   .skin-film-chapters button,
   .skin-film-cta i {
     transition: none;

@@ -45,12 +45,12 @@
 
 .skin-discovery-page .hero {
   display: grid;
-  grid-template-columns: 1fr 0.95fr;
-  align-items: stretch;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
   gap: clamp(24px, 5vw, 72px);
   width: min(1200px, calc(100% - 48px));
   max-width: 1200px;
-  min-height: 370px;
+  min-height: 310px;
   margin: 24px auto 0;
   padding: clamp(28px, 5vw, 62px);
   overflow: hidden;
@@ -63,7 +63,7 @@
 
 .skin-discovery-page .hero-copy {
   align-self: center;
-  max-width: 560px;
+  max-width: 700px;
 }
 
 .skin-discovery-page .eyebrow {
@@ -369,10 +369,6 @@
   animation-delay: 170ms;
 }
 
-.skin-film.is-changing .skin-film-details > *:nth-child(5) {
-  animation-delay: 220ms;
-}
-
 @keyframes film-ring-rotate {
   to { transform: translate(22%, -5%) rotate(360deg); }
 }
@@ -503,19 +499,6 @@
   background:
     radial-gradient(circle at 100% 0, rgba(246, 139, 30, 0.09), transparent 40%),
     #fffdfb;
-}
-
-.skin-film-kicker {
-  margin: 0 0 12px;
-  color: var(--skin-rose-dark);
-  font-size: 0.7rem;
-  font-weight: 800;
-  letter-spacing: 0.13em;
-}
-
-.skin-film-kicker span {
-  padding: 0 4px;
-  color: #d7c4b5;
 }
 
 .skin-film-details h3 {

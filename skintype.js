@@ -23,37 +23,32 @@ if (skinFilm) {
     const filmToggle = skinFilm.querySelector('[data-film-toggle]');
     const filmProgress = skinFilm.querySelector('[data-film-progress]');
     const filmTag = skinFilm.querySelector('[data-film-tag]');
-    const filmKicker = skinFilm.querySelector('[data-film-kicker]');
     const filmTitle = skinFilm.querySelector('[data-film-title]');
     const filmDescription = skinFilm.querySelector('[data-film-description]');
     const filmProduct = skinFilm.querySelector('[data-film-product]');
     const filmSteps = [
         {
             tag: 'GENTLE CLEANSING',
-            kicker: 'STEP 01 • START FRESH',
-            title: 'Cleanse with care',
-            description: 'Start with a gentle cleanse to lift away the day while helping your skin feel comfortable and fresh.',
+            title: 'Gentle cleansing',
+            description: 'This ceramide cleanser is made to wash away everyday dirt and impurities while supporting the skin’s moisture barrier.',
             product: 'Face Facts Ceramide Cleanser'
         },
         {
-            tag: 'TARGETED CLEANSING',
-            kicker: 'STEP 02 • CARE FOR CLARITY',
-            title: 'Give pores a fresh start',
-            description: 'For blemish-prone skin, explore a salicylic acid cleanser and follow the product directions.',
+            tag: 'DEEP CLEANSING',
+            title: 'Salicylic acid cleansing',
+            description: 'This foaming clay cleanser is designed to deeply cleanse and purify skin. It contains salicylic acid, lactic acid, and white clay.',
             product: 'Creightons Salicylic Acid Cleanser'
         },
         {
             tag: 'BRIGHTENING CARE',
-            kicker: 'STEP 03 • BRING BACK YOUR GLOW',
-            title: 'Brighten your routine',
-            description: 'Add a vitamin C serum to your routine for a fresh-looking, more radiant finish.',
+            title: 'Vitamin C brightening care',
+            description: 'This vitamin C serum is intended to brighten and refresh the look of skin and help reduce the appearance of uneven tone.',
             product: 'Lacura Vitamin C Serum'
         },
         {
-            tag: 'LIGHTWEIGHT HYDRATION',
-            kicker: 'STEP 04 • FINISH WITH A GLOW',
-            title: 'Hydrate and glow',
-            description: 'Finish with a lightweight illuminating gel serum to leave skin feeling soft and comfortably hydrated.',
+            tag: 'OIL CONTROL & SMOOTHING',
+            title: 'Smoothing gel serum',
+            description: 'This illuminating gel serum is made to smooth the look of skin and help control excess oil. Its listed ingredients include niacinamide, green tea, and vitamin C.',
             product: 'Face Facts Illuminating Gel Serum'
         }
     ];
@@ -141,7 +136,6 @@ if (skinFilm) {
             chapter.setAttribute('aria-pressed', String(selected));
         });
         filmTag.textContent = step.tag;
-        filmKicker.textContent = step.kicker;
         filmTitle.textContent = step.title;
         filmDescription.textContent = step.description;
         filmProduct.textContent = step.product;
